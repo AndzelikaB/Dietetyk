@@ -1,11 +1,24 @@
 {
   "name": "dietetyk",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Andżelika Botwina",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndzelikaB/Dietetyk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndzelikaB/Dietetyk/issues"
+  },
+  "homepage": "https://github.com/AndzelikaB/Dietetyk#readme",
+  "description": "dietetyk site",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.45.0"
+  }
 }
