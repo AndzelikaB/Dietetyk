@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.site-header {
+  display: flex;
+  align-items: center;
+  min-height: 150px;
+  background-color: #6d84a4;
+}
+.site-header--details-logo img {
+  max-width: 200px;
+}

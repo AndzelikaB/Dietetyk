@@ -1,0 +1,18 @@
+@import "variables.scss";
+
+
+.site-header{
+    display: flex;
+    align-items: center;
+    min-height: 150px;
+    background-color: $light-primary-color;
+
+    &--details{
+        &-logo{
+            img{
+                max-width: 200px;
+            }
+        }
+    }
+}
+

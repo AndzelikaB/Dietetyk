@@ -17,6 +17,7 @@
   "homepage": "https://github.com/AndzelikaB/Dietetyk#readme",
   "description": "dietetyk site",
   "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
     "sass": "^1.45.0"

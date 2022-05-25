@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 $theme-background: #d6dde5;
 
-$primary-color: #fff;
-$secondary-color: #b41028;
+$primary-color: #3b5577;
+$light-primary-color: #6d84a4;
+$secondary-color: #4d7246;
+$light-secondary-color: #94c06f;
 $tertiary-color: #1b1e27;
 $quaternary-color: #d4d4d4;
 
@@ -9,3 +13,6 @@ $header-size: 2rem;
 $motto-size: 1rem;
 
 $footer-bg: red;
+
+$text-color-dark: #333;
+$text-color-light: #fff;

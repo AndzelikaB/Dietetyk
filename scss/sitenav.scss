@@ -1,3 +1,13 @@
-.site-menu {
-    $siteMenu: ".site-menu";
+@import "variables.scss";
+
+.site-menu{
+    display: flex;
+    justify-content: space-evenly;
+    &-item{
+        list-style: none;
+        &--link{
+            text-decoration: none;
+            color: $text-color-dark;
+        }
+    }
 }

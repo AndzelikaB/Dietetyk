@@ -1,0 +1,9 @@
+@import "variables.scss";
+
+.site-container{
+    // --glowny-kolor-tla: brown;
+    // background-color: var(--glowny-kolor-tla);
+
+    font: 16px 'Quicksand', sans-serif;
+    color: $text-color-dark;
+}
