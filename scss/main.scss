@@ -6,4 +6,24 @@
 
     font: 16px 'Quicksand', sans-serif;
     color: $text-color-dark;
+
+    .site-content{
+        &__row-1{
+            max-width: 70%;
+            margin: 0 auto;
+            
+            .components{
+                .item{
+                    text-align: center;
+                    align-items: center;
+
+                    img{
+                        max-width: 100px;
+                    }
+                }
+            }
+
+        }
+    }
+   
 }

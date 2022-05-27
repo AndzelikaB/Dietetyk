@@ -7,6 +7,17 @@
   font: 16px "Quicksand", sans-serif;
   color: #333;
 }
+.site-container .site-content__row-1 {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.site-container .site-content__row-1 .components .item {
+  text-align: center;
+  align-items: center;
+}
+.site-container .site-content__row-1 .components .item img {
+  max-width: 100px;
+}
 
 .site-header {
   display: flex;
