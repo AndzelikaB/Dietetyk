@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.site-footer {
+  background: #6d84a4;
+  color: #fff;
+}
+.site-footer--details {
+  padding: 4em;
+}
+.site-footer--details-contact h4 {
+  font-size: 30px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.site-footer--details-contact p {
+  margin-bottom: 1.2rem;
+  font-weight: 300;
+}
+.site-footer--details-contact p i {
+  margin-right: 15px;
+}
+.site-footer--details-logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.site-footer--details-logo img {
+  width: 400px;
+}
+.site-footer--copyrights {
+  background: #3b5577;
+}
+.site-footer--copyrights p {
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 0px;
+}
+.site-footer--copyrights p a {
+  color: #fff;
+}

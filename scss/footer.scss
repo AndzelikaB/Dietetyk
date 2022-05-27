@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+.site-footer{
+    background: $light-primary-color;
+    color: $text-color-light;
+
+    &--details{
+        padding: 4em;
+        &-contact{
+            h4{
+                font-size: 30px;
+                margin-bottom: 2rem;
+                text-transform: uppercase;
+            }
+
+            p{
+                margin-bottom: 1.2rem;
+                font-weight: 300;
+
+                i{
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        &-logo{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            img{
+                width: 400px;
+
+            }
+        }
+    }
+    &--copyrights{
+        background: $primary-color;
+        p{
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 0px;
+            a{
+                color: $text-color-light; 
+            }
+        }
+    }
+}

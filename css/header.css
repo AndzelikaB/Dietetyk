@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   min-height: 150px;
-  background-color: #6d84a4;
+  background-color: #fff;
+  padding: 0 30px;
 }
 .site-header--details-logo img {
   max-width: 200px;

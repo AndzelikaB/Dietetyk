@@ -2,12 +2,20 @@
 
 .site-menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     &-item{
         list-style: none;
         &--link{
             text-decoration: none;
             color: $text-color-dark;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $text-menu-color;
+            padding: 10px 20px;
+
+                &:hover{
+                    color: $text-color-dark;
+                }
         }
     }
 }

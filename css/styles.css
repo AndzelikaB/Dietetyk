@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 .site-container {
   font: 16px "Quicksand", sans-serif;
   color: #333;
@@ -11,7 +12,8 @@
   display: flex;
   align-items: center;
   min-height: 150px;
-  background-color: #6d84a4;
+  background-color: #fff;
+  padding: 0 30px;
 }
 .site-header--details-logo img {
   max-width: 200px;
@@ -19,7 +21,7 @@
 
 .site-menu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .site-menu-item {
   list-style: none;
@@ -27,4 +29,50 @@
 .site-menu-item--link {
   text-decoration: none;
   color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #3b5577;
+  padding: 10px 20px;
+}
+.site-menu-item--link:hover {
+  color: #333;
+}
+
+.site-footer {
+  background: #6d84a4;
+  color: #fff;
+}
+.site-footer--details {
+  padding: 4em;
+}
+.site-footer--details-contact h4 {
+  font-size: 30px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.site-footer--details-contact p {
+  margin-bottom: 1.2rem;
+  font-weight: 300;
+}
+.site-footer--details-contact p i {
+  margin-right: 15px;
+}
+.site-footer--details-logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.site-footer--details-logo img {
+  width: 400px;
+}
+.site-footer--copyrights {
+  background: #3b5577;
+}
+.site-footer--copyrights p {
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 0px;
+}
+.site-footer--copyrights p a {
+  color: #fff;
 }
