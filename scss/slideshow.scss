@@ -1,0 +1,14 @@
+@import "variables.scss";
+
+.slideshow{
+    .slider{
+        &-item{
+           &--image{
+               width: 100%;
+           }
+           &--heading{
+               font-size: 2rem;
+           }
+        }
+    }
+}
