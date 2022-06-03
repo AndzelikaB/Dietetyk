@@ -56,29 +56,46 @@
             </div>
 
             <div class="slideshow">
-                <ul class="slider">
+                <ul class="slider px-0">
                     <li class="slider-item">
-                        <img class="slider-item--image" src="./img/slider2.jpg" alt="">
+                        <img class="slider-item-image" src="./img/slider1.jpg" alt="">
 
                         <div class="slider-item-details">
                             <h1 class="slider-item--text"> Zadbaj o swoje zdrowie z dietetykiem klinicznym! </h1>
-                            <button>Umów się </button>
+                            <button class="slider-item--button" > 
+                                <a href="#"> Umów się! </a>  
+                            </button>
                         </div>
 
                     </li>
                     <li class="slider-item">
-                        <img class="slider-item--image" src="./img/slider3.jpg" alt="">
-                        <h1 class="slider-item--heading"> Umów się na konsultacje online</h1>
+                        <img class="slider-item-image" src="./img/slider3.jpg" alt="">
+                        <div class="slider-item-details">
+                            <h1 class="slider-item--text">Indywidualne plany żywieniowe </h1>
+                            <button class="slider-item--button" > 
+                                <a href="#"> Umów się </a>  
+                            </button>
+                        </div>
                     </li>
 
                     <li class="slider-item">
-                        <img class="slider-item--image" src="./img/slider1.jpg" alt="">
-                        <h1 class="slider-item--heading"> slide 1</h1>
+                        <img class="slider-item-image" src="./img/slider2.jpg" alt="">
+                        <div class="slider-item-details">
+                            <h1 class="slider-item--text"> Zadbaj o swoje zdrowie z dietetykiem klinicznym! </h1>
+                            <button class="slider-item--button" > 
+                                <a href="#"> Umów się </a>  
+                            </button>
+                        </div>
                     </li>
 
                     <li class="slider-item">
-                        <img class="slider-item--image" src="./img/slider4.jpg" alt="">
-                        <h1 class="slider-item--heading"> slide 1</h1>
+                        <img class="slider-item-image" src="./img/slider4.jpg" alt="">
+                        <div class="slider-item-details">
+                            <h1 class="slider-item--text"> Zadbaj o swoje zdrowie z dietetykiem klinicznym! </h1>
+                            <button class="slider-item--button" > 
+                                <a href="#"> Umów się </a>  
+                            </button>
+                        </div>
                     </li>
 
                 </ul>
@@ -144,7 +161,7 @@
        $('.slider').slick({
             dots: true,
             infinite: true,
-            speed: 300,
+            speed: 1,
             slidesToShow: 1,
             adaptiveHeight: true,
             fade: true,
