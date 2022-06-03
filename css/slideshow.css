@@ -7,15 +7,17 @@
 .slideshow .slider-item-details {
   position: absolute;
   top: 0;
-  width: 500px;
+  width: 620px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  top: 100px;
+  top: 70px;
   right: 50px;
+  background: rgba(0, 0, 0, 0.1882352941);
+  padding: 20px;
 }
 .slideshow .slider-item-details .slider-item--text {
-  font-size: 2rem;
+  font-size: 2.6rem;
   color: #fff;
   font-weight: 600;
   text-align: center;
@@ -37,14 +39,14 @@
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
-  padding: 13px 30px 12px 30px;
+  padding: 10px 20px;
   transition: all ease-in-out 0.5s;
 }
 .slideshow .slider-item-details .slider-item--button:hover {
   background: #fff;
 }
 .slideshow .slider-item-details .slider-item--button:hover a {
-  color: green;
+  color: #5e9106;
 }
 .slideshow .slider .slick-arrow {
   z-index: 1;
@@ -60,4 +62,8 @@
 }
 .slideshow .slider .slick-dots {
   bottom: 25px;
+}
+.slideshow .slider .slick-dots li button:before {
+  color: #161616;
+  font-size: 1rem;
 }

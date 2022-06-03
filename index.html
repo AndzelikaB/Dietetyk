@@ -10,10 +10,6 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<!--         
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script> -->
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -33,26 +29,32 @@
                     </div>
                 </div>
 
-                <div class="col-9 site-header--menu">
+                <div class="col-7 site-header--menu">
                     <ul class="site-menu">
                         <li class="site-menu-item">
                             <a href="#" class="site-menu-item--link"> Start </a>
                         </li>
                         <li class="site-menu-item">
-                            <a href="#" class="site-menu-item--link"> Poznaj mnie! </a>
+                            <a href="#about_me" class="site-menu-item--link"> Poznaj mnie! </a>
                         </li>
                         <li class="site-menu-item">
-                            <a href="#" class="site-menu-item--link"> Dlaczego warto? </a>
+                            <a href="#why_worthit" class="site-menu-item--link"> Dlaczego warto? </a>
                         </li>
                         <li class="site-menu-item">
                             <a href="#" class="site-menu-item--link"> Oferta </a>
                         </li>
                         <li class="site-menu-item">
-                            <a href="#" class="site-menu-item--link"> Kontakt </a>
+                            <a href="#footer" class="site-menu-item--link"> Kontakt </a>
                         </li>
 
                     </ul>
                 </div>
+
+                <div class="col site-header--social-icons d-flex justify-content-end">
+                  <a href="https://www.facebook.com/Dietetyk-kliniczny-Agnieszka-Borowska-104932951566725" target="_blank" alt="facebook icon"> <i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/diet_etyk_foodlover/" target="_blank" alt="instagram icon"> <i class="fa-brands fa-instagram"></i></a>
+                </div>
+   
             </div>
 
             <div class="slideshow">
@@ -71,30 +73,14 @@
                     <li class="slider-item">
                         <img class="slider-item-image" src="./img/slider3.jpg" alt="">
                         <div class="slider-item-details">
-                            <h1 class="slider-item--text">Indywidualne plany żywieniowe </h1>
-                            <button class="slider-item--button" > 
-                                <a href="#"> Umów się </a>  
-                            </button>
-                        </div>
-                    </li>
-
-                    <li class="slider-item">
-                        <img class="slider-item-image" src="./img/slider2.jpg" alt="">
-                        <div class="slider-item-details">
-                            <h1 class="slider-item--text"> Zadbaj o swoje zdrowie z dietetykiem klinicznym! </h1>
-                            <button class="slider-item--button" > 
-                                <a href="#"> Umów się </a>  
-                            </button>
+                            <h1 class="slider-item--text"> Plany żywieniowe dostosowane do Twoich potrzeb </h1>
                         </div>
                     </li>
 
                     <li class="slider-item">
                         <img class="slider-item-image" src="./img/slider4.jpg" alt="">
                         <div class="slider-item-details">
-                            <h1 class="slider-item--text"> Zadbaj o swoje zdrowie z dietetykiem klinicznym! </h1>
-                            <button class="slider-item--button" > 
-                                <a href="#"> Umów się </a>  
-                            </button>
+                            <h1 class="slider-item--text"> Profesjonalna opieka dietetyczna on-line </h1>
                         </div>
                     </li>
 
@@ -103,7 +89,29 @@
         </div>
 
         <div class="site-content">
-            <div class="site-content__row-1">
+
+            <div id="about_me" class="site-content__row-0">
+
+                <div class="about-me row ">
+                    <div class="col-7 about-me-textBlock">
+                        <h2>
+                            Poznaj mnie!
+                        </h2>
+                        
+                        <p>
+                            Cześć! Słowem wstępu opowiem trochę o sobie. Ukończyłam licencjat z Dietetyki na Śląskim Uniwersytecie Medycznym w Katowicach. Kontynuuję naukę na II stopniu o tym samym kierunku. Gotowanie oraz jedzenie jest moją pasją. W szczególności zdrowa żywność mnie cieszy z uwagi na dobrodziejstwa jakie można z niej uzyskać.
+                            Jako że mam aktualną wiedzę z zakresu żywienia zdrowego i chorego człowieka, gorąco zachęcam do skorzystania z moich usług dietetycznych online!
+                        </p> 
+                    </div>
+
+                    <div class="about-me-imageBlock col-5">
+                        <img src="./img/about_me.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="why_worthit" class="site-content__row-1">
+                <div class="content-wrapper">
                 <div class="components d-flex">
                     <div class=" item components__item1">
                         <img src="./img/gymnast-diet.png" alt="">
@@ -118,21 +126,21 @@
                     </div>
                     <div class=" item components-item3">
                         <img src="./img/gymnast-diet-list-on-a-clipboard-and-a-carrot-on-a-fork.png" alt="">
-                        <h5> Jadłospisy / Pakiety wizyt </h5>
+                        <h5> Pakiety wizyt </h5>
                         <p> Programy współpracy dopasowane do Twojego celu </p>
                     </div>
                 </div>
             </div>
-            <div class="site-content__row-2">
+            </div>
+
+            <div id="offer" class="site-content__row-2">
 
             </div>
-            <div class="site-content__row-3">
 
-            </div>
         </div>
 
 
-        <div class="site-footer">
+        <div id="footer" class="site-footer">
             <div class="site-footer--details d-flex">
                 <div class="site-footer--details-contact ">
                     <h4 class="site-footer--details-contact-header">Skontaktuj się ze mną!</h4>

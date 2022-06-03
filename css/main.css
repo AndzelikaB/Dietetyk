@@ -3,13 +3,67 @@
   font: 16px "Quicksand", sans-serif;
   color: #333;
 }
-.site-container .site-content__row-1 {
+.site-container .site-content__row-0 {
   max-width: 70%;
-  margin: 0 auto;
+  margin: 0px auto;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.site-container .site-content__row-0 .about-me {
+  justify-content: center;
+  align-items: center;
+}
+.site-container .site-content__row-0 .about-me-textBlock {
+  padding: 30px;
+  background: #6d84a4;
+  height: 100%;
+  margin-right: -50px;
+  z-index: 2;
+}
+.site-container .site-content__row-0 .about-me-textBlock h2, .site-container .site-content__row-0 .about-me-textBlock p {
+  color: #fff;
+  line-height: 1.4;
+}
+.site-container .site-content__row-0 .about-me-imageBlock {
+  padding: 0px;
+}
+.site-container .site-content__row-0 .about-me-imageBlock img {
+  height: 400px;
+}
+.site-container .site-content__row-1 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.site-container .site-content__row-1::before {
+  content: "";
+  background: url("../img/favicon.png");
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.5;
+}
+.site-container .site-content__row-1 .content-wrapper {
+  max-width: 70%;
+  margin: 50px auto;
+}
+.site-container .site-content__row-1 .components {
+  justify-content: space-between;
 }
 .site-container .site-content__row-1 .components .item {
   text-align: center;
   align-items: center;
+  max-width: 31%;
+  border-radius: 25px;
+  padding: 50px;
+  box-shadow: 0 0 1em #4a4a4a;
+  background: #fff;
+}
+.site-container .site-content__row-1 .components .item h5 {
+  font-weight: 600;
 }
 .site-container .site-content__row-1 .components .item img {
   max-width: 100px;

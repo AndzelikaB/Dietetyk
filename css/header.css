@@ -3,10 +3,30 @@
   width: 100%;
   display: flex;
   align-items: center;
-  min-height: 150px;
   background-color: #fff;
-  padding: 0 30px;
+  padding: 30px;
 }
 .site-header--details-logo img {
   max-width: 200px;
+}
+.site-header--social-icons a {
+  text-decoration: none;
+}
+.site-header--social-icons a i {
+  font-style: normal;
+  margin-left: 20px;
+}
+.site-header--social-icons a i::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 700;
+  color: #3b5577;
+  font-size: 1.6rem;
+  transition: transform 300ms ease-in;
+}
+.site-header--social-icons a i:hover::before {
+  transform: rotate(62deg);
+}
+.site-header--social-icons a i:hover {
+  transform: rotate(360deg);
+  transition: 0.3s;
 }

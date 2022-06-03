@@ -2,6 +2,7 @@
 .site-menu {
   display: flex;
   justify-content: space-between;
+  margin: 0px;
 }
 .site-menu-item {
   list-style: none;

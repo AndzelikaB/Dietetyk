@@ -8,13 +8,67 @@
   font: 16px "Quicksand", sans-serif;
   color: #333;
 }
-.site-container .site-content__row-1 {
+.site-container .site-content__row-0 {
   max-width: 70%;
-  margin: 0 auto;
+  margin: 0px auto;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.site-container .site-content__row-0 .about-me {
+  justify-content: center;
+  align-items: center;
+}
+.site-container .site-content__row-0 .about-me-textBlock {
+  padding: 30px;
+  background: #6d84a4;
+  height: 100%;
+  margin-right: -50px;
+  z-index: 2;
+}
+.site-container .site-content__row-0 .about-me-textBlock h2, .site-container .site-content__row-0 .about-me-textBlock p {
+  color: #fff;
+  line-height: 1.4;
+}
+.site-container .site-content__row-0 .about-me-imageBlock {
+  padding: 0px;
+}
+.site-container .site-content__row-0 .about-me-imageBlock img {
+  height: 400px;
+}
+.site-container .site-content__row-1 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.site-container .site-content__row-1::before {
+  content: "";
+  background: url("../img/favicon.png");
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.5;
+}
+.site-container .site-content__row-1 .content-wrapper {
+  max-width: 70%;
+  margin: 50px auto;
+}
+.site-container .site-content__row-1 .components {
+  justify-content: space-between;
 }
 .site-container .site-content__row-1 .components .item {
   text-align: center;
   align-items: center;
+  max-width: 31%;
+  border-radius: 25px;
+  padding: 50px;
+  box-shadow: 0 0 1em #4a4a4a;
+  background: #fff;
+}
+.site-container .site-content__row-1 .components .item h5 {
+  font-weight: 600;
 }
 .site-container .site-content__row-1 .components .item img {
   max-width: 100px;
@@ -24,17 +78,38 @@
   width: 100%;
   display: flex;
   align-items: center;
-  min-height: 150px;
   background-color: #fff;
-  padding: 0 30px;
+  padding: 30px;
 }
 .site-header--details-logo img {
   max-width: 200px;
+}
+.site-header--social-icons a {
+  text-decoration: none;
+}
+.site-header--social-icons a i {
+  font-style: normal;
+  margin-left: 20px;
+}
+.site-header--social-icons a i::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 700;
+  color: #3b5577;
+  font-size: 1.6rem;
+  transition: transform 300ms ease-in;
+}
+.site-header--social-icons a i:hover::before {
+  transform: rotate(62deg);
+}
+.site-header--social-icons a i:hover {
+  transform: rotate(360deg);
+  transition: 0.3s;
 }
 
 .site-menu {
   display: flex;
   justify-content: space-between;
+  margin: 0px;
 }
 .site-menu-item {
   list-style: none;
@@ -59,15 +134,17 @@
 .slideshow .slider-item-details {
   position: absolute;
   top: 0;
-  width: 500px;
+  width: 620px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  top: 100px;
+  top: 70px;
   right: 50px;
+  background: rgba(0, 0, 0, 0.1882352941);
+  padding: 20px;
 }
 .slideshow .slider-item-details .slider-item--text {
-  font-size: 2rem;
+  font-size: 2.6rem;
   color: #fff;
   font-weight: 600;
   text-align: center;
@@ -89,14 +166,14 @@
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
-  padding: 13px 30px 12px 30px;
+  padding: 10px 20px;
   transition: all ease-in-out 0.5s;
 }
 .slideshow .slider-item-details .slider-item--button:hover {
   background: #fff;
 }
 .slideshow .slider-item-details .slider-item--button:hover a {
-  color: green;
+  color: #5e9106;
 }
 .slideshow .slider .slick-arrow {
   z-index: 1;
@@ -112,6 +189,10 @@
 }
 .slideshow .slider .slick-dots {
   bottom: 25px;
+}
+.slideshow .slider .slick-dots li button:before {
+  color: #161616;
+  font-size: 1rem;
 }
 
 .site-footer {
