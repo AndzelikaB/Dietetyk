@@ -97,13 +97,11 @@
   color: #3b5577;
   font-size: 1.6rem;
   transition: transform 300ms ease-in;
-}
-.site-header--social-icons a i:hover::before {
-  transform: rotate(62deg);
-}
-.site-header--social-icons a i:hover {
   transform: rotate(360deg);
   transition: 0.3s;
+}
+.site-header--social-icons a i:hover::before {
+  color: #6d84a4;
 }
 
 .site-menu {
@@ -116,49 +114,46 @@
 }
 .site-menu-item--link {
   text-decoration: none;
-  color: #333;
+  color: #3b5577;
   font-weight: 600;
   text-transform: uppercase;
-  color: #3b5577;
   padding: 10px 20px;
   position: relative;
 }
-.site-menu-item--link .line1,
-.site-menu-item--link .line2,
-.site-menu-item--link .line3,
-.site-menu-item--link .line4 {
-  animation: move2 1500ms infinite ease;
-}
-.site-menu-item--link .line1 {
+.site-menu-item--link:hover .line1,
+.site-menu-item--link:hover .line2,
+.site-menu-item--link:hover .line3,
+.site-menu-item--link:hover .line4 {
   position: absolute;
+  background: #3b5577;
+}
+.site-menu-item--link:hover .line1 {
+  animation: move1 1500ms infinite ease;
   width: 1px;
-  background: red;
   left: 0;
   bottom: 0;
 }
-.site-menu-item--link .line2 {
-  position: absolute;
+.site-menu-item--link:hover .line2 {
+  animation: move2 1500ms infinite ease;
   height: 1px;
-  background: green;
   left: 0;
   top: 0;
 }
-.site-menu-item--link .line3 {
-  position: absolute;
+.site-menu-item--link:hover .line3 {
+  animation: move3 1500ms infinite ease;
   width: 1px;
-  background: rgb(170, 0, 255);
   top: 0;
   right: 0;
 }
-.site-menu-item--link .line4 {
-  position: absolute;
+.site-menu-item--link:hover .line4 {
+  animation: move4 1500ms infinite ease;
   height: 1px;
-  background: rgb(177, 211, 77);
   right: 0;
   bottom: 0;
 }
 .site-menu-item--link:hover {
-  color: #333;
+  font-weight: 800;
+  color: #3b5577;
 }
 .site-menu-item--link:hover::before {
   width: 100%;
@@ -194,6 +189,38 @@
   100% {
     width: 0;
     left: 100%;
+  }
+}
+@keyframes move3 {
+  0% {
+    height: 100%;
+    top: 0;
+  }
+  54% {
+    height: 0;
+    top: 100%;
+  }
+  55% {
+    height: 0;
+    top: 0;
+  }
+  100% {
+    height: 100%;
+    top: 0;
+  }
+}
+@keyframes move4 {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  55% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
   }
 }
 .slideshow .slider-item-image {

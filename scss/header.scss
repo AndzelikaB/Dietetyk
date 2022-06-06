@@ -22,29 +22,27 @@
             i{
                 font-style: normal;
                 margin-left: 20px;
+
+                // transform: rotate(360deg);
+                // transition: 0.3s;
+
                 &::before{
                     font-family: 'Font Awesome 5 Brands';
                     font-weight: 700;
-                    color: $primary-color;
+                    color: $header-icon;
                     font-size: 1.6rem;
                     transition: transform 300ms ease-in;
+                    transform: rotate(360deg);
+                    transition: 0.3s;
 
                 }
 
                 &:hover{
                     &::before{
-                        transform: rotate(62deg);
+                        color: $header-icon-hover;
                     }
                 }
-
-                &:hover{
-                    transform: rotate(360deg);
-                    transition: 0.3s;
-                    }
             }
-          
         }
-
     }
 }
-

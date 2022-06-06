@@ -1,88 +1,79 @@
 @import "variables.scss";
 
-.site-menu{
+.site-menu {
     display: flex;
     justify-content: space-between;
     margin: 0px;
-    &-item{
+
+    &-item {
         list-style: none;
-        &--link{
+
+        &--link {
             text-decoration: none;
-            color: $text-color-dark;
+            color: $header-menu;
             font-weight: 600;
             text-transform: uppercase;
-            color: $text-menu-color;
             padding: 10px 20px;
             position: relative;
 
-            .line1,
-            .line2,
-            .line3,
-            .line4{
-                animation: move2 1500ms infinite ease;
-            }
-
-            
-            .line1{
-                position: absolute;
-                width: 1px;
-                background: red;
-                left: 0;
-                bottom: 0;
-            }
-
-            .line2{
-                position: absolute;
-                height: 1px;
-                background: green;
-                left: 0;
-                top: 0;
-            }
-
-            .line3{
-                position: absolute;
-                width: 1px;
-                background: rgb(170, 0, 255);
-                top: 0;
-                right: 0;
-
-            }
-            .line4{
-                position: absolute;
-                height: 1px;
-                background: rgb(177, 211, 77);
-                right: 0;
-                bottom: 0;
-            }
-
-
-            // &::before{
-            //     content:'';
-            //     left: 0;
-            //     bottom: 0;
-            //     position: absolute;
-            //     background-color: red;
-            //     height: 2px;
-            //     width: 0%;
-            //     transition: 0.3s;
-            // }
-
-                &:hover{
-                    color: $text-color-dark;
-
-                    &::before{
-                        width: 100%;
-                    }
+            &:hover{
+                .line1,
+                .line2,
+                .line3,
+                .line4 {
+                    position: absolute;
+                    background: $header-menu-hover;
                 }
+    
+    
+                .line1 {
+                    animation: move1 1500ms infinite ease;
+                    width: 1px;
+                    left: 0;
+                    bottom: 0;
+                }
+    
+                .line2 {
+                    animation: move2 1500ms infinite ease;
+                    height: 1px;
+                    left: 0;
+                    top: 0;
+                }
+    
+                .line3 {
+                    animation: move3 1500ms infinite ease;
+                    width: 1px;
+                    top: 0;
+                    right: 0;
+    
+                }
+    
+                .line4 {
+                    animation: move4 1500ms infinite ease;
+                    height: 1px;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+
+            &:hover {
+                font-weight: 800;
+                color: $header-menu-hover;
+
+                &::before {
+                    width: 100%;
+                }
+            }
         }
     }
 }
 
-@keyframes move1{
+@keyframes move1 {
     0% {
         height: 100%;
         bottom: 0;
     }
+    
     54% {
         height: 0;
         bottom: 100%;
@@ -94,19 +85,58 @@
     100% {
         height: 100%;
         bottom: 0;
-    }    
+    }
 }
-@keyframes move2{
-    0%{
+
+@keyframes move2 {
+    0% {
         width: 0;
         left: 0;
     }
-    50%{
+    50% {
         width: 100%;
         left: 0;
     }
-    100%{
+    
+    100% {
         width: 0;
-        left: 100%
+        left: 100%;
+    }    
+}
+
+@keyframes move3 {
+    0% {
+        height: 100%;
+        top: 0;
     }
+    54% {
+        height: 0;
+        top: 100%;
+    }
+    55% {
+        height: 0;
+        top: 0;
+    }
+    
+    100% {
+        height: 100%;
+        top: 0;
+    }
+}
+
+@keyframes move4 {
+    0% {
+        width: 0;
+        right: 0;
+    }
+    55% {
+        width: 100%;
+        right: 0;
+    }
+    
+    100% {
+        width: 0;
+        right: 100%;
+    }
+    
 }

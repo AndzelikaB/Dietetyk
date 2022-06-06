@@ -22,11 +22,9 @@
   color: #3b5577;
   font-size: 1.6rem;
   transition: transform 300ms ease-in;
-}
-.site-header--social-icons a i:hover::before {
-  transform: rotate(62deg);
-}
-.site-header--social-icons a i:hover {
   transform: rotate(360deg);
   transition: 0.3s;
+}
+.site-header--social-icons a i:hover::before {
+  color: #6d84a4;
 }
