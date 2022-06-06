@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     background-color: $based-color;
-    padding: 30px;
+    padding: 10px;
 
     &--details{
         &-logo{
@@ -17,6 +17,20 @@
     }
 
     &--social-icons{
+        background: #334a6e;
+        width: 150px !important;
+        height: 150px;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        z-index: 1;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+
         a{
             text-decoration: none;
             i{

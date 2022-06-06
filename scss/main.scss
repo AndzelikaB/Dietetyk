@@ -9,39 +9,71 @@
 
     .site-content{
 
-        &_row-0,
-        &_row-1,
-        &_row-2{
-
+        &__row-0,
+        &__row-1,
+        &__row-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         &__row-0{
-            max-width: 70%;
-            margin: 0px auto;
-            align-items: center;
+            background: #fff;
+            // align-items: center;
             height: 100vh;
-            display: flex;
-            align-items: center;
+            // display: flex;
+            // align-items: center;
 
             .about-me{
+                max-width: 90%;
+                margin: 0px auto;
                 justify-content: center;
                 align-items: center;
                 &-textBlock{
-                    padding: 30px;
-                    background: $light-primary-color;
+                    // padding: 30px;
+                    // background: $light-primary-color;
                     height: 100%;
-                    margin-right: -50px;
+                    // margin-right: -50px;
                     z-index: 2;
 
-                    h2, p{
-                        color: #fff;
+                    h2, h3, p{
+                        color: #333;
                         line-height: 1.4;
+                    }
+
+                    h2{
+                        font-size: 3.5rem;
+                        font-weight: 800;
+                    }
+
+                    h3{
+                        font-size: 2rem;
+                        font-weight: 300;
+                        margin-bottom: 20px;
+                    }
+                    
+                    p{
+                        font-size: 1.1rem;
+                        line-height: 1.6;  
+                        margin-bottom: 20px;    
+                    }
+                    .socials{
+                        .fab{
+                            border-radius: 50%;
+                            background-color: #0e76a8;
+                            font-size: 30px;
+                            padding: 15px;
+                            color: #fff;
+                        }
                     }
                 }
                 &-imageBlock{
                     padding: 0px;
+                    height: 430px;
+                    display: flex;
+                    justify-content: center;
                     img{
-                        height: 400px;
+                        height: 100%;
 
                     }
                 }

@@ -4,10 +4,25 @@
   display: flex;
   align-items: center;
   background-color: #fff;
-  padding: 30px;
+  padding: 10px;
 }
 .site-header--details-logo img {
   max-width: 200px;
+}
+.site-header--social-icons {
+  background: #334a6e;
+  width: 150px !important;
+  height: 150px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
 }
 .site-header--social-icons a {
   text-decoration: none;
@@ -19,7 +34,7 @@
 .site-header--social-icons a i::before {
   font-family: "Font Awesome 5 Brands";
   font-weight: 700;
-  color: #3b5577;
+  color: #fff;
   font-size: 1.6rem;
   transition: transform 300ms ease-in;
   transform: rotate(360deg);
