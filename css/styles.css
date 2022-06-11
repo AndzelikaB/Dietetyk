@@ -4,6 +4,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+:root {
+  --site-header-height: #fff;
+}
+
+:root {
+  --site-header-height: #fff;
+}
+
 .site-container {
   font: 16px "Quicksand", sans-serif;
   color: #333;
@@ -15,10 +23,24 @@
   height: 100vh;
 }
 .site-container .site-content__row-0 h2, .site-container .site-content__row-1 h2, .site-container .site-content__row-2 h2 {
-  font-size: 3.6rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: #3b5577;
   letter-spacing: 2px;
+  position: relative;
+}
+.site-container .site-content__row-0 h2::after, .site-container .site-content__row-1 h2::after, .site-container .site-content__row-2 h2::after {
+  content: "";
+  width: 35%;
+  height: 3px;
+  background: #fff;
+  color: #fff;
+  position: absolute;
+  border: 0;
+  bottom: 36px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .site-container .site-content__row-0 {
   background: #fff;
@@ -29,7 +51,7 @@
   align-items: center;
 }
 .site-container .site-content__row-0 .about-me-textBlock {
-  border: 5px solid #334a6e;
+  box-shadow: -5px 7px 8px 1px #c1c1c1;
   padding: 20px 90px 20px 20px;
   height: 100%;
   z-index: 1;
@@ -144,12 +166,17 @@
   border-radius: inherit;
 }
 
+:root {
+  --site-header-height: #fff;
+}
+
 .site-header {
   width: 100%;
   display: flex;
   align-items: center;
   background-color: #fff;
   padding: 10px;
+  min-height: 110px;
 }
 .site-header--details-logo img {
   max-width: 200px;
@@ -187,6 +214,10 @@
 }
 .site-header--social-icons a i:hover::before {
   color: #6d84a4;
+}
+
+:root {
+  --site-header-height: #fff;
 }
 
 .site-menu {
@@ -308,6 +339,10 @@
     right: 100%;
   }
 }
+:root {
+  --site-header-height: #fff;
+}
+
 .slideshow .slider {
   margin-bottom: 0px !important;
 }
@@ -380,41 +415,90 @@
   font-size: 1rem;
 }
 
+:root {
+  --site-header-height: #fff;
+}
+
 .site-footer {
-  background: #333;
+  background: rgb(17, 17, 17);
   color: #fff;
 }
-.site-footer--details {
+.site-footer-details {
   padding: 4em;
+  column-gap: 30px;
 }
-.site-footer--details-contact h4 {
-  font-size: 30px;
-  margin-bottom: 2rem;
+.site-footer-details h4 {
+  font-size: 24px;
+  margin-bottom: 4rem;
   text-transform: uppercase;
+  position: relative;
 }
-.site-footer--details-contact p {
+.site-footer-details h4::after {
+  content: "";
+  width: 30%;
+  height: 3px;
+  background: #3b5577;
+  position: absolute;
+  border: 0;
+  left: 0;
+  bottom: -15px;
+}
+.site-footer-details--information p {
   margin-bottom: 1.2rem;
   font-weight: 300;
+  padding-right: 55px;
 }
-.site-footer--details-contact p i {
+.site-footer-details--information p i {
   margin-right: 15px;
 }
-.site-footer--details-logo {
+.site-footer-details--data p i {
+  padding: 0 20px 20px 0;
+}
+.site-footer-details--data p i::before {
+  background: hsl(0deg, 0%, 10%);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+.site-footer-details--icons .icons-element {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  column-gap: 15px;
+}
+.site-footer-details--icons .icons-element a {
+  text-decoration: none;
+}
+.site-footer-details--icons .icons-element a i {
+  font-style: normal;
+  background: hsl(0deg, 0%, 10%);
+  border-radius: 5px;
+  margin: 0px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.site-footer--details-logo img {
-  width: 400px;
+.site-footer-details--icons .icons-element a i::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: transform 300ms ease-in;
+  transform: rotate(360deg);
+  transition: 0.3s;
+}
+.site-footer-details--icons .icons-element a i:hover::before {
+  color: #6d84a4;
 }
 .site-footer--copyrights {
-  background: #3b5577;
+  background: rgb(21, 21, 21);
 }
 .site-footer--copyrights p {
   text-align: center;
   padding: 15px;
   margin-bottom: 0px;
 }
-.site-footer--copyrights p a {
-  color: #fff;
+.site-footer--copyrights p span {
+  color: #3b5577;
 }

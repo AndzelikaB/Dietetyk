@@ -1,39 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+:root {
+  --site-header-height: #fff;
+}
+
 .site-footer {
-  background: #333;
+  background: rgb(17, 17, 17);
   color: #fff;
 }
-.site-footer--details {
+.site-footer-details {
   padding: 4em;
+  column-gap: 30px;
 }
-.site-footer--details-contact h4 {
-  font-size: 30px;
-  margin-bottom: 2rem;
+.site-footer-details h4 {
+  font-size: 24px;
+  margin-bottom: 4rem;
   text-transform: uppercase;
+  position: relative;
 }
-.site-footer--details-contact p {
+.site-footer-details h4::after {
+  content: "";
+  width: 30%;
+  height: 3px;
+  background: #3b5577;
+  position: absolute;
+  border: 0;
+  left: 0;
+  bottom: -15px;
+}
+.site-footer-details--information p {
   margin-bottom: 1.2rem;
   font-weight: 300;
+  padding-right: 55px;
 }
-.site-footer--details-contact p i {
+.site-footer-details--information p i {
   margin-right: 15px;
 }
-.site-footer--details-logo {
+.site-footer-details--data p i {
+  padding: 0 20px 20px 0;
+}
+.site-footer-details--data p i::before {
+  background: hsl(0deg, 0%, 10%);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+.site-footer-details--icons .icons-element {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  column-gap: 15px;
+}
+.site-footer-details--icons .icons-element a {
+  text-decoration: none;
+}
+.site-footer-details--icons .icons-element a i {
+  font-style: normal;
+  background: hsl(0deg, 0%, 10%);
+  border-radius: 5px;
+  margin: 0px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.site-footer--details-logo img {
-  width: 400px;
+.site-footer-details--icons .icons-element a i::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: transform 300ms ease-in;
+  transform: rotate(360deg);
+  transition: 0.3s;
+}
+.site-footer-details--icons .icons-element a i:hover::before {
+  color: #6d84a4;
 }
 .site-footer--copyrights {
-  background: #3b5577;
+  background: rgb(21, 21, 21);
 }
 .site-footer--copyrights p {
   text-align: center;
   padding: 15px;
   margin-bottom: 0px;
 }
-.site-footer--copyrights p a {
-  color: #fff;
+.site-footer--copyrights p span {
+  color: #3b5577;
 }

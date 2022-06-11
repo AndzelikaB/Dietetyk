@@ -1,46 +1,116 @@
 @import "variables.scss";
 
-.site-footer{
-    background: #333;
+.site-footer {
+    background: rgb(17 17 17);
     color: $text-color-light;
 
-    &--details{
+    &-details {
         padding: 4em;
-        &-contact{
-            h4{
-                font-size: 30px;
-                margin-bottom: 2rem;
-                text-transform: uppercase;
-            }
+        column-gap: 30px;
 
-            p{
+        h4 {
+            font-size: 24px;
+            margin-bottom: 4rem;
+            text-transform: uppercase;
+            position: relative;
+
+
+            &::after {
+                content: "";
+                width: 30%;
+                height: 3px;
+                background: #3b5577;
+                position: absolute;
+                border: 0;
+                left: 0;
+                bottom: -15px;
+
+            }
+        }
+
+        &--information {
+            p {
                 margin-bottom: 1.2rem;
                 font-weight: 300;
+                padding-right: 55px;
 
-                i{
+                i {
                     margin-right: 15px;
                 }
             }
         }
 
-        &-logo{
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            img{
-                width: 400px;
+        &--data {
+            p {
+                i {
+                    padding: 0 20px 20px 0;
 
+                    &::before {
+                        background: hsl(0deg 0% 10%);
+                        padding: 10px;
+                        border-radius: 50%;
+                        font-size: 1.2rem;
+                    }
+
+                }
+            }
+
+        }
+
+        &--icons {
+            .icons-element {
+                display: flex;
+                flex-direction: row;
+                column-gap: 15px;
+
+                a {
+                    text-decoration: none;
+
+                    i {
+                        font-style: normal;
+                        background: hsl(0deg 0% 10%);
+                        border-radius: 5px;
+                        margin: 0px;
+                        height: 50px;
+                        width: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &::before {
+                            font-family: 'Font Awesome 5 Brands';
+                            font-weight: 700;
+                            color: $header-icon;
+                            font-size: 1.2rem;
+                            transition: transform 300ms ease-in;
+                            transform: rotate(360deg);
+                            transition: 0.3s;
+
+                        }
+
+                        &:hover {
+                            &::before {
+                                color: $header-icon-hover;
+                            }
+                        }
+                    }
+                }
             }
         }
+
+
     }
-    &--copyrights{
-        background: $primary-color;
-        p{
+
+    &--copyrights {
+        background: rgb(21 21 21);
+
+        p {
             text-align: center;
             padding: 15px;
             margin-bottom: 0px;
-            a{
-                color: $text-color-light; 
+
+            span {
+                color: $primary-color;
             }
         }
     }
