@@ -1,20 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
 :root {
-  --site-header-height: #fff;
+  --site-header-height: 130px;
 }
 
-.site-header {
+.site-top {
+  height: 100vh;
+}
+.site-top .site-header {
   width: 100%;
   display: flex;
   align-items: center;
   background-color: #fff;
   padding: 10px;
-  min-height: 110px;
+  min-height: var(--site-header-height);
 }
-.site-header--details-logo img {
+.site-top .site-header--details-logo img {
   max-width: 200px;
 }
-.site-header--social-icons {
+.site-top .site-header--social-icons {
   background: #334a6e;
   width: 150px !important;
   height: 150px;
@@ -29,14 +33,14 @@
   justify-content: center;
   align-items: center;
 }
-.site-header--social-icons a {
+.site-top .site-header--social-icons a {
   text-decoration: none;
 }
-.site-header--social-icons a i {
+.site-top .site-header--social-icons a i {
   font-style: normal;
   margin-left: 20px;
 }
-.site-header--social-icons a i::before {
+.site-top .site-header--social-icons a i::before {
   font-family: "Font Awesome 5 Brands";
   font-weight: 700;
   color: #fff;
@@ -45,6 +49,6 @@
   transform: rotate(360deg);
   transition: 0.3s;
 }
-.site-header--social-icons a i:hover::before {
+.site-top .site-header--social-icons a i:hover::before {
   color: #6d84a4;
 }

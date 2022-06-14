@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
 :root {
-  --site-header-height: #fff;
+  --site-header-height: 130px;
 }
 
 .site-menu {

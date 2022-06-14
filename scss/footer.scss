@@ -1,7 +1,8 @@
 @import "variables.scss";
 
 .site-footer {
-    background: rgb(17 17 17);
+    // background: rgb(17 17 17);
+    background: $footer-bg;
     color: $text-color-light;
 
     &-details {

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
 
 $theme-background: #d6dde5;
 
@@ -13,7 +14,7 @@ $based-color: #fff;
 $header-size: 2rem;
 $motto-size: 1rem;
 
-$footer-bg: red;
+$footer-bg: #181a1e;
 
 $text-color-dark: #333;
 $text-color-light: #fff;
@@ -24,8 +25,6 @@ $header-icon-hover: $light-primary-color;
 $header-menu: $primary-color;
 $header-menu-hover: $primary-color;
 
-$site-header-height: 110px;
-
 :root {
-    --site-header-height: #fff;
+    --site-header-height: 130px;
 }

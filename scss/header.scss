@@ -1,60 +1,61 @@
 @import "variables.scss";
+.site-top{
+    height: 100vh;
+    .site-header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: $based-color;
+        padding: 10px;
+        min-height: var(--site-header-height);
 
-
-.site-header{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: $based-color;
-    padding: 10px;
-    min-height: $site-header-height;
-
-    &--details{
-        &-logo{
-            img{
-                max-width: 200px;
+        &--details{
+            &-logo{
+                img{
+                    max-width: 200px;
+                }
             }
         }
-    }
 
-    &--social-icons{
-        background: #334a6e;
-        width: 150px !important;
-        height: 150px;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 50%;
-        z-index: 1;
-        overflow: hidden;
-        position: absolute;
-        right: 0;
-        top: 0;
-        justify-content: center;
-        align-items: center;
+        &--social-icons{
+            background: #334a6e;
+            width: 150px !important;
+            height: 150px;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            z-index: 1;
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            top: 0;
+            justify-content: center;
+            align-items: center;
 
-        a{
-            text-decoration: none;
-            i{
-                font-style: normal;
-                margin-left: 20px;
+            a{
+                text-decoration: none;
+                i{
+                    font-style: normal;
+                    margin-left: 20px;
 
-                // transform: rotate(360deg);
-                // transition: 0.3s;
+                    // transform: rotate(360deg);
+                    // transition: 0.3s;
 
-                &::before{
-                    font-family: 'Font Awesome 5 Brands';
-                    font-weight: 700;
-                    color: $header-icon;
-                    font-size: 1.6rem;
-                    transition: transform 300ms ease-in;
-                    transform: rotate(360deg);
-                    transition: 0.3s;
-
-                }
-
-                &:hover{
                     &::before{
-                        color: $header-icon-hover;
+                        font-family: 'Font Awesome 5 Brands';
+                        font-weight: 700;
+                        color: $header-icon;
+                        font-size: 1.6rem;
+                        transition: transform 300ms ease-in;
+                        transform: rotate(360deg);
+                        transition: 0.3s;
+
+                    }
+
+                    &:hover{
+                        &::before{
+                            color: $header-icon-hover;
+                        }
                     }
                 }
             }
