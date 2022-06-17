@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;600;700;800&display=swap");
 :root {
-  --site-header-height: 130px;
+  --site-header-height: 105px;
 }
 
 .slideshow .slider {
@@ -15,22 +15,27 @@
 .slideshow .slider-item-details {
   position: absolute;
   top: 0;
-  width: 620px;
+  width: 1000px;
   display: flex;
   align-items: center;
   flex-direction: column;
   top: 70px;
   right: 50px;
-  background: rgba(0, 0, 0, 0.1882352941);
   padding: 20px;
 }
+.slideshow .slider-item-details span {
+  color: #3b5577;
+}
 .slideshow .slider-item-details .slider-item--text {
-  font-size: 2.6rem;
-  color: #fff;
+  color: #333;
   font-weight: 600;
   text-align: center;
-  text-transform: uppercase;
   margin-bottom: 0px;
+  line-height: 1.2;
+  font-size: 3.6rem;
+  font-family: "Sen", sans-serif;
+  font-weight: 400;
+  text-align: right;
 }
 .slideshow .slider-item-details .slider-item--button {
   border: 1px solid #fff;
@@ -83,6 +88,6 @@
 .slideshow .slider .slick-dots li button:before {
   color: transparent;
   font-size: 1rem;
-  border: 3px solid #4d7246;
+  border: 3px solid #3b5577;
   border-radius: 50%;
 }

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;600;700;800&display=swap');
 
 $theme-background: #d6dde5;
 
@@ -14,17 +14,34 @@ $based-color: #fff;
 $header-size: 2rem;
 $motto-size: 1rem;
 
-$footer-bg: #181a1e;
+$header-icon: #333;
+$header-icon-hover: $primary-color;
+
+$menu-color: #333;
+$menu-color-hover: $primary-color;
+$sticky-menu: #333;
+$sticky-menu-bg: #fff;
+
+$qlink1: #3b5577;;
+$qlink2: #5C7390;
+$qlink3: #8899AF;
+$qlink4: #9ca5af;
+
+$offer1: rgba(#3b5577, 0.7);
+$offer2: rgba(#3b5577, 0.7);
+$offer3: rgba(#3b5577, 0.7);
+$offer4: rgba(#3b5577, 0.7);
+
+$footer-bg: #fff;
+$footer-icon: #fff;
+$footer-icon-bg: rgb(173, 173, 173);
+$copyright: #333;
+$copyright-bg: #fff;
 
 $text-color-dark: #333;
 $text-color-light: #fff;
 $text-menu-color: $primary-color;
 
-$header-icon: #fff;
-$header-icon-hover: $light-primary-color;
-$header-menu: $primary-color;
-$header-menu-hover: $primary-color;
-
 :root {
-    --site-header-height: 130px;
+    --site-header-height: 105px;
 }

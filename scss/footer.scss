@@ -1,9 +1,8 @@
 @import "variables.scss";
 
 .site-footer {
-    // background: rgb(17 17 17);
     background: $footer-bg;
-    color: $text-color-light;
+    color: $text-color-dark;
 
     &-details {
         padding: 4em;
@@ -45,9 +44,10 @@
             p {
                 i {
                     padding: 0 20px 20px 0;
+                    color: $footer-icon;
 
                     &::before {
-                        background: hsl(0deg 0% 10%);
+                        background: $footer-icon-bg;
                         padding: 10px;
                         border-radius: 50%;
                         font-size: 1.2rem;
@@ -69,11 +69,11 @@
 
                     i {
                         font-style: normal;
-                        background: hsl(0deg 0% 10%);
+                        background: $footer-icon-bg;
                         border-radius: 5px;
                         margin: 0px;
-                        height: 50px;
-                        width: 50px;
+                        height: 40px;
+                        width: 40px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -81,7 +81,7 @@
                         &::before {
                             font-family: 'Font Awesome 5 Brands';
                             font-weight: 700;
-                            color: $header-icon;
+                            color: $footer-icon;
                             font-size: 1.2rem;
                             transition: transform 300ms ease-in;
                             transform: rotate(360deg);
@@ -103,15 +103,25 @@
     }
 
     &--copyrights {
-        background: rgb(21 21 21);
+        display: flex;
+        flex-direction: row;
+        background: $copyright-bg;
+        padding: 0 30px;
 
         p {
             text-align: center;
             padding: 15px;
             margin-bottom: 0px;
+            color: $copyright;
 
-            span {
-                color: $primary-color;
+            a {
+                text-decoration: none;
+                color: $copyright;
+                cursor: pointer;
+
+                &:hover{
+                    color: #4179fd;
+                }
             }
         }
     }

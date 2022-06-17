@@ -3,6 +3,7 @@
 .slideshow {
     .slider {
         margin-bottom: 0px !important;
+
         &-item {
             &-image {
                 width: 100%;
@@ -13,32 +14,42 @@
             &-details {
                 position: absolute;
                 top: 0;
-                width: 620px;
+                width: 1000px;
                 display: flex;
                 align-items: center;
                 flex-direction: column;
                 top: 70px;
                 right: 50px;
-                background: #00000030;
+                // background: #00000030;
                 padding: 20px;
 
-                .slider-item{
-                    &--text{
-                        font-size: 2.6rem;
-                        color: #fff;
+                span{
+                    color: $primary-color;
+                }
+
+                .slider-item {
+                    &--text {
+                        color: #333;
                         font-weight: 600;
                         text-align: center;
-                        text-transform: uppercase;
+                        // text-transform: uppercase;
                         margin-bottom: 0px;
+                        line-height: 1.2;
+                        font-size: 3.6rem;
+                        font-family: "Sen",sans-serif;
+                        font-weight: 400;
+                        text-align: right;
                     }
 
-                    &--button{
+
+
+                    &--button {
                         border: 1px solid #fff;
                         background: transparent;
                         margin-top: 30px;
                         transition: all ease-in-out 0.5s;
 
-                        a{
+                        a {
                             color: #fff;
                             text-decoration: none;
                             border-radius: 3px;
@@ -51,40 +62,31 @@
                             transition: all ease-in-out 0.5s;
                         }
 
-                        &:hover{
+                        &:hover {
                             background: #fff;
 
-                            a{
+                            a {
                                 color: #5e9106;
                             }
                         }
-
                     }
                 }
-
-
-                
             }
         }
 
-        .slick-arrow{
+        .slick-arrow {
             z-index: 1;
-            &::before{
+
+            &::before {
                 font-size: 2.2rem;
             }
         }
+
         .slick-prev {
             left: 25px;
 
             &::before {
-                // font-family: "Font Awesome 5 Free";
-                // font-weight: 900;
-                // content: "\f138";
-                // z-index: 3;
-                // font-size: 2.5rem;
-                // color: #c2c2c2;
                 font-family: 'Font Awesome 5 Free';
-
             }
         }
 
@@ -102,13 +104,11 @@
             align-items: flex-start;
             padding: 0 20px;
 
-           & li button:before{
+            & li button:before {
                 color: transparent;
                 font-size: 1rem;
-                border: 3px solid $secondary-color;
+                border: 3px solid $primary-color;
                 border-radius: 50%;
-
-                
             }
         }
     }

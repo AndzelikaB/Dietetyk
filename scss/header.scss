@@ -6,7 +6,7 @@
         display: flex;
         align-items: center;
         background-color: $based-color;
-        padding: 10px;
+        padding: 5px 25px 0px;
         min-height: var(--site-header-height);
 
         &--details{
@@ -17,29 +17,37 @@
             }
         }
 
-        &--social-icons{
-            background: #334a6e;
-            width: 150px !important;
-            height: 150px;
-            border-top-left-radius: 50%;
-            border-bottom-left-radius: 50%;
-            border-bottom-right-radius: 50%;
-            z-index: 1;
-            overflow: hidden;
-            position: absolute;
-            right: 0;
-            top: 0;
-            justify-content: center;
+       &--right{
+        .row{
+            display: flex;
+            justify-content: flex-end;
             align-items: center;
+        }
+
+
+        }
+
+        &--social-icons{
+            justify-content: flex-end;
+            // background: #334a6e;
+            // width: 150px !important;
+            // height: 150px;
+            // border-top-left-radius: 50%;
+            // border-bottom-left-radius: 50%;
+            // border-bottom-right-radius: 50%;
+            // z-index: 1;
+            // overflow: hidden;
+            // position: absolute;
+            // right: 0;
+            // top: 0;
+            // justify-content: center;
+            // align-items: center;
 
             a{
                 text-decoration: none;
                 i{
                     font-style: normal;
                     margin-left: 20px;
-
-                    // transform: rotate(360deg);
-                    // transition: 0.3s;
 
                     &::before{
                         font-family: 'Font Awesome 5 Brands';

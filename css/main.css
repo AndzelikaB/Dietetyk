@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;600;700;800&display=swap");
 :root {
-  --site-header-height: 130px;
+  --site-header-height: 105px;
 }
 
 .site-container {
   font: 16px "Sen", sans-serif;
   color: #333;
+}
+.site-container .site-content {
+  margin-top: -180px;
 }
 .site-container .site-content__row-0, .site-container .site-content__row-1, .site-container .site-content__row-2 {
   display: flex;
@@ -45,48 +48,56 @@
 .site-container .site-content__row-0 .components {
   justify-content: space-between;
 }
-.site-container .site-content__row-0 .components .item {
+.site-container .site-content__row-0 .components__item {
   text-align: center;
   align-items: center;
-  height: 450px;
-  padding: 0 20px;
-  border-radius: 25px;
-  box-shadow: 0 0 1em #4a4a4a;
-  background: #fff;
+  height: 250px;
   cursor: pointer;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 20px;
 }
-.site-container .site-content__row-0 .components .item h5 {
+.site-container .site-content__row-0 .components__item h5 {
   font-weight: 600;
-  color: #3b5577;
-  margin-bottom: 30px;
+  color: #fff;
   font-size: 1.4rem;
+  width: 95%;
 }
-.site-container .site-content__row-0 .components .item .image {
-  background: rgb(177, 199, 158);
+.site-container .site-content__row-0 .components__item .image {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  width: 100px;
+  height: 100px;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   transition: all 400ms ease;
 }
-.site-container .site-content__row-0 .components .item .image img {
-  max-width: 100px;
+.site-container .site-content__row-0 .components__item .image img {
+  max-width: 70px;
 }
-.site-container .site-content__row-0 .components .item .image:hover {
-  transform: rotate(360deg);
+.site-container .site-content__row-0 .components__item .image:hover {
+  transform: rotate(30deg);
+}
+.site-container .site-content__row-0 .components__item1 {
+  background: #3b5577;
+}
+.site-container .site-content__row-0 .components__item2 {
+  background: #5C7390;
+}
+.site-container .site-content__row-0 .components__item3 {
+  background: #8899AF;
+}
+.site-container .site-content__row-0 .components__item4 {
+  background: #9ca5af;
 }
 .site-container .site-content__row-1 {
   background: #fff;
+  height: 100vh;
 }
 .site-container .site-content__row-1 .about-me {
   max-width: 75%;
@@ -160,6 +171,7 @@
 .site-container .site-content__row-2 {
   flex-direction: column;
   height: auto;
+  margin-top: 50px;
 }
 .site-container .site-content__row-2 .elements {
   display: flex;
@@ -231,13 +243,13 @@
   background: rgba(59, 85, 119, 0.7);
 }
 .site-container .site-content__row-2 .elements-item2::before {
-  background: rgba(109, 132, 164, 0.7);
+  background: rgba(59, 85, 119, 0.7);
 }
 .site-container .site-content__row-2 .elements-item3::before {
-  background: rgba(77, 114, 70, 0.7);
+  background: rgba(59, 85, 119, 0.7);
 }
 .site-container .site-content__row-2 .elements-item4::before {
-  background: rgba(177, 199, 158, 0.7);
+  background: rgba(59, 85, 119, 0.7);
 }
 .site-container .site-content__row-2 .elements-item:hover img {
   transform: scale(1.1);

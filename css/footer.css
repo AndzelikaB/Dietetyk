@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;600;700;800&display=swap");
 :root {
-  --site-header-height: 130px;
+  --site-header-height: 105px;
 }
 
 .site-footer {
-  background: #181a1e;
-  color: #fff;
+  background: #fff;
+  color: #333;
 }
 .site-footer-details {
   padding: 4em;
@@ -38,9 +38,10 @@
 }
 .site-footer-details--data p i {
   padding: 0 20px 20px 0;
+  color: #fff;
 }
 .site-footer-details--data p i::before {
-  background: hsl(0deg, 0%, 10%);
+  background: rgb(173, 173, 173);
   padding: 10px;
   border-radius: 50%;
   font-size: 1.2rem;
@@ -55,11 +56,11 @@
 }
 .site-footer-details--icons .icons-element a i {
   font-style: normal;
-  background: hsl(0deg, 0%, 10%);
+  background: rgb(173, 173, 173);
   border-radius: 5px;
   margin: 0px;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,16 +75,25 @@
   transition: 0.3s;
 }
 .site-footer-details--icons .icons-element a i:hover::before {
-  color: #6d84a4;
+  color: #3b5577;
 }
 .site-footer--copyrights {
-  background: rgb(21, 21, 21);
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  padding: 0 30px;
 }
 .site-footer--copyrights p {
   text-align: center;
   padding: 15px;
   margin-bottom: 0px;
+  color: #333;
 }
-.site-footer--copyrights p span {
-  color: #3b5577;
+.site-footer--copyrights p a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+.site-footer--copyrights p a:hover {
+  color: #4179fd;
 }

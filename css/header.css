@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;600;700;800&display=swap");
 :root {
-  --site-header-height: 130px;
+  --site-header-height: 105px;
 }
 
 .site-top {
@@ -12,26 +12,19 @@
   display: flex;
   align-items: center;
   background-color: #fff;
-  padding: 10px;
+  padding: 5px 25px 0px;
   min-height: var(--site-header-height);
 }
 .site-top .site-header--details-logo img {
   max-width: 200px;
 }
-.site-top .site-header--social-icons {
-  background: #334a6e;
-  width: 150px !important;
-  height: 150px;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  z-index: 1;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  justify-content: center;
+.site-top .site-header--right .row {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
+}
+.site-top .site-header--social-icons {
+  justify-content: flex-end;
 }
 .site-top .site-header--social-icons a {
   text-decoration: none;
@@ -43,12 +36,12 @@
 .site-top .site-header--social-icons a i::before {
   font-family: "Font Awesome 5 Brands";
   font-weight: 700;
-  color: #fff;
+  color: #333;
   font-size: 1.6rem;
   transition: transform 300ms ease-in;
   transform: rotate(360deg);
   transition: 0.3s;
 }
 .site-top .site-header--social-icons a i:hover::before {
-  color: #6d84a4;
+  color: #3b5577;
 }

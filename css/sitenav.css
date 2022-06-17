@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;600;700;800&display=swap");
 :root {
-  --site-header-height: 130px;
+  --site-header-height: 105px;
 }
 
 .site-menu {
@@ -14,14 +14,13 @@
 }
 .site-menu-item--link {
   text-decoration: none;
-  color: #3b5577;
-  font-weight: 600;
-  text-transform: uppercase;
+  color: #333;
+  font-weight: 500;
   padding: 10px 20px;
   position: relative;
+  font-size: 1.1rem;
 }
 .site-menu-item--link:hover {
-  font-weight: 600;
   color: #3b5577;
 }
 .site-menu-item--link:hover::before {
@@ -128,20 +127,21 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgb(24, 26, 30);
+  background: #fff;
   z-index: 5;
-  padding: 20px 0;
+  padding: 15px 0;
+  box-shadow: 2px 1px 8px #979797;
 }
 .sticky ul {
   width: 60%;
   margin: 0 auto;
 }
 .sticky ul li a {
-  color: #fff;
+  color: #333;
 }
 .sticky ul li a:hover {
-  color: #fff;
+  color: #333;
 }
 .sticky ul li a:hover .line1, .sticky ul li a:hover .line2, .sticky ul li a:hover .line3, .sticky ul li a:hover .line4 {
-  background: #fff;
+  background: #333;
 }
