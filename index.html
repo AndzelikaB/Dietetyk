@@ -30,49 +30,56 @@
                 </div>
 
                 <div class="col-7 site-header--menu">
-                    <ul class="site-menu">
-                        <li class="site-menu-item">
-                            <a href="#" class="site-menu-item--link"> Start
-                                <span class="line1"></span>
-                                <span class="line2"></span>
-                                <span class="line3"></span>
-                                <span class="line4"></span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item">
-                            <a href="#about_me" class="site-menu-item--link"> Poznaj mnie!
-                                <span class="line1"></span>
-                                <span class="line2"></span>
-                                <span class="line3"></span>
-                                <span class="line4"></span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item">
-                            <a href="#why_worthit" class="site-menu-item--link"> Dlaczego warto?
-                                <span class="line1"></span>
-                                <span class="line2"></span>
-                                <span class="line3"></span>
-                                <span class="line4"></span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item">
-                            <a href="#" class="site-menu-item--link"> Oferta
-                                <span class="line1"></span>
-                                <span class="line2"></span>
-                                <span class="line3"></span>
-                                <span class="line4"></span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item">
-                            <a href="#footer" class="site-menu-item--link"> Kontakt
-                                <span class="line1"></span>
-                                <span class="line2"></span>
-                                <span class="line3"></span>
-                                <span class="line4"></span>
-                            </a>
-                        </li>
 
-                    </ul>
+                    <nav id="navbar">
+                        <!-- <h5> asdfasdf
+                         
+                        </h5> -->
+                        <ul id="menu" class="site-menu">
+                            <li class="site-menu-item">
+                                <a href="#" class="site-menu-item--link"> Start
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class="line4"></span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a href="#about_me" class="site-menu-item--link"> Poznaj mnie!
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class="line4"></span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a href="#why_worthit" class="site-menu-item--link"> Dlaczego warto?
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class="line4"></span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a href="#" class="site-menu-item--link"> Oferta
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class="line4"></span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a href="#footer" class="site-menu-item--link"> Kontakt
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class="line4"></span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
                 </div>
 
                 <div class="col site-header--social-icons d-flex ">
@@ -124,7 +131,8 @@
                             <div class="image">
                                 <img src="./img/gymnast-diet-list-on-a-clipboard-and-a-carrot-on-a-fork.png" alt="">
                             </div>
-                            <p> Plan żywieniowy dopasowany do Twoich potrzeb i trybu życia. Smaczne i proste w przygotowaniu.  </p>
+                            <p> Plan żywieniowy dopasowany do Twoich potrzeb i trybu życia. Smaczne i proste w
+                                przygotowaniu. </p>
                         </div>
                         <div class="col-4 item components__item2">
                             <h5> Zdrowe odżywianie </h5>
@@ -196,9 +204,9 @@
                         <a href="#">
                             <img src="./img/first-meeting.jpg" alt="slimming">
                             <div class="tekst">
-                                <h5> Pierwsza wizyta  </h5>
+                                <h5> Pierwsza wizyta </h5>
                                 <p>
-                                   Sprawdź jak wygląda pierwsze spotkanie
+                                    Sprawdź jak wygląda pierwsze spotkanie
                                 </p>
                             </div>
                         </a>
@@ -220,7 +228,7 @@
                             <div class="tekst">
                                 <h5> Pakiety wizyt </h5>
                                 <p>
-                                   Dowiedz się jak zaoszczędzić pieniądze
+                                    Dowiedz się jak zaoszczędzić pieniądze
                                 </p>
                             </div>
                         </a>
@@ -273,12 +281,24 @@
         $('.slider').slick({
             dots: true,
             infinite: true,
-            speed: 1,
+            speed: 2,
             slidesToShow: 1,
             adaptiveHeight: true,
             fade: true,
             cssEase: 'linear'
         });
+
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function () {
+            if (window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+
+        }
     </script>
 </body>
 
