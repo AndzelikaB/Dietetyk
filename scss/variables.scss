@@ -22,6 +22,8 @@ $menu-color-hover: $primary-color;
 $sticky-menu: #333;
 $sticky-menu-bg: #fff;
 
+$slideshow-text: #6a9cdf;
+
 $qlink1: #3b5577;;
 $qlink2: #5C7390;
 $qlink3: #8899AF;
@@ -34,13 +36,15 @@ $offer4: rgba(#3b5577, 0.7);
 
 $footer-bg: #fff;
 $footer-icon: #fff;
-$footer-icon-bg: rgb(173, 173, 173);
-$copyright: #333;
+$footer-icon-bg: rgb(146 158 173);
+$copyright: rgb(146 158 173);
 $copyright-bg: #fff;
 
 $text-color-dark: #333;
 $text-color-light: #fff;
 $text-menu-color: $primary-color;
+
+$details-color: #6a9cdf;
 
 :root {
     --site-header-height: 105px;

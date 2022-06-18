@@ -20,11 +20,10 @@
                 flex-direction: column;
                 top: 70px;
                 right: 50px;
-                // background: #00000030;
                 padding: 20px;
 
-                span{
-                    color: $primary-color;
+                span {
+                    color: $slideshow-text;
                 }
 
                 .slider-item {
@@ -32,29 +31,25 @@
                         color: #333;
                         font-weight: 600;
                         text-align: center;
-                        // text-transform: uppercase;
                         margin-bottom: 0px;
                         line-height: 1.2;
                         font-size: 3.6rem;
-                        font-family: "Sen",sans-serif;
+                        font-family: "Sen", sans-serif;
                         font-weight: 400;
                         text-align: right;
                     }
 
-
-
                     &--button {
-                        border: 1px solid #fff;
+                        border: 1px solid #333;
                         background: transparent;
                         margin-top: 30px;
                         transition: all ease-in-out 0.5s;
 
                         a {
-                            color: #fff;
+                            color: #333;
                             text-decoration: none;
                             border-radius: 3px;
                             font-size: 22px;
-                            color: #ffffff;
                             text-align: center;
                             text-transform: uppercase;
                             display: inline-block;
@@ -66,7 +61,7 @@
                             background: #fff;
 
                             a {
-                                color: #5e9106;
+                                color: $details-color;
                             }
                         }
                     }
@@ -78,6 +73,7 @@
             z-index: 1;
 
             &::before {
+                color: #333;
                 font-size: 2.2rem;
             }
         }

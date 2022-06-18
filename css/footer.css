@@ -41,7 +41,7 @@
   color: #fff;
 }
 .site-footer-details--data p i::before {
-  background: rgb(173, 173, 173);
+  background: rgb(146, 158, 173);
   padding: 10px;
   border-radius: 50%;
   font-size: 1.2rem;
@@ -56,7 +56,7 @@
 }
 .site-footer-details--icons .icons-element a i {
   font-style: normal;
-  background: rgb(173, 173, 173);
+  background: rgb(146, 158, 173);
   border-radius: 5px;
   margin: 0px;
   height: 40px;
@@ -87,11 +87,11 @@
   text-align: center;
   padding: 15px;
   margin-bottom: 0px;
-  color: #333;
+  color: rgb(146, 158, 173);
 }
 .site-footer--copyrights p a {
   text-decoration: none;
-  color: #333;
+  color: rgb(146, 158, 173);
   cursor: pointer;
 }
 .site-footer--copyrights p a:hover {
