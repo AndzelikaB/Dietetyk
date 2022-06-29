@@ -1,68 +1,126 @@
 @import "variables.scss";
-.site-top{
+
+.site-top {
     height: 100vh;
-    .site-header{
+
+    .site-header {
+        position: absolute;
         width: 100%;
-        display: flex;
-        align-items: center;
-        background-color: $based-color;
+        background-color: transparent;
         padding: 5px 25px 0px;
         min-height: var(--site-header-height);
+        z-index: 1;
 
-        &--details{
-            &-logo{
-                img{
-                    max-width: 200px;
+        &-wrapper {
+            display: flex;
+            align-items: center;
+
+            &__details {
+                &-logo {
+                    img {
+                        max-width: 200px;
+                    }
+                }
+            }
+
+            &__right {
+                .row {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+
+
+                &-social-icons {
+                    justify-content: flex-end;
+                    // background: #334a6e;
+                    // width: 150px !important;
+                    // height: 150px;
+                    // border-top-left-radius: 50%;
+                    // border-bottom-left-radius: 50%;
+                    // border-bottom-right-radius: 50%;
+                    // z-index: 1;
+                    // overflow: hidden;
+                    // position: absolute;
+                    // right: 0;
+                    // top: 0;
+                    // justify-content: center;
+                    // align-items: center;
+
+                    a {
+                        text-decoration: none;
+
+                        i {
+                            font-style: normal;
+                            margin-left: 20px;
+
+                            &::before {
+                                font: 700 1.6rem 'Font Awesome 5 Brands';
+                                color: $header-icon;
+                                transition: transform 300ms ease-in;
+                                transform: rotate(360deg);
+                                transition: 0.3s;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    color: $header-icon-hover;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
+    }
 
-       &--right{
-        .row{
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
+    .sticky {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: $sticky-menu-bg;
+        z-index: 3;
+        padding: 0;
+        // box-shadow: 2px 1px 8px #979797;
+        transition: .5s;
+        min-height: 65px !important;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(191, 211, 237, 0.85);
+            z-index: 0;
         }
 
+        .site-header-wrapper {
+            z-index: 1;
 
-        }
+            &__details{
+                img{
+                    max-width: 130px;
+                }
+            }
 
-        &--social-icons{
-            justify-content: flex-end;
-            // background: #334a6e;
-            // width: 150px !important;
-            // height: 150px;
-            // border-top-left-radius: 50%;
-            // border-bottom-left-radius: 50%;
-            // border-bottom-right-radius: 50%;
-            // z-index: 1;
-            // overflow: hidden;
-            // position: absolute;
-            // right: 0;
-            // top: 0;
-            // justify-content: center;
-            // align-items: center;
+            .site-menu {
+                &-item {
+                    &--link {
+                        color: $sticky-menu;
 
-            a{
-                text-decoration: none;
-                i{
-                    font-style: normal;
-                    margin-left: 20px;
-
-                    &::before{
-                        font-family: 'Font Awesome 5 Brands';
-                        font-weight: 700;
-                        color: $header-icon;
-                        font-size: 1.6rem;
-                        transition: transform 300ms ease-in;
-                        transform: rotate(360deg);
-                        transition: 0.3s;
-
-                    }
-
-                    &:hover{
-                        &::before{
-                            color: $header-icon-hover;
+                        &:hover {
+                            color: $sticky-menu;
+                            .line1,
+                            .line2,
+                            .line3,
+                            .line4 {
+                                background: $sticky-menu;
+                            }
                         }
                     }
                 }

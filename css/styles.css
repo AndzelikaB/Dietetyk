@@ -283,42 +283,84 @@
   height: 100vh;
 }
 .site-top .site-header {
+  position: absolute;
   width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #fff;
+  background-color: transparent;
   padding: 5px 25px 0px;
   min-height: var(--site-header-height);
+  z-index: 1;
 }
-.site-top .site-header--details-logo img {
+.site-top .site-header-wrapper {
+  display: flex;
+  align-items: center;
+}
+.site-top .site-header-wrapper__details-logo img {
   max-width: 200px;
 }
-.site-top .site-header--right .row {
+.site-top .site-header-wrapper__right .row {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.site-top .site-header--social-icons {
+.site-top .site-header-wrapper__right-social-icons {
   justify-content: flex-end;
 }
-.site-top .site-header--social-icons a {
+.site-top .site-header-wrapper__right-social-icons a {
   text-decoration: none;
 }
-.site-top .site-header--social-icons a i {
+.site-top .site-header-wrapper__right-social-icons a i {
   font-style: normal;
   margin-left: 20px;
 }
-.site-top .site-header--social-icons a i::before {
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 700;
+.site-top .site-header-wrapper__right-social-icons a i::before {
+  font: 700 1.6rem "Font Awesome 5 Brands";
   color: #333;
-  font-size: 1.6rem;
   transition: transform 300ms ease-in;
   transform: rotate(360deg);
   transition: 0.3s;
 }
-.site-top .site-header--social-icons a i:hover::before {
+.site-top .site-header-wrapper__right-social-icons a i:hover::before {
   color: #3b5577;
+}
+.site-top .sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 3;
+  padding: 0;
+  transition: 0.5s;
+  min-height: 65px !important;
+}
+.site-top .sticky::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(191, 211, 237, 0.85);
+  z-index: 0;
+}
+.site-top .sticky .site-header-wrapper {
+  z-index: 1;
+}
+.site-top .sticky .site-header-wrapper__details img {
+  max-width: 130px;
+}
+.site-top .sticky .site-header-wrapper .site-menu-item--link {
+  color: #333;
+}
+.site-top .sticky .site-header-wrapper .site-menu-item--link:hover {
+  color: #333;
+}
+.site-top .sticky .site-header-wrapper .site-menu-item--link:hover .line1,
+.site-top .sticky .site-header-wrapper .site-menu-item--link:hover .line2,
+.site-top .sticky .site-header-wrapper .site-menu-item--link:hover .line3,
+.site-top .sticky .site-header-wrapper .site-menu-item--link:hover .line4 {
+  background: #333;
 }
 
 :root {
@@ -443,44 +485,6 @@
     right: 100%;
   }
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  z-index: 5;
-  padding: 15px 0;
-  transition: 0.5s;
-}
-.sticky::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(191, 211, 237, 0.85);
-  z-index: 0;
-}
-.sticky ul {
-  width: 60%;
-  margin: 0 auto;
-}
-.sticky ul li {
-  z-index: 1;
-}
-.sticky ul li a {
-  color: #333;
-}
-.sticky ul li a:hover {
-  color: #333;
-}
-.sticky ul li a:hover .line1, .sticky ul li a:hover .line2, .sticky ul li a:hover .line3, .sticky ul li a:hover .line4 {
-  background: #333;
-}
-
 :root {
   --site-header-height: 105px;
 }
@@ -491,17 +495,17 @@
 .slideshow .slider-item-image {
   width: 100%;
   object-fit: cover;
-  height: calc(100vh - var(--site-header-height));
+  height: 100vh;
 }
 .slideshow .slider-item-details {
   position: absolute;
   top: 0;
-  width: 1000px;
+  max-width: 1000px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  top: 70px;
-  right: 50px;
+  top: 140px;
+  right: 40px;
   padding: 20px;
 }
 .slideshow .slider-item-details span {
@@ -509,14 +513,10 @@
 }
 .slideshow .slider-item-details .slider-item--text {
   color: #333;
-  font-weight: 600;
-  text-align: center;
   margin-bottom: 0px;
   line-height: 1.2;
-  font-size: 3.6rem;
-  font-family: "Sen", sans-serif;
-  font-weight: 400;
   text-align: right;
+  font: 400 3.6rem Sen, sans-serif;
 }
 .slideshow .slider-item-details .slider-item--button {
   border: 1px solid #333;
@@ -528,7 +528,7 @@
   color: #333;
   text-decoration: none;
   border-radius: 3px;
-  font-size: 22px;
+  font-size: 1.4rem;
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
@@ -604,7 +604,7 @@
 .site-footer-details--information p {
   margin-bottom: 1.2rem;
   font-weight: 300;
-  padding-right: 55px;
+  padding-right: 3.4rem;
 }
 .site-footer-details--information p i {
   margin-right: 15px;
@@ -639,10 +639,8 @@
   align-items: center;
 }
 .site-footer-details--icons .icons-element a i::before {
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 700;
+  font: 700 1.2rem "Font Awesome 5 Brands";
   color: #fff;
-  font-size: 1.2rem;
   transition: transform 300ms ease-in;
   transform: rotate(360deg);
   transition: 0.3s;

@@ -10,17 +10,17 @@
 .slideshow .slider-item-image {
   width: 100%;
   object-fit: cover;
-  height: calc(100vh - var(--site-header-height));
+  height: 100vh;
 }
 .slideshow .slider-item-details {
   position: absolute;
   top: 0;
-  width: 1000px;
+  max-width: 1000px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  top: 70px;
-  right: 50px;
+  top: 140px;
+  right: 40px;
   padding: 20px;
 }
 .slideshow .slider-item-details span {
@@ -28,14 +28,10 @@
 }
 .slideshow .slider-item-details .slider-item--text {
   color: #333;
-  font-weight: 600;
-  text-align: center;
   margin-bottom: 0px;
   line-height: 1.2;
-  font-size: 3.6rem;
-  font-family: "Sen", sans-serif;
-  font-weight: 400;
   text-align: right;
+  font: 400 3.6rem Sen, sans-serif;
 }
 .slideshow .slider-item-details .slider-item--button {
   border: 1px solid #333;
@@ -47,7 +43,7 @@
   color: #333;
   text-decoration: none;
   border-radius: 3px;
-  font-size: 22px;
+  font-size: 1.4rem;
   text-align: center;
   text-transform: uppercase;
   display: inline-block;

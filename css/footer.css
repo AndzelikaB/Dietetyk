@@ -31,7 +31,7 @@
 .site-footer-details--information p {
   margin-bottom: 1.2rem;
   font-weight: 300;
-  padding-right: 55px;
+  padding-right: 3.4rem;
 }
 .site-footer-details--information p i {
   margin-right: 15px;
@@ -66,10 +66,8 @@
   align-items: center;
 }
 .site-footer-details--icons .icons-element a i::before {
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 700;
+  font: 700 1.2rem "Font Awesome 5 Brands";
   color: #fff;
-  font-size: 1.2rem;
   transition: transform 300ms ease-in;
   transform: rotate(360deg);
   transition: 0.3s;
