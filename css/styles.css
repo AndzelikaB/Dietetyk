@@ -301,6 +301,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin: 0px;
 }
 .site-top .site-header-wrapper__right-social-icons {
   justify-content: flex-end;
