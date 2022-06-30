@@ -5,5 +5,6 @@
             slidesToShow: 1,
             adaptiveHeight: true,
             fade: true,
-            cssEase: 'linear'
+            cssEase: 'linear',
+            arrows: false
         });

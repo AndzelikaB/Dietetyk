@@ -41,7 +41,7 @@
 
         &__row-0 {
             .content-wrapper {
-                max-width: 70%;
+                max-width: 100%;
                 margin: 50px auto;
 
                 h2 {
@@ -54,6 +54,9 @@
             .components {
                 justify-content: space-between;
 
+                .col-3{
+                    padding: 0 5px;
+                }
                 &__item {
                     text-align: center;
                     align-items: center;

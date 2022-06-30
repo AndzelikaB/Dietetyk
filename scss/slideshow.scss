@@ -18,7 +18,7 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                top: 140px;
+                top: 170px;
                 right: 40px;
                 padding: 20px;
 
@@ -65,30 +65,29 @@
             }
         }
 
-        .slick-arrow {
-            z-index: 1;
+        // .slick-arrow {
+        //     z-index: 1;
 
-            &::before {
-                color: $text-color-dark;
-                font-size: 2.2rem;
-            }
-        }
+        //     &::before {
+        //         color: $text-color-dark;
+        //         font-size: 2.2rem;
+        //     }
+        // }
 
-        .slick-prev {
-            left: 25px;
+        // .slick-prev {
+        //     left: 25px;
 
-            &::before {
-                font-family: 'Font Awesome 5 Free';
-            }
-        }
+        //     &::before {
+        //         font-family: 'Font Awesome 5 Free';
+        //     }
+        // }
 
-        .slick-next {
-            right: 25px;
-
-            &::before {
-                font-family: 'Font Awesome 5 Free';
-            }
-        }
+        // .slick-next {
+        //     right: 25px;
+        //     &::before {
+        //         font-family: 'Font Awesome 5 Free';
+        //     }
+        // }
 
         .slick-dots {
             bottom: 25px;

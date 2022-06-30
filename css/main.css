@@ -37,7 +37,7 @@
   margin: 0 auto;
 }
 .site-container .site-content__row-0 .content-wrapper {
-  max-width: 70%;
+  max-width: 100%;
   margin: 50px auto;
 }
 .site-container .site-content__row-0 .content-wrapper h2 {
@@ -47,6 +47,9 @@
 }
 .site-container .site-content__row-0 .components {
   justify-content: space-between;
+}
+.site-container .site-content__row-0 .components .col-3 {
+  padding: 0 5px;
 }
 .site-container .site-content__row-0 .components__item {
   text-align: center;
