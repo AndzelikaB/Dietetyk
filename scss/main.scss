@@ -54,9 +54,10 @@
             .components {
                 justify-content: space-between;
 
-                .col-3{
+                .col-3 {
                     padding: 0 5px;
                 }
+
                 &__item {
                     text-align: center;
                     align-items: center;
@@ -90,21 +91,25 @@
                         img {
                             max-width: 70px;
                         }
-                        &:hover{
+
+                        &:hover {
                             transform: rotate(30deg);
                         }
                     }
 
-                    &1{
+                    &1 {
                         background: $qlink1;
                     }
-                    &2{
+
+                    &2 {
                         background: $qlink2;
                     }
-                    &3{
+
+                    &3 {
                         background: $qlink3;
                     }
-                    &4{
+
+                    &4 {
                         background: $qlink4;
                     }
                 }
@@ -209,6 +214,7 @@
             flex-direction: column;
             height: auto;
             margin-top: 50px;
+
             .elements {
                 display: flex;
                 flex-direction: row;
@@ -316,6 +322,59 @@
                             width: 100%;
                             height: 100%;
                             z-index: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__row-3 {
+            .ig-embeded {
+                margin: 35px 50px;
+                align-items: center;
+
+                &_details {
+                    h3 {
+                        font: 500 38px Sen;
+                    }
+
+                    a {
+                        color: #333;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        transition: all 200ms ease-in-out;
+
+                        p {
+                            font-size: 25px;
+                            margin: 15px auto 0;
+                        }
+
+                        i {
+                            margin-left: 15px;
+                            &::before {
+                                font: 700 1.2rem 'Font Awesome 5 Brands';
+                            }
+                        }
+
+                        &:hover{
+                            color: red;
+                        }
+
+                    }
+                }
+
+                &_images {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    #ig-embeded-container {
+                        img {
+                            width: 180px;
+                            margin: 5px;
+                            height: 180px;
+                            object-fit: cover;
+                            object-position: center;
                         }
                     }
                 }
