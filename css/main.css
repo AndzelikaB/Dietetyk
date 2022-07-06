@@ -264,13 +264,38 @@
   z-index: 1;
 }
 .site-container .site-content__row-3 .ig-embeded {
-  margin: 35px 50px;
+  margin: 35px 0;
   align-items: center;
+}
+.site-container .site-content__row-3 .ig-embeded_details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+}
+.site-container .site-content__row-3 .ig-embeded_details::before {
+  content: "";
+  height: 100%;
+  background: #bdd4f1;
+  margin-right: 0;
+  width: 10%;
+  position: absolute;
+  transition: all 250ms ease-in-out;
+  z-index: -1;
+}
+.site-container .site-content__row-3 .ig-embeded_details:hover::before {
+  width: 100%;
+}
+.site-container .site-content__row-3 .ig-embeded_details:hover a:hover {
+  transform: scale(1.05);
 }
 .site-container .site-content__row-3 .ig-embeded_details h3 {
   font: 500 38px Sen;
+  padding: 0 10px;
 }
 .site-container .site-content__row-3 .ig-embeded_details a {
+  padding: 0 10px;
   color: #333;
   text-decoration: none;
   display: flex;
@@ -282,17 +307,16 @@
   margin: 15px auto 0;
 }
 .site-container .site-content__row-3 .ig-embeded_details a i {
-  margin-left: 15px;
+  margin-left: 10px;
+  color: #6a9cdf;
 }
 .site-container .site-content__row-3 .ig-embeded_details a i::before {
   font: 700 1.2rem "Font Awesome 5 Brands";
 }
-.site-container .site-content__row-3 .ig-embeded_details a:hover {
-  color: red;
-}
 .site-container .site-content__row-3 .ig-embeded_images {
   display: flex;
   justify-content: flex-end;
+  padding: 0;
 }
 .site-container .site-content__row-3 .ig-embeded_images #ig-embeded-container img {
   width: 180px;
@@ -300,4 +324,7 @@
   height: 180px;
   object-fit: cover;
   object-position: center;
+}
+.site-container .site-content__row-3 .ig-embeded_images #ig-embeded-container img:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
