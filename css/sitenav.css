@@ -122,3 +122,19 @@
     right: 100%;
   }
 }
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6a9cdf;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(106, 157, 223, 0.6);
+}
