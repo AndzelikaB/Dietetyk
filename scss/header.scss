@@ -34,6 +34,7 @@
 
                 &-social-icons {
                     justify-content: flex-end;
+                    column-gap: 10px;
                     // background: #334a6e;
                     // width: 150px !important;
                     // height: 150px;
@@ -50,23 +51,26 @@
 
                     a {
                         text-decoration: none;
+                        transition: 1s;
 
                         i {
                             font-style: normal;
-                            margin-left: 20px;
+                            z-index: 3;
 
                             &::before {
                                 font: 700 1.6rem 'Font Awesome 5 Brands';
                                 color: $header-icon;
-                                transition: transform 300ms ease-in;
-                                transform: rotate(360deg);
-                                transition: 0.3s;
                             }
+                        }
 
-                            &:hover {
+                        &:hover {
+                            transform: rotateY(360deg);
+
+                            i {
                                 &::before {
                                     color: $header-icon-hover;
                                 }
+
                             }
                         }
                     }

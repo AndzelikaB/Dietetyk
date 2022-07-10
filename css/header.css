@@ -30,22 +30,24 @@
 }
 .site-top .site-header-wrapper__right-social-icons {
   justify-content: flex-end;
+  column-gap: 10px;
 }
 .site-top .site-header-wrapper__right-social-icons a {
   text-decoration: none;
+  transition: 1s;
 }
 .site-top .site-header-wrapper__right-social-icons a i {
   font-style: normal;
-  margin-left: 20px;
+  z-index: 3;
 }
 .site-top .site-header-wrapper__right-social-icons a i::before {
   font: 700 1.6rem "Font Awesome 5 Brands";
   color: #333;
-  transition: transform 300ms ease-in;
-  transform: rotate(360deg);
-  transition: 0.3s;
 }
-.site-top .site-header-wrapper__right-social-icons a i:hover::before {
+.site-top .site-header-wrapper__right-social-icons a:hover {
+  transform: rotateY(360deg);
+}
+.site-top .site-header-wrapper__right-social-icons a:hover i::before {
   color: #3b5577;
 }
 .site-top .sticky {
