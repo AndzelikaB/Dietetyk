@@ -13,7 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            // height: 100vh;
+            margin-bottom: 100px;
 
             h2 {
                 font-size: 3.5rem;
@@ -21,20 +21,6 @@
                 color: $primary-color;
                 letter-spacing: 2px;
                 position: relative;
-
-                &::after {
-                    content: "";
-                    width: 35%;
-                    height: 3px;
-                    background: #fff;
-                    color: #fff;
-                    position: absolute;
-                    border: 0;
-                    bottom: 36px;
-                    left: 0;
-                    right: 0;
-                    margin: 0 auto;
-                }
             }
 
         }
@@ -42,7 +28,6 @@
         &__row-0 {
             .content-wrapper {
                 max-width: 100%;
-                margin: 50px auto;
 
                 h2 {
                     color: rgb(31, 122, 208);
@@ -116,11 +101,46 @@
             }
         }
 
+        &__row-1{
+            background: $row1-bg;
+            padding: 40px 0;
+            .quote{
+                color: #fff;
+                font-weight: 300;
+                font-family: cursive;
+                max-height: 600px;
+                max-width: 72%;
+                font-size: 38px;
 
-        &__row-1 {
+                &:before,
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    margin: -15px;
+                }
+
+                &:before{
+                    border-top: 4px solid #fff;
+                    border-left: 4px solid #fff;
+                    top: 0;
+                    left: 0;
+
+                }
+
+                &:after{
+                    border-bottom: 4px solid #fff;
+                    border-right: 4px solid #fff;
+                    right: 0;
+                    bottom: 0;
+
+                }
+            }
+        }
+
+        &__row-2 {
             background: #fff;
-            height: 100vh;
-
             .about-me {
                 max-width: 75%;
                 margin: 0px auto;
@@ -210,7 +230,7 @@
 
         }
 
-        &__row-2 {
+        &__row-3 {
             flex-direction: column;
             height: auto;
             margin-top: 50px;
@@ -328,7 +348,7 @@
             }
         }
 
-        &__row-3 {
+        &__row-4 {
             .ig-embeded {
                 margin: 35px 30px;
                 align-items: center;
