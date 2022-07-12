@@ -111,6 +111,8 @@
                 max-height: 600px;
                 max-width: 72%;
                 font-size: 38px;
+                text-align: center;
+                cursor: default;
 
                 &:before,
                 &::after{
@@ -119,6 +121,8 @@
                     width: 30px;
                     height: 30px;
                     margin: -15px;
+                    transition: all 550ms ease-in;
+
                 }
 
                 &:before{
@@ -136,6 +140,21 @@
                     bottom: 0;
 
                 }
+
+          
+            }
+
+            &:hover{
+                .quote{
+
+                    &:before,
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 70px;
+                        height: 70px;
+                }
+            }
             }
         }
 
