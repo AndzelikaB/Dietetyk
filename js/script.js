@@ -34,7 +34,7 @@
 
 async function addHeader() {
     const header = document.querySelector('#site-header')
-    const resp = await fetch("/header.html")
+    const resp = await fetch("/html/header.html")
     const html = await resp.text();
 
 //     const parser = new DOMParser()
@@ -47,7 +47,7 @@ async function addHeader() {
 
 async function addFooter() {
     const footer = document.querySelector('#site-footer')
-    const resp = await fetch("/footer.html");
+    const resp = await fetch("/html/footer.html");
     const html = await resp.text();
     footer.insertAdjacentHTML("beforeend", html);
 }
