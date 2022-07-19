@@ -1,5 +1,4 @@
-<div class="row site-header mx-0" id="header">
-    <div class="site-header-wrapper" id="header-wrapper"> 
+<div class="site-header-wrapper" id="header-wrapper"> 
         <div class="col-3 site-header-wrapper__details px-0">
             <div class="site-header-wrapper__details-logo">
                 <a href="index.html"> <img src="./img/logo.png" alt="logo"></a>
@@ -71,5 +70,17 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
+
+<!-- <script src="/js/sticky-header.js"></script> -->
+<script>
+    var headerWrapper = document.getElementById("header-wrapper");
+window.onscroll = function () {
+   if (window.pageYOffset >= headerWrapper.offsetHeight) {
+      header.classList.add("sticky");
+   } else {
+      header.classList.remove("sticky");
+   }
+}
+
+</script>
