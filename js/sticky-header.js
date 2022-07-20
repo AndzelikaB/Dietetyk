@@ -1,7 +1,6 @@
 var headerWrapper;
 var header;
 window.addEventListener('DOMContentLoaded',function () {
-  headerWrapper = document.getElementById("header-wrapper");
   header = document.getElementById('site-header');
 });
 window.onscroll = function () {

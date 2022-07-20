@@ -36,14 +36,19 @@ async function addHeader() {
     const header = document.querySelector('#site-header')
     const resp = await fetch("/html/header.html")
     const html = await resp.text();
-
-//     const parser = new DOMParser()
-//     const doc = parser.parseFromString(data, 'text/html')
-//     eval(doc.querySelector('script').textContent)
-    
-
     header.insertAdjacentHTML("beforeend", html);
+
+    headerWrapper = document.getElementById("header-wrapper");
+
+
 }
+
+// async function addSlider() {
+//     const header = document.querySelector('#slideshow')
+//     const resp = await fetch("/html/slideshow.html")
+//     const html = await resp.text();
+//     header.insertAdjacentHTML("beforeend", html);
+// }
 
 async function addFooter() {
     const footer = document.querySelector('#site-footer')

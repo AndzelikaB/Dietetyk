@@ -2,7 +2,8 @@
 
 .site-footer {
     background: $footer-bg;
-    color: $text-color-dark;
+    color: #3f597b;
+    position: relative;
 
     &-details {
         padding: 4em;
@@ -96,14 +97,28 @@
                 }
             }
         }
+     
 
-
+    }
+    &::before {
+        content: "";
+        background: url(../img/favicon.png) no-repeat;
+        width: 147px;
+        height: 158px;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        right: 0px;
+        /* left: 0; */
+        background-position: center;
+        background-size: contain;
+        opacity: 0.1;
+    
     }
 
     &--copyrights {
         display: flex;
         flex-direction: row;
-        background: $copyright-bg;
         padding: 0 30px;
 
         p {

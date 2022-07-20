@@ -15,7 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
 }
 .site-container .site-content__row-0 h2, .site-container .site-content__row-1 h2, .site-container .site-content__row-2 h2 {
   font-size: 3.5rem;
@@ -126,12 +125,12 @@
   height: 70px;
 }
 .site-container .site-content__row-2 {
-  background: #fff;
+  background: pink;
 }
 .site-container .site-content__row-2 .about-me {
   max-width: 75%;
-  margin: 0px auto;
   align-items: center;
+  margin-bottom: 35px;
 }
 .site-container .site-content__row-2 .about-me-textBlock {
   box-shadow: 0px 0px 2px 1px #c1c1c1;
@@ -199,14 +198,14 @@
 }
 .site-container .site-content__row-3 {
   flex-direction: column;
-  height: auto;
-  margin-top: 50px;
+  background: greenyellow;
 }
 .site-container .site-content__row-3 .elements {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   position: relative;
+  margin-top: 80px;
 }
 .site-container .site-content__row-3 .elements::before {
   content: "";
@@ -236,16 +235,6 @@
   width: 100%;
   object-fit: cover;
   transition: all 350ms ease-in;
-}
-.site-container .site-content__row-3 .elements-item::before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  right: 0;
-  background: green;
 }
 .site-container .site-content__row-3 .elements-item .tekst {
   position: absolute;
@@ -290,7 +279,7 @@
   z-index: 1;
 }
 .site-container .site-content__row-4 .ig-embeded {
-  margin: 35px 30px;
+  margin: 65px 30px 65px 0;
   align-items: center;
 }
 .site-container .site-content__row-4 .ig-embeded_details {
@@ -315,9 +304,6 @@
 }
 .site-container .site-content__row-4 .ig-embeded_details:hover::before {
   width: 80%;
-}
-.site-container .site-content__row-4 .ig-embeded_details:hover p {
-  transform: scale(1.02);
 }
 .site-container .site-content__row-4 .ig-embeded_details h3 {
   color: #333;
