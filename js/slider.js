@@ -5,7 +5,7 @@ $('.slider').slick({
     adaptiveHeight: true,
     fade: true,
     arrows: false,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 6000,
     draggable: true,
     autoplay: true,
     cssEase: 'ease-in-out'

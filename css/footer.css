@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 :root {
   --site-header-height: 105px;
 }
@@ -11,7 +12,10 @@
 }
 .site-footer-details {
   padding: 4em;
-  column-gap: 30px;
+  flex-wrap: wrap;
+}
+.site-footer-details .col-12 {
+  margin-bottom: 30px;
 }
 .site-footer-details h4 {
   font-size: 24px;
@@ -54,6 +58,7 @@
 }
 .site-footer-details--icons .icons-element a {
   text-decoration: none;
+  word-break: break-word;
 }
 .site-footer-details--icons .icons-element a i {
   font-style: normal;
@@ -85,7 +90,6 @@
   z-index: 2;
   bottom: 0;
   right: 0px;
-  /* left: 0; */
   background-position: center;
   background-size: contain;
   opacity: 0.1;

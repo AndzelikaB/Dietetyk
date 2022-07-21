@@ -1,61 +1,14 @@
-// // const content = document.querySelector('#site-content')
-// const slideshow = document.querySelector('#slideshow')
-
-
-// fetch('/header.html')
-// .then(res=>res.text())
-// .then(data=>{
-//     header.innerHTML=data
-//     const parser = new DOMParser()
-//     const doc = parser.parseFromString(data, 'text/html')
-//     eval(doc.querySelector('script').textContent)
-// })
-
-// fetch('/slideshow.html')
-// .then(res=>res.text())
-// .then(data=>{
-//     slideshow.innerHTML=data
-//     const parser = new DOMParser()
-//     const doc = parser.parseFromString(data, 'text/html')
-//     eval(doc.querySelector('script').textContent)
-// })
-
-// // fetch('/content.html')
-// // .then(res=>res.text())
-// // .then(data=>{
-// //     content.innerHTML=data
-// // })
-
-// // fetch('/footer.html')
-// // .then(res=>res.text())
-// // .then(data=>{
-// //     footer.innerHTML=data
-// // })
-
 async function addHeader() {
-    const header = document.querySelector('#site-header')
-    const resp = await fetch("/html/header.html")
-    const html = await resp.text();
-    header.insertAdjacentHTML("beforeend", html);
-
+    const header = document.getElementById('site-header')
+    const response = await fetch("../html/header.html")   // (poczekaj aż pobierze header.html) pobierz wszystko
+    const headerHtml = await response.text();           //zwraca odpowiedź w formacie text -> funkcja do przerobienia na text
+    header.insertAdjacentHTML("beforeend", headerHtml); // włóż w miejsce przed elementem header fragment pobrany headerhtml
     headerWrapper = document.getElementById("header-wrapper");
-
-
 }
 
-// async function addSlider() {
-//     const header = document.querySelector('#slideshow')
-//     const resp = await fetch("/html/slideshow.html")
-//     const html = await resp.text();
-//     header.insertAdjacentHTML("beforeend", html);
-// }
-
 async function addFooter() {
-    const footer = document.querySelector('#site-footer')
-    const resp = await fetch("/html/footer.html");
+    const footer = document.getElementById('site-footer')
+    const resp = await fetch("../html/footer.html");
     const html = await resp.text();
     footer.insertAdjacentHTML("beforeend", html);
 }
-
-
-

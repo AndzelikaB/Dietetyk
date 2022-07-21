@@ -7,7 +7,11 @@
 
     &-details {
         padding: 4em;
-        column-gap: 30px;
+        flex-wrap: wrap;
+
+        .col-12 {
+            margin-bottom: 30px;
+        }
 
         h4 {
             font-size: 24px;
@@ -67,6 +71,7 @@
 
                 a {
                     text-decoration: none;
+                    word-break: break-word;
 
                     i {
                         font-style: normal;
@@ -85,7 +90,6 @@
                             transition: transform 300ms ease-in;
                             transform: rotate(360deg);
                             transition: 0.3s;
-
                         }
 
                         &:hover {
@@ -97,9 +101,8 @@
                 }
             }
         }
-     
-
     }
+
     &::before {
         content: "";
         background: url(../img/favicon.png) no-repeat;
@@ -109,11 +112,10 @@
         z-index: 2;
         bottom: 0;
         right: 0px;
-        /* left: 0; */
         background-position: center;
         background-size: contain;
         opacity: 0.1;
-    
+
     }
 
     &--copyrights {
@@ -132,7 +134,7 @@
                 color: $copyright;
                 cursor: pointer;
 
-                &:hover{
+                &:hover {
                     color: #4179fd;
                 }
             }
