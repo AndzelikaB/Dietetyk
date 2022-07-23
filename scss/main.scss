@@ -38,76 +38,86 @@
                     text-align: center;
                     padding-bottom: 50px;
                 }
-            }
 
-            .components {
-                justify-content: space-between;
-
-                @media(max-width: 991px){
-                    flex-direction: column;
-                }
-
-                .col-3 {
-                    padding: 0 5px;
-                }
-
-                &__item {
-                    text-align: center;
-                    align-items: center;
-                    height: 250px;
-                    cursor: pointer;
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 10px;
-
-                    h5 {
-                        font-weight: 600;
-                        color: #fff;
-                        font-size: 1.4rem;
-                        width: 95%;
+                &-components {
+                    justify-content: space-between;
+    
+                    @media(max-width: 991px){
+                        flex-wrap:  wrap;
+                        padding: 0 50px;
                     }
+    
+                   .components {
+                        padding: 0 5px;
+                        @media(max-width: 991px){
+                            padding: 10px;
+                        }
 
-                    .image {
-                        border-radius: 50%;
-                        width: 100px;
-                        height: 100px;
-                        background: #fff;
-                        display: flex;
-                        justify-content: center;
+                            
+                    &__item {
+                        text-align: center;
                         align-items: center;
-                        margin: 0 auto;
-                        margin-bottom: 15px;
-                        transition: all 400ms ease;
-
-                        img {
-                            max-width: 70px;
+                        height: 250px;
+                        cursor: pointer;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 10px;
+    
+                        h5 {
+                            font-weight: 600;
+                            color: #fff;
+                            font-size: 1.4rem;
+                            width: 95%;
                         }
-
-                        &:hover {
-                            transform: rotate(30deg);
+    
+                        .image {
+                            border-radius: 50%;
+                            width: 100px;
+                            height: 100px;
+                            background: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0 auto;
+                            margin-bottom: 15px;
+                            transition: all 400ms ease;
+    
+                            img {
+                                max-width: 70px;
+                            }
+    
+                            &:hover {
+                                transform: rotate(30deg);
+                            }
+                        }
+    
+                        &1 {
+                            background: $qlink1;
+                        }
+    
+                        &2 {
+                            background: $qlink2;
+                        }
+    
+                        &3 {
+                            background: $qlink3;
+                        }
+    
+                        &4 {
+                            background: $qlink4;
                         }
                     }
-
-                    &1 {
-                        background: $qlink1;
                     }
 
-                    &2 {
-                        background: $qlink2;
-                    }
 
-                    &3 {
-                        background: $qlink3;
-                    }
 
-                    &4 {
-                        background: $qlink4;
-                    }
                 }
             }
+
+
         }
 
         &__row-1 {
@@ -125,6 +135,10 @@
                 cursor: default;
                 font-family: 'Courgette', cursive;
                 margin: 30px 0;
+
+                @media(max-width: 991px){
+                    text-align: center;
+                }
 
                 &:before,
                 &::after {
@@ -461,6 +475,7 @@
 
                     #ig-embeded-container {
                         text-align: right;
+                        position: relative;
 
                         @media(max-width: 991px){
                             justify-content: center;

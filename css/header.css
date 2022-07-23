@@ -8,6 +8,11 @@
 .site-top {
   height: 100vh;
 }
+@media (max-width: 991px) {
+  .site-top {
+    height: unset;
+  }
+}
 .site-top .site-header {
   position: absolute;
   width: 100%;

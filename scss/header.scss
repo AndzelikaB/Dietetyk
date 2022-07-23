@@ -3,6 +3,10 @@
 .site-top {
     height: 100vh;
 
+    @media(max-width: 991px){
+        height: unset;
+    }
+
     .site-header {
         position: absolute;
         width: 100%;

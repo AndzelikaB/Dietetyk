@@ -10,6 +10,10 @@
                 width: 100%;
                 object-fit: cover;
                 height: 100vh;
+
+                @media(max-width: 991px){
+                    height: 300px;
+                }
             }
 
             &-details {
@@ -23,6 +27,12 @@
                 right: 40px;
                 padding: 20px;
 
+                @media(max-width: 991px){
+                    max-width: 100%;
+                    bottom: 0;
+                    background: #ffffff94;
+                }
+
                 span {
                     color: $slideshow-text;
                 }
@@ -33,7 +43,11 @@
                         margin-bottom: 0px;
                         line-height: 1.2;
                         text-align: right;
-                        font: 400 3.6rem Sen, sans-serif 
+                        font: 400 3.6rem Sen, sans-serif;
+
+                        @media(max-width: 991px){
+                            font-size: 2rem;
+                        }
                     }
 
                     &--button {
@@ -92,7 +106,7 @@
 
         .slick-dots {
             bottom: 25px;
-            display: flex !important;
+            display: flex;
             align-items: flex-start;
             padding: 0 20px;
 
@@ -101,6 +115,9 @@
                 font-size: 1rem;
                 border: 3px solid $primary-color;
                 border-radius: 50%;
+            }
+            @media(max-width: 991px){
+                display: none;
             }
         }
     }
