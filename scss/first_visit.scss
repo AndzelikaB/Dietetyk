@@ -1,7 +1,7 @@
 // @import "variables.scss";
 // @import "variables.scss";
 // @import "variables.scss";
-// @import "variables.scss";
+@import "variables.scss";
 
 h1{
     color: red;
@@ -24,15 +24,58 @@ h1{
     text-align: center;
     display: table;
 }
-.section-1{
+.section-1,
+.section-2,
+.section-3{
+    align-items: center;
     .left{
         .title{
             color: $primary-color;
         }
     }
 
+    .icon{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+        
+        &::before{
+            content: "";
+            background: url("../img/first_visit/whatsapp.png") no-repeat;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            background-size: contain;
+            z-index: 1;
+        }
+        &::after{
+            content: "";
+            height: 100%;
+            position: absolute;
+            border: 3px solid #333;
+            background: #333;
+            z-index: 0;
+        }
+    }
     .right{
         .description{
+            background: $primary-color;
+            padding: 20px;
+            color: #fff;
+            text-align: left;
+        }
+    }
+}
+
+.section-2{
+    flex-direction: row-reverse;
+
+    .icon{
+        &::before{
+            background: url("../img/first_visit/calendar.png") no-repeat;
+            background-size: contain;
 
         }
     }

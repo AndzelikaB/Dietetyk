@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+:root {
+  --site-header-height: 105px;
+}
+
 h1 {
   color: red;
 }
@@ -18,4 +25,61 @@ h1 {
   padding-left: 15px;
   text-align: center;
   display: table;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+  align-items: center;
+}
+.section-1 .left .title,
+.section-2 .left .title,
+.section-3 .left .title {
+  color: #3b5577;
+}
+.section-1 .icon,
+.section-2 .icon,
+.section-3 .icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+}
+.section-1 .icon::before,
+.section-2 .icon::before,
+.section-3 .icon::before {
+  content: "";
+  background: url("../img/first_visit/whatsapp.png") no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-size: contain;
+  z-index: 1;
+}
+.section-1 .icon::after,
+.section-2 .icon::after,
+.section-3 .icon::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  border: 3px solid #333;
+  background: #333;
+  z-index: 0;
+}
+.section-1 .right .description,
+.section-2 .right .description,
+.section-3 .right .description {
+  background: #3b5577;
+  padding: 20px;
+  color: #fff;
+  text-align: left;
+}
+
+.section-2 {
+  flex-direction: row-reverse;
+}
+.section-2 .icon::before {
+  background: url("../img/first_visit/calendar.png") no-repeat;
+  background-size: contain;
 }
