@@ -1,6 +1,5 @@
 @import "variables.scss";
 
-
 .slideshow {
     .slider {
         margin-bottom: 0px !important;
@@ -119,6 +118,14 @@
             @media(max-width: 991px){
                 display: none;
             }
+        }
+    }
+}
+
+body{
+    &.inner-page{
+        .slideshow{
+            display: none;
         }
     }
 }

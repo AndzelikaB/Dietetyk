@@ -2,6 +2,20 @@ h1 {
   color: red;
 }
 
-.site-top {
-  height: auto;
+.content-title {
+  font-size: 4.9rem;
+  line-height: 1.2;
+  font-family: "Sen", sans-serif;
+  color: #000;
+  font-weight: 400;
+  padding: 30px;
+}
+
+.blocks {
+  margin: 50px auto;
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  display: table;
 }

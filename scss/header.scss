@@ -141,3 +141,14 @@
         }
     }
 }
+
+body{
+    &.inner-page{
+        .site-top{
+            height: 100%;
+            .site-header{
+                position: relative;
+            }
+        }
+    }
+}

@@ -87,3 +87,10 @@
 .site-top .sticky .site-header-wrapper .site-menu-item--link:hover .line4 {
   background: #333;
 }
+
+body.inner-page .site-top {
+  height: 100%;
+}
+body.inner-page .site-top .site-header {
+  position: relative;
+}
