@@ -1,25 +1,24 @@
 @import "variables.scss";
 
-body.main-page{
+body.main-page {
     .site-container {
         font: 16px 'Sen', sans-serif;
         color: $text-color-dark;
-    
+
         .site-content {
             margin-top: -180px;
-    
-            @media(max-width: 991px){
+
+            @media(max-width: 991px) {
                 margin: 50px 0;
             }
-    
+
             &__row-0,
             &__row-1,
             &__row-2 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                // margin-bottom: 100px;
-    
+
                 h2 {
                     font-size: 3.5rem;
                     font-weight: 800;
@@ -27,105 +26,100 @@ body.main-page{
                     letter-spacing: 2px;
                     position: relative;
                 }
-    
             }
-    
+
             &__row-0 {
                 .content-wrapper {
                     max-width: 100%;
-    
+
                     h2 {
                         color: rgb(31, 122, 208);
                         text-align: center;
                         padding-bottom: 50px;
                     }
-    
+
                     &-components {
                         justify-content: space-between;
-        
-                        @media(max-width: 991px){
-                            flex-wrap:  wrap;
+
+                        @media(max-width: 991px) {
+                            flex-wrap: wrap;
                             padding: 0 50px;
                         }
-        
-                       .components {
+
+                        .components {
                             padding: 0 5px;
-                            @media(max-width: 991px){
+
+                            @media(max-width: 991px) {
                                 padding: 10px;
                             }
-    
-                                
-                        &__item {
-                            text-align: center;
-                            align-items: center;
-                            height: 250px;
-                            cursor: pointer;
-                            position: relative;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-                            border-radius: 10px;
-        
-                            h5 {
-                                font-weight: 600;
-                                color: #fff;
-                                font-size: 1.4rem;
-                                width: 95%;
-                            }
-        
-                            .image {
-                                border-radius: 50%;
-                                width: 100px;
-                                height: 100px;
-                                background: #fff;
-                                display: flex;
-                                justify-content: center;
+
+
+                            &__item {
+                                text-align: center;
                                 align-items: center;
-                                margin: 0 auto;
-                                margin-bottom: 15px;
-                                transition: all 400ms ease;
-        
-                                img {
-                                    max-width: 70px;
+                                height: 250px;
+                                cursor: pointer;
+                                position: relative;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 10px;
+
+                                h5 {
+                                    font-weight: 600;
+                                    color: #fff;
+                                    font-size: 1.4rem;
+                                    width: 95%;
                                 }
-        
-                                &:hover {
-                                    transform: rotate(30deg);
+
+                                .image {
+                                    border-radius: 50%;
+                                    width: 100px;
+                                    height: 100px;
+                                    background: #fff;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin: 0 auto;
+                                    margin-bottom: 15px;
+                                    transition: all 400ms ease;
+
+                                    img {
+                                        max-width: 70px;
+                                    }
+
+                                    &:hover {
+                                        transform: rotate(30deg);
+                                    }
                                 }
-                            }
-        
-                            &1 {
-                                background: $qlink1;
-                            }
-        
-                            &2 {
-                                background: $qlink2;
-                            }
-        
-                            &3 {
-                                background: $qlink3;
-                            }
-        
-                            &4 {
-                                background: $qlink4;
+
+                                &1 {
+                                    background: $qlink1;
+                                }
+
+                                &2 {
+                                    background: $qlink2;
+                                }
+
+                                &3 {
+                                    background: $qlink3;
+                                }
+
+                                &4 {
+                                    background: $qlink4;
+                                }
                             }
                         }
-                        }
-    
-    
-    
                     }
                 }
-    
-    
             }
-    
+
             &__row-1 {
                 background: $row1-bg;
                 min-height: 300px;
                 margin: 7em 0;
-    
+
                 .quote {
                     color: #fff;
                     font-weight: 300;
@@ -136,11 +130,11 @@ body.main-page{
                     cursor: default;
                     font-family: 'Courgette', cursive;
                     margin: 30px 0;
-    
-                    @media(max-width: 991px){
+
+                    @media(max-width: 991px) {
                         text-align: center;
                     }
-    
+
                     &:before,
                     &::after {
                         content: '';
@@ -150,27 +144,27 @@ body.main-page{
                         margin: -15px;
                         transition: all 550ms ease-in;
                     }
-    
+
                     &:before {
                         border-top: 4px solid #fff;
                         border-left: 4px solid #fff;
                         top: 0;
                         left: 0;
-    
+
                     }
-    
+
                     &:after {
                         border-bottom: 4px solid #fff;
                         border-right: 4px solid #fff;
                         right: 0;
                         bottom: 0;
-    
+
                     }
                 }
-    
+
                 &:hover {
                     .quote {
-    
+
                         &:before,
                         &::after {
                             content: '';
@@ -181,60 +175,54 @@ body.main-page{
                     }
                 }
             }
-    
+
             &__row-2 {
                 min-height: 620px;
                 align-items: flex-start;
-    
+
                 .about-me {
                     max-width: 75%;
-                    // margin: 0px auto 35px;
                     align-items: center;
                     margin-bottom: 35px;
-    
+
                     &-textBlock {
-                        // border: 5px solid #334a6e;
-                        // box-shadow: -5px 7px 8px 1px #c1c1c1;
-                        box-shadow: 0px 0px 2px 1px #c1c1c1;
+                        box-shadow: 0 0 2px 1px #c1c1c1;
                         padding: 20px 90px 20px 20px;
-                        // padding: 30px;
-                        // background: $light-primary-color;
                         height: 100%;
-                        // margin-right: -50px;
                         z-index: 1;
                         background: #fff;
                         margin-top: 60px;
-    
-                        @media(max-width: 991px){
+
+                        @media(max-width: 991px) {
                             order: 1;
                         }
-    
+
                         h2,
                         h3,
                         p {
                             color: $text-color-dark;
                         }
-    
+
                         h2 {
                             font-size: 3.4rem;
                             font-weight: 800;
                             color: $primary-color;
                         }
-    
+
                         h3 {
                             font-size: 1.8rem;
                             font-weight: 300;
                             margin-bottom: 20px;
                             line-height: normal;
                         }
-    
+
                         p {
                             font-size: 1.1rem;
                             line-height: 1.6;
                             margin-bottom: 20px;
                             line-height: 1.2;
                         }
-    
+
                         .socials {
                             .fab {
                                 border-radius: 50%;
@@ -245,7 +233,7 @@ body.main-page{
                             }
                         }
                     }
-    
+
                     &-imageBlock {
                         padding: 0px;
                         height: 360px;
@@ -253,16 +241,14 @@ body.main-page{
                         justify-content: flex-start;
                         margin-left: -45px;
                         position: relative;
-    
-    
-    
+
                         img {
                             height: 100%;
                             box-shadow: 44px -44px #a1b3b5;
                             z-index: 2;
                         }
-    
-                        .blok{
+
+                        .blok {
                             &::before {
                                 content: "";
                                 background: url("../img/dots.jpg");
@@ -279,22 +265,20 @@ body.main-page{
                                 left: -140px;
                             }
                         }
-    
-                  
                     }
                 }
             }
-    
+
             &__row-3 {
                 flex-direction: column;
-    
+
                 .elements {
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
                     position: relative;
                     margin-top: 80px;
-    
+
                     &::before {
                         content: "";
                         background: url("../img/favicon.png") no-repeat;
@@ -309,7 +293,7 @@ body.main-page{
                         background-position: center;
                         background-size: contain;
                     }
-    
+
                     &-item {
                         position: relative;
                         cursor: pointer;
@@ -318,18 +302,18 @@ body.main-page{
                         flex-wrap: wrap;
                         overflow: hidden;
                         transition: all 550ms ease-in;
-    
-                        @media(max-width: 991px){
+
+                        @media(max-width: 991px) {
                             max-width: 100%;
                         }
-    
+
                         img {
                             height: 350px;
                             width: 100%;
                             object-fit: cover;
                             transition: all 350ms ease-in;
                         }
-    
+
                         .tekst {
                             position: absolute;
                             color: #fff;
@@ -342,18 +326,18 @@ body.main-page{
                             height: 100%;
                             width: 100%;
                             top: 0;
-    
+
                             h5 {
                                 font-size: 3rem;
                                 font-weight: 700;
                             }
-    
+
                             p {
                                 text-align: center;
                                 font-size: 1.5rem
                             }
                         }
-    
+
                         &1,
                         &2,
                         &3,
@@ -365,36 +349,36 @@ body.main-page{
                                 position: absolute;
                             }
                         }
-    
+
                         &1 {
                             &::before {
                                 background: $offer1;
                             }
                         }
-    
+
                         &2 {
                             &::before {
                                 background: $offer2;
                             }
                         }
-    
+
                         &3 {
                             &::before {
                                 background: $offer3;
                             }
                         }
-    
+
                         &4 {
                             &::before {
                                 background: $offer4;
                             }
                         }
-    
+
                         &:hover {
                             img {
                                 transform: scale(1.1);
                             }
-    
+
                             &::before {
                                 background: rgba(#000, 0.2);
                                 width: 100%;
@@ -405,17 +389,17 @@ body.main-page{
                     }
                 }
             }
-    
+
             &__row-4 {
                 .ig-embeded {
                     margin: 70px 30px 70px 0;
                     align-items: center;
-    
-                    
-                    @media(max-width: 991px){
-                        margin: 70px 0px;
+
+
+                    @media(max-width: 991px) {
+                        margin: 70px 0;
                     }
-    
+
                     &_details {
                         position: relative;
                         display: flex;
@@ -424,11 +408,12 @@ body.main-page{
                         text-decoration: none;
                         color: #333;
                         height: 180px;
-                        padding: 0px;
-    
-                        @media(max-width: 991px){
-                           text-align: center;
+                        padding: 0;
+
+                        @media(max-width: 991px) {
+                            text-align: center;
                         }
+
                         &::before {
                             content: '';
                             height: 100%;
@@ -439,51 +424,51 @@ body.main-page{
                             transition: all 250ms ease-in-out;
                             z-index: -1;
                         }
-    
+
                         &:hover {
                             &::before {
                                 width: 80%;
                             }
                         }
-    
+
                         h3 {
                             color: #333;
                             font: 500 38px Sen;
                             padding: 0 10px;
                         }
-    
+
                         p {
                             transition: all 250ms ease-in-out;
                             font-size: 17px;
-                            margin: 0px 10px;
+                            margin: 0 10px;
                         }
-    
+
                         i {
                             margin-left: 10px;
                             color: #6a9cdf;
-    
+
                             &::before {
                                 font: 700 1.2rem 'Font Awesome 5 Brands';
                             }
                         }
-    
                     }
-    
+
                     &_images {
                         display: flex;
                         justify-content: flex-end;
                         padding: 0;
-    
+
                         #ig-embeded-container {
                             text-align: right;
                             position: relative;
-    
-                            @media(max-width: 991px){
+
+                            @media(max-width: 991px) {
                                 justify-content: center;
                                 display: flex;
                                 flex-wrap: wrap;
                                 margin-top: 40px;
                             }
+
                             a {
                                 &:before {
                                     content: "";
@@ -495,20 +480,20 @@ body.main-page{
                                     right: 0;
                                     background: rgba(#000, 0);
                                 }
-    
+
                                 &:hover {
-    
+
                                     // &:before{
                                     //     z-index: 2;
                                     //     width: 100%;
                                     //     height: 100%;
                                     //     z-index: 1;
                                     //     background: rgba(#000, 0.2);
-    
+
                                     // }
                                 }
                             }
-    
+
                             img {
                                 width: 180px;
                                 margin: 5px;

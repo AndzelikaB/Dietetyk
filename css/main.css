@@ -159,7 +159,7 @@ body.main-page .site-container .site-content__row-2 .about-me {
   margin-bottom: 35px;
 }
 body.main-page .site-container .site-content__row-2 .about-me-textBlock {
-  box-shadow: 0px 0px 2px 1px #c1c1c1;
+  box-shadow: 0 0 2px 1px #c1c1c1;
   padding: 20px 90px 20px 20px;
   height: 100%;
   z-index: 1;
@@ -326,7 +326,7 @@ body.main-page .site-container .site-content__row-4 .ig-embeded {
 }
 @media (max-width: 991px) {
   body.main-page .site-container .site-content__row-4 .ig-embeded {
-    margin: 70px 0px;
+    margin: 70px 0;
   }
 }
 body.main-page .site-container .site-content__row-4 .ig-embeded_details {
@@ -337,7 +337,7 @@ body.main-page .site-container .site-content__row-4 .ig-embeded_details {
   text-decoration: none;
   color: #333;
   height: 180px;
-  padding: 0px;
+  padding: 0;
 }
 @media (max-width: 991px) {
   body.main-page .site-container .site-content__row-4 .ig-embeded_details {
@@ -365,7 +365,7 @@ body.main-page .site-container .site-content__row-4 .ig-embeded_details h3 {
 body.main-page .site-container .site-content__row-4 .ig-embeded_details p {
   transition: all 250ms ease-in-out;
   font-size: 17px;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 body.main-page .site-container .site-content__row-4 .ig-embeded_details i {
   margin-left: 10px;

@@ -1,0 +1,89 @@
+@import "variables.scss";
+
+.content-title {
+    font-size: 4.9rem;
+    line-height: 1.2;
+    font-family: "Sen", sans-serif;
+    color: #000;
+    font-weight: 400;
+    padding: 30px;
+}
+
+.blocks {
+    margin: 100px auto;
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    display: table;
+
+    &:nth-child(odd) {}
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5,
+    .section-6,
+    .section-7 {
+
+        .left {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 7em 0;
+
+            .title {
+                color: $primary-color;
+            }
+        }
+
+        .icon {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-image {
+                border: 4px solid $primary-color;
+                border-radius: 50%;
+                padding: 15px;
+                z-index: 1;
+                background: #fff;
+
+                img {
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+
+            &::after {
+                content: "";
+                height: 100%;
+                position: absolute;
+                border: 4px solid $primary-color;
+                z-index: 0;
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+
+            .description {
+                background: $primary-color;
+                padding: 20px;
+                color: #fff;
+                text-align: left;
+                margin: 0px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .section-2,
+    .section-4,
+    .section-6 {
+        flex-direction: row-reverse;
+    }
+}
