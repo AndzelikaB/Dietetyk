@@ -33,7 +33,22 @@
                 }
 
                 span {
-                    color: $slideshow-text;
+                    position: relative;
+                    z-index: 1;
+                    font-weight: 700;
+
+                    &:before {
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        right: 0;
+                        background-color: #6a9cdf;
+                        opacity: 0.5;
+                        height: 30%;
+                        z-index: -1;
+                        width: 100%;
+                        bottom: 0;
+                    }
                 }
 
                 .slider-item {

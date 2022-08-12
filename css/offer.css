@@ -17,25 +17,53 @@
   margin-top: 30px;
 }
 
-.site-content-wrapper {
+.site-content-wrapper .inner-content__row-0, .site-content-wrapper .inner-content__row-1, .site-content-wrapper .inner-content__row-2 {
+  margin-bottom: 5em;
+}
+.site-content-wrapper .inner-content__row-0 .row-wrapper, .site-content-wrapper .inner-content__row-1 .row-wrapper, .site-content-wrapper .inner-content__row-2 .row-wrapper {
   margin: 50px 100px;
 }
-.site-content-wrapper .inner-content__row-0 {
-  margin-bottom: 5em;
+.site-content-wrapper .inner-content__row-0 .row-wrapper span, .site-content-wrapper .inner-content__row-1 .row-wrapper span, .site-content-wrapper .inner-content__row-2 .row-wrapper span {
+  position: relative;
+  z-index: 1;
+}
+.site-content-wrapper .inner-content__row-0 .row-wrapper span:before, .site-content-wrapper .inner-content__row-1 .row-wrapper span:before, .site-content-wrapper .inner-content__row-2 .row-wrapper span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  background-color: #6a9cdf;
+  opacity: 0.5;
+  height: 30%;
+  z-index: -1;
+  width: 100%;
+  bottom: 0;
+}
+.site-content-wrapper .inner-content__row-0 h2, .site-content-wrapper .inner-content__row-1 h2, .site-content-wrapper .inner-content__row-2 h2 {
+  font-family: "Sen", sans-serif;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+}
+.site-content-wrapper .inner-content__row-0 h3, .site-content-wrapper .inner-content__row-1 h3, .site-content-wrapper .inner-content__row-2 h3 {
+  font-family: "Sen", sans-serif;
+  font-size: 1.9rem;
+  margin-bottom: 0.7em;
+}
+.site-content-wrapper .inner-content__row-0 p, .site-content-wrapper .inner-content__row-1 p, .site-content-wrapper .inner-content__row-2 p {
+  font-family: "Quicksand";
+  line-height: 1.7;
 }
 .site-content-wrapper .inner-content__row-0 .content-wrapper {
   max-width: 100%;
   margin-top: 2em;
 }
-.site-content-wrapper .inner-content__row-0 .content-wrapper h2 {
-  color: rgb(31, 122, 208);
-  text-align: center;
-  padding-bottom: 50px;
-}
 .site-content-wrapper .inner-content__row-0 .content-wrapper-components {
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 @media (max-width: 991px) {
@@ -45,49 +73,123 @@
   }
 }
 .site-content-wrapper .inner-content__row-0 .content-wrapper-components .components {
-  padding: 15px 20px;
+  padding: 20px 0;
 }
 @media (max-width: 991px) {
   .site-content-wrapper .inner-content__row-0 .content-wrapper-components .components {
     padding: 10px;
   }
 }
-.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item {
-  text-align: center;
-  align-items: center;
-  height: 250px;
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
   cursor: pointer;
+}
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .flip-card-inner {
   position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(85, 84, 84, 0.2);
+  border-radius: 10px;
+}
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .flip-card-inner:hover {
+  transform: rotateY(180deg);
+}
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .flip-card .flip-card-front, .site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .flip-card .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background: #ffffff;
-  border: 2px solid #333;
-  box-shadow: 5px 3px #434343;
 }
-.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item h5 {
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .flip-card .flip-card-front img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 25px;
+}
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .flip-card .flip-card-front h5 {
   font-weight: 600;
   color: #333;
   font-size: 1.4rem;
-  width: 95%;
+  font-family: "Sen";
 }
-.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .image {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background: #fff;
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .flip-card .flip-card-back {
+  color: #333;
+  transform: rotateY(180deg);
+  font-size: 1.1rem;
+  position: relative;
+}
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .flip-card .flip-card-back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0.1;
+}
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .flip-card .flip-card-back p {
+  font-family: "Sen";
+  padding: 0 10px;
+  z-index: 1;
+}
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item1 .flip-card-back::before {
+  background: url("../img/offer/weight-loss.png");
+}
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item2 .flip-card-back::before {
+  background: url("../img/offer/healthy-living.png");
+}
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item3 .flip-card-back::before {
+  background: url("../img/offer/diet.png");
+}
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item4 .flip-card-back::before {
+  background: url("../img/offer/gluten-free.png");
+}
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item5 .flip-card-back::before {
+  background: url("../img/offer/salad.png");
+}
+.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item6 .flip-card-back::before {
+  background: url("../img/offer/healthcare.png");
+}
+.site-content-wrapper .inner-content__row-1 {
+  background: #f1f7ff;
+  z-index: -2;
+}
+.site-content-wrapper .inner-content__row-1 .row-wrapper {
+  padding: 50px;
+}
+.site-content-wrapper .inner-content__row-1 .row-wrapper ul {
+  padding-left: 0;
+}
+.site-content-wrapper .inner-content__row-1 .row-wrapper ul li {
+  list-style-type: none;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 40px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  transition: all 400ms ease;
 }
-.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .image img {
-  max-width: 70px;
+.site-content-wrapper .inner-content__row-1 .row-wrapper ul li:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 1px;
+  background-color: #6a9cdf;
+  opacity: 0.5;
 }
-.site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .image:hover {
-  transform: rotate(30deg);
+.site-content-wrapper .inner-content__row-2 img {
+  width: 100%;
+  height: 100%;
 }

@@ -37,7 +37,21 @@
   }
 }
 .slideshow .slider-item-details span {
-  color: #6a9cdf;
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+}
+.slideshow .slider-item-details span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  background-color: #6a9cdf;
+  opacity: 0.5;
+  height: 30%;
+  z-index: -1;
+  width: 100%;
+  bottom: 0;
 }
 .slideshow .slider-item-details .slider-item--text {
   color: #333;
