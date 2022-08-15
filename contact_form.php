@@ -14,14 +14,14 @@ ini_set("smtp_port","465");
       $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message\n\nRegards,\n$name";
       $sender = "From: $email";
       if(mail($receiver, $subject, $body, $sender)){
-         echo "Your message has been sent";
+         echo "Wiadomość została wysłana";
       }else{
-         echo "Sorry, failed to send your message!";
+         echo "Błąd wysyłania wiadomości";
       }
     }else{
-      echo "Enter a valid email address!";
+      echo "Wprowadź poprawny adres email";
     }
   }else{
-    echo "Email and message field is required!";
+    echo "Wypełnij wszystkie pola";
   }
 ?>

@@ -18,36 +18,37 @@
 }
 
 .site-content-wrapper {
-  margin: 60px 0;
-}
-.site-content-wrapper .wrapper {
-  width: 900px;
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
   background: #fff;
   border-radius: 5px;
-  box-shadow: -1px 0px 10px 3px rgba(0, 0, 0, 0.5);
-  margin: 0 auto;
+  box-shadow: -1px 0px 10px 3px rgba(138, 136, 136, 0.5);
+  margin: 10vw auto;
 }
-.site-content-wrapper .wrapper header {
-  font-size: 2.4rem;
-  font-weight: 400;
+.site-content-wrapper > .row {
+  padding: 30px;
+}
+.site-content-wrapper > .row .wrapper header {
+  font-size: 2.2rem;
+  font-weight: 500;
   padding: 20px 30px;
-  border-bottom: 1px solid #ccc;
-  color: #94c06f;
+  color: #494bf5;
   font-family: "Sen";
 }
-.site-content-wrapper .wrapper form {
-  padding: 35px 30px;
+.site-content-wrapper > .row .wrapper form {
+  padding: 0px 30px;
 }
-.site-content-wrapper .wrapper form.disabled {
+.site-content-wrapper > .row .wrapper form.disabled {
   pointer-events: none;
   opacity: 0.7;
 }
-.site-content-wrapper .wrapper form .dbl-field {
+.site-content-wrapper > .row .wrapper form .dbl-field {
   display: flex;
   margin-bottom: 25px;
   flex-wrap: wrap;
 }
-.site-content-wrapper .wrapper form i {
+.site-content-wrapper > .row .wrapper form i {
   position: absolute;
   top: 50%;
   left: 18px;
@@ -56,26 +57,26 @@
   pointer-events: none;
   transform: translateY(-50%);
 }
-.site-content-wrapper .wrapper form .field {
+.site-content-wrapper > .row .wrapper form .field {
   position: relative;
   height: 50px;
   width: 100%;
 }
-.site-content-wrapper .wrapper form .field input::placeholder,
-.site-content-wrapper .wrapper form .message textarea::placeholder {
+.site-content-wrapper > .row .wrapper form .field input::placeholder,
+.site-content-wrapper > .row .wrapper form .message textarea::placeholder {
   color: #ccc;
 }
-.site-content-wrapper .wrapper form .field input:focus,
-.site-content-wrapper .wrapper form .message textarea:focus {
+.site-content-wrapper > .row .wrapper form .field input:focus,
+.site-content-wrapper > .row .wrapper form .message textarea:focus {
   padding-left: 47px;
-  border: 2px solid #94c06f;
+  border: 2px solid #6a9cdf;
 }
-.site-content-wrapper .wrapper form .field input:focus ~ i,
-.site-content-wrapper .wrapper form .message textarea:focus ~ i {
-  color: #94c06f;
+.site-content-wrapper > .row .wrapper form .field input:focus ~ i,
+.site-content-wrapper > .row .wrapper form .message textarea:focus ~ i {
+  color: #6a9cdf;
 }
-.site-content-wrapper .wrapper form .field input,
-.site-content-wrapper .wrapper form .message textarea {
+.site-content-wrapper > .row .wrapper form .field input,
+.site-content-wrapper > .row .wrapper form .message textarea {
   width: 100%;
   height: 100%;
   outline: none;
@@ -84,32 +85,32 @@
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-.site-content-wrapper .wrapper form .message {
+.site-content-wrapper > .row .wrapper form .message {
   position: relative;
 }
-.site-content-wrapper .wrapper form .message i {
+.site-content-wrapper > .row .wrapper form .message i {
   top: 30px;
   font-size: 20px;
 }
-.site-content-wrapper .wrapper form .message textarea {
+.site-content-wrapper > .row .wrapper form .message textarea {
   min-height: 130px;
   max-height: 230px;
   max-width: 100%;
   min-width: 100%;
   padding: 15px 20px 0 48px;
 }
-.site-content-wrapper .wrapper form .message textarea:focus {
+.site-content-wrapper > .row .wrapper form .message textarea:focus {
   padding-top: 14px;
 }
-.site-content-wrapper .wrapper form .message textarea::-webkit-scrollbar {
+.site-content-wrapper > .row .wrapper form .message textarea::-webkit-scrollbar {
   width: 0px;
 }
-.site-content-wrapper .wrapper form .button-area {
+.site-content-wrapper > .row .wrapper form .button-area {
   margin: 25px 0;
   display: flex;
   align-items: center;
 }
-.site-content-wrapper .wrapper form .button-area button {
+.site-content-wrapper > .row .wrapper form .button-area button {
   color: #fff;
   border: none;
   outline: none;
@@ -117,14 +118,18 @@
   cursor: pointer;
   border-radius: 5px;
   padding: 13px 25px;
-  background: #94c06f;
+  background: #6a9cdf;
   transition: background 0.3s ease;
 }
-.site-content-wrapper .wrapper form .button-area button:hover {
-  background: #94c06f;
+.site-content-wrapper > .row .wrapper form .button-area button:hover {
+  background: #6a9cdf;
 }
-.site-content-wrapper .wrapper form .button-area span {
+.site-content-wrapper > .row .wrapper form .button-area span {
   font-size: 17px;
   margin-left: 30px;
   display: none;
+}
+.site-content-wrapper > .row .image img {
+  width: 100%;
+  height: 100%;
 }

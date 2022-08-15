@@ -4,7 +4,7 @@ form.onsubmit = (e)=>{
   e.preventDefault();
   statusTxt.style.color = "#fff";
   statusTxt.style.display = "block";
-  statusTxt.innerText = "Sending your message...";
+  statusTxt.innerText = "Wysyłanie wiadomości...";
   form.classList.add("disabled");
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "../contact_form.php", true);
