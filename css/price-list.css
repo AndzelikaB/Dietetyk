@@ -6,9 +6,6 @@
   --site-header-height: 105px;
 }
 
-.site-content-wrapper {
-  margin: 5vw 0;
-}
 .site-content-wrapper .tabs {
   max-width: 80%;
   display: flex;
@@ -47,7 +44,7 @@
 }
 .site-content-wrapper .tabs__title {
   color: #333;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -59,11 +56,11 @@
   background-color: #fff;
   color: #333;
   border: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(111, 162, 226, 0.25);
 }
 .site-content-wrapper .accordion-item-header {
-  padding: 15px 20px 15px 0;
-  font-size: 1.8rem;
+  padding: 10px 20px 10px 0;
+  font-size: 1.2rem;
   font-family: "Sen", sans-serif;
   color: #333;
   font-weight: 400;
@@ -73,12 +70,16 @@
   justify-content: space-between;
   align-items: center;
 }
+.site-content-wrapper .accordion-item-header-name {
+  margin: 0;
+}
 .site-content-wrapper .accordion-item-header-name::before {
   content: "+";
-  font-size: 3rem;
+  font-size: 2rem;
   margin-right: 30px;
+  color: #6a9ce0;
 }
-.site-content-wrapper .accordion-item-header-name.active::before {
+.site-content-wrapper .accordion-item-header.active .accordion-item-header-name::before {
   content: "−";
 }
 .site-content-wrapper .accordion-item-header-cost {
@@ -95,8 +96,8 @@
 }
 .site-content-wrapper .accordion-item-body-content {
   padding-top: 0;
-  font-size: 1.2rem;
-  padding: 1rem;
+  font-size: 1rem;
+  padding: 0 1rem 1rem;
   line-height: 1.5rem;
   color: rgb(119, 119, 119);
 }

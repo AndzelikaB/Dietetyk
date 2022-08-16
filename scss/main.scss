@@ -516,6 +516,10 @@ body.main-page {
   border-bottom: 2px solid #c4c4c4;
 }
 
+.site-content-wrapper {
+  margin: 5vw auto;
+}
+
 body:not(.site-menu-horizntal) .site-menu {
   padding-left: 0;
   flex-direction: column;

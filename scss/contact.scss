@@ -7,7 +7,6 @@
   background: #fff;
   border-radius: 5px;
   box-shadow: -1px 0px 10px 3px rgba(138, 136, 136, 0.5);
-  margin: 10vw auto;
 
   > .row {
     padding: 30px;
@@ -17,7 +16,7 @@
         font-size: 2.2rem;
         font-weight: 500;
         padding: 20px 30px;
-        color: #494bf5;
+        color: #6a9cdf;
         font-family: "Sen";
       }
 
@@ -135,6 +134,7 @@
 
     .image {
       img {
+        opacity: 0.8;
         width: 100%;
         height: 100%;
       }

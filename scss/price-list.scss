@@ -1,8 +1,6 @@
 @import "variables.scss";
 
 .site-content-wrapper {
-  margin: 5vw 0;
-
   .tabs {
     max-width: 80%;
     display: flex;
@@ -45,7 +43,7 @@
 
     &__title {
       color: #333;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: 700;
       margin-bottom: 20px;
     }
@@ -60,11 +58,11 @@
       background-color: #fff;
       color: #333;
       border: none;
-      border-bottom: 1px solid gray;
+      border-bottom: 1px solid rgb(111, 162, 226, 0.25);
 
       &-header {
-        padding: 15px 20px 15px 0;
-        font-size: 1.8rem;
+        padding: 10px 20px 10px 0;
+        font-size: 1.2rem;
         font-family: "Sen", sans-serif;
         color: #333;
         font-weight: 400;
@@ -75,14 +73,20 @@
         align-items: center;
 
         &-name {
+          margin: 0;
           &::before {
             content: "\002B";
-            font-size: 3rem;
+            font-size: 2rem;
             margin-right: 30px;
+            color: #6a9ce0;
           }
+        }
 
-          &.active::before {
-            content: "\2212";
+        &.active {
+          .accordion-item-header-name {
+            &::before {
+              content: "\2212";
+            }
           }
         }
 
@@ -103,8 +107,8 @@
 
         &-content {
           padding-top: 0;
-          font-size: 1.2rem;
-          padding: 1rem;
+          font-size: 1rem;
+          padding: 0 1rem 1rem;
           line-height: 1.5rem;
           color: rgb(119, 119, 119);
         }
