@@ -5,18 +5,6 @@
   --site-header-height: 105px;
 }
 
-.content-title {
-  font-size: 3.6rem;
-  background: #3b5577;
-  line-height: 1.2;
-  font-family: "Sen", sans-serif;
-  color: #fff;
-  font-weight: 400;
-  padding: 30px;
-  margin-bottom: 0;
-  margin-top: 30px;
-}
-
 .site-content-wrapper {
   display: flex;
   flex-direction: row;

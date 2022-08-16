@@ -1,18 +1,4 @@
 @import "variables.scss";
-
-.content-title {
-    font-size: 3.6rem;
-    background: $primary-color;
-    line-height: 1.2;
-    font-family: "Sen", sans-serif;
-    color: #fff;
-    font-weight: 400;
-    padding: 30px;
-    margin-bottom: 0;
-    margin-top: 30px;
-}
-
-
 .site-content-wrapper{
 
     .inner-content{
@@ -266,8 +252,9 @@
         }
         &__row-2{
             img{
-                width: 100%;
+                width: 75%;
                 height: 100%;
+                display: flex;
             }
         }
     }
