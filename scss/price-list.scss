@@ -1,0 +1,114 @@
+@import "variables.scss";
+
+.site-content-wrapper {
+  margin: 5vw 0;
+
+  .tabs {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+
+    &__head {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .tabs__toggle {
+      font-size: 1.2rem;
+      padding: 20px;
+      display: flex;
+      width: 80%;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      background: #f1f7ff;
+      cursor: pointer;
+
+      &.is-active {
+        background: #fff;
+        font-weight: 500;
+      }
+    }
+    &__content {
+      padding: 30px;
+      display: none;
+      margin-top: 40px;
+
+      &.is-active {
+        display: block;
+      }
+    }
+
+    &__title {
+      color: #333;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    &__text {
+      color: #333;
+      font-size: 1rem;
+    }
+  }
+
+  .accordion {
+    &-item {
+      background-color: #fff;
+      color: #333;
+      border: none;
+      border-bottom: 1px solid gray;
+
+      &-header {
+        padding: 15px 20px 15px 0;
+        font-size: 1.8rem;
+        font-family: "Sen", sans-serif;
+        color: #333;
+        font-weight: 400;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-name {
+          &::before {
+            content: "\002B";
+            font-size: 3rem;
+            margin-right: 30px;
+          }
+
+          &.active::before {
+            content: "\2212";
+          }
+        }
+
+        &-cost {
+          color: #6a9cdf;
+          font-weight: 500;
+        }
+
+        &:hover {
+          background: #f1f7ff;
+        }
+      }
+
+      &-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+
+        &-content {
+          padding-top: 0;
+          font-size: 1.2rem;
+          padding: 1rem;
+          line-height: 1.5rem;
+          color: rgb(119, 119, 119);
+        }
+      }
+    }
+  }
+}

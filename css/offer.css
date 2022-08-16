@@ -156,27 +156,6 @@
 .site-content-wrapper .inner-content__row-1 .row-wrapper {
   padding: 50px;
 }
-.site-content-wrapper .inner-content__row-1 .row-wrapper ul {
-  padding-left: 0;
-}
-.site-content-wrapper .inner-content__row-1 .row-wrapper ul li {
-  list-style-type: none;
-  position: relative;
-  margin-bottom: 20px;
-  padding-left: 40px;
-  display: flex;
-  align-items: center;
-}
-.site-content-wrapper .inner-content__row-1 .row-wrapper ul li:before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  width: 25px;
-  height: 1px;
-  background-color: #6a9cdf;
-  opacity: 0.5;
-}
 .site-content-wrapper .inner-content__row-2 img {
   width: 75%;
   height: 100%;

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+:root {
+  --site-header-height: 105px;
+}
+
+.site-content-wrapper {
+  margin: 5vw 0;
+}
+.site-content-wrapper .tabs {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+}
+.site-content-wrapper .tabs__head {
+  display: flex;
+  align-items: stretch;
+}
+.site-content-wrapper .tabs .tabs__toggle {
+  font-size: 1.2rem;
+  padding: 20px;
+  display: flex;
+  width: 80%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background: #f1f7ff;
+  cursor: pointer;
+}
+.site-content-wrapper .tabs .tabs__toggle.is-active {
+  background: #fff;
+  font-weight: 500;
+}
+.site-content-wrapper .tabs__content {
+  padding: 30px;
+  display: none;
+  margin-top: 40px;
+}
+.site-content-wrapper .tabs__content.is-active {
+  display: block;
+}
+.site-content-wrapper .tabs__title {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.site-content-wrapper .tabs__text {
+  color: #333;
+  font-size: 1rem;
+}
+.site-content-wrapper .accordion-item {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.site-content-wrapper .accordion-item-header {
+  padding: 15px 20px 15px 0;
+  font-size: 1.8rem;
+  font-family: "Sen", sans-serif;
+  color: #333;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-content-wrapper .accordion-item-header-name::before {
+  content: "+";
+  font-size: 3rem;
+  margin-right: 30px;
+}
+.site-content-wrapper .accordion-item-header-name.active::before {
+  content: "−";
+}
+.site-content-wrapper .accordion-item-header-cost {
+  color: #6a9cdf;
+  font-weight: 500;
+}
+.site-content-wrapper .accordion-item-header:hover {
+  background: #f1f7ff;
+}
+.site-content-wrapper .accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.site-content-wrapper .accordion-item-body-content {
+  padding-top: 0;
+  font-size: 1.2rem;
+  padding: 1rem;
+  line-height: 1.5rem;
+  color: rgb(119, 119, 119);
+}

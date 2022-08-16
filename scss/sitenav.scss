@@ -1,153 +1,153 @@
 @import "variables.scss";
 
-.site-menu {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px;
-
+.site-menu-horizontal {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  .site-menu {
     &-item {
-        list-style: none;
+      list-style: none;
 
-        &--link {
-            text-decoration: none;
-            color: $menu-color;
-            font-weight: 500;
-            padding: 10px 20px;
-            position: relative;
-            font-size: 1.1rem;
+      &--link {
+        text-decoration: none;
+        color: $menu-color;
+        font-weight: 500;
+        padding: 10px 20px;
+        position: relative;
+        font-size: 1.1rem;
 
-            &:hover {
-                color: $menu-color-hover;
+        &:hover {
+          color: $menu-color-hover;
 
-                &::before {
-                    width: 100%;
-                }
+          &::before {
+            width: 100%;
+          }
 
-                .line1,
-                .line2,
-                .line3,
-                .line4 {
-                    position: absolute;
-                    background: $menu-color-hover;
-                }
+          .line1,
+          .line2,
+          .line3,
+          .line4 {
+            position: absolute;
+            background: $menu-color-hover;
+          }
 
-                .line1 {
-                    animation: move1 1500ms infinite ease;
-                    width: 1px;
-                    left: 0;
-                    bottom: 0;
-                }
+          .line1 {
+            animation: move1 1500ms infinite ease;
+            width: 1px;
+            left: 0;
+            bottom: 0;
+          }
 
-                .line2 {
-                    animation: move2 1500ms infinite ease;
-                    height: 1px;
-                    left: 0;
-                    top: 0;
-                }
+          .line2 {
+            animation: move2 1500ms infinite ease;
+            height: 1px;
+            left: 0;
+            top: 0;
+          }
 
-                .line3 {
-                    animation: move3 1500ms infinite ease;
-                    width: 1px;
-                    top: 0;
-                    right: 0;
+          .line3 {
+            animation: move3 1500ms infinite ease;
+            width: 1px;
+            top: 0;
+            right: 0;
+          }
 
-                }
-
-                .line4 {
-                    animation: move4 1500ms infinite ease;
-                    height: 1px;
-                    right: 0;
-                    bottom: 0;
-                }
-            }
+          .line4 {
+            animation: move4 1500ms infinite ease;
+            height: 1px;
+            right: 0;
+            bottom: 0;
+          }
         }
+      }
     }
+  }
 }
 
 @keyframes move1 {
-    0% {
-        height: 100%;
-        bottom: 0;
-    }
+  0% {
+    height: 100%;
+    bottom: 0;
+  }
 
-    54% {
-        height: 0;
-        bottom: 100%;
-    }
+  54% {
+    height: 0;
+    bottom: 100%;
+  }
 
-    55% {
-        height: 0;
-        bottom: 0;
-    }
+  55% {
+    height: 0;
+    bottom: 0;
+  }
 
-    100% {
-        height: 100%;
-        bottom: 0;
-    }
+  100% {
+    height: 100%;
+    bottom: 0;
+  }
 }
 
 @keyframes move2 {
-    0% {
-        width: 0;
-        left: 0;
-    }
+  0% {
+    width: 0;
+    left: 0;
+  }
 
-    50% {
-        width: 100%;
-        left: 0;
-    }
+  50% {
+    width: 100%;
+    left: 0;
+  }
 
-    100% {
-        width: 0;
-        left: 100%;
-    }
+  100% {
+    width: 0;
+    left: 100%;
+  }
 }
 
 @keyframes move3 {
-    0% {
-        height: 100%;
-        top: 0;
-    }
+  0% {
+    height: 100%;
+    top: 0;
+  }
 
-    54% {
-        height: 0;
-        top: 100%;
-    }
+  54% {
+    height: 0;
+    top: 100%;
+  }
 
-    55% {
-        height: 0;
-        top: 0;
-    }
+  55% {
+    height: 0;
+    top: 0;
+  }
 
-    100% {
-        height: 100%;
-        top: 0;
-    }
+  100% {
+    height: 100%;
+    top: 0;
+  }
 }
 
 @keyframes move4 {
-    0% {
-        width: 0;
-        right: 0;
-    }
+  0% {
+    width: 0;
+    right: 0;
+  }
 
-    55% {
-        width: 100%;
-        right: 0;
-    }
+  55% {
+    width: 100%;
+    right: 0;
+  }
 
-    100% {
-        width: 0;
-        right: 100%;
-    }
+  100% {
+    width: 0;
+    right: 100%;
+  }
 }
 ::-webkit-scrollbar {
-    width: 13px;
+  width: 13px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #6a9cdf;
+  background: #6a9cdf;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(106, 157, 223, 0.6);
+  background: rgba(106, 157, 223, 0.6);
 }

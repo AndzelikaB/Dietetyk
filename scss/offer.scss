@@ -1,261 +1,232 @@
 @import "variables.scss";
-.site-content-wrapper{
+.site-content-wrapper {
+  .inner-content {
+    &__row-0,
+    &__row-1,
+    &__row-2 {
+      margin-bottom: 5em;
 
-    .inner-content{
-        &__row-0,
-        &__row-1,
-        &__row-2{
-            margin-bottom: 5em;
+      .row-wrapper {
+        margin: 50px 100px;
 
-            .row-wrapper{
-                margin: 50px 100px;
+        span {
+          // font-weight: 600;
+          // color: #6a9cdf;
+          position: relative;
+          z-index: 1;
 
-                span{
-                    // font-weight: 600;
-                    // color: #6a9cdf;
-                    position: relative;
-                    z-index: 1;
-
-                    &:before {
-                        content: "";
-                        display: inline-block;
-                        position: absolute;
-                        right: 0;
-                        background-color: #6a9cdf;
-                        opacity: 0.5;
-                        height: 30%;
-                        z-index: -1;
-                        width: 100%;
-                        bottom: 0;
-                    }
-
-                }
-            }
-
-            h2 {
-                font-family: "Sen",sans-serif;
-                color: #000;
-                font-weight: 400;
-                text-align: center;
-                font-size: 2.5rem;
-                margin-bottom: 1em;
-            }
-
-            h3{
-                font-family: "Sen",sans-serif;
-                font-size: 1.9rem;
-                margin-bottom: .7em;
-
-            }
-
-            p{
-                font-family: 'Quicksand';
-                line-height: 1.7;
-            }
+          &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            background-color: #6a9cdf;
+            opacity: 0.5;
+            height: 30%;
+            z-index: -1;
+            width: 100%;
+            bottom: 0;
+          }
         }
-        &__row-0{
-            .content-wrapper {
-                max-width: 100%;
-                margin-top: 2em;
+      }
 
+      h2 {
+        font-family: "Sen", sans-serif;
+        color: #000;
+        font-weight: 400;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1em;
+      }
 
-                &-components {
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    max-width: 1000px;
-                    margin: 0 auto;
+      h3 {
+        font-family: "Sen", sans-serif;
+        font-size: 1.9rem;
+        margin-bottom: 0.7em;
+      }
 
-                    @media(max-width: 991px) {
-                        flex-wrap: wrap;
-                        padding: 0 50px;
-                    }
-
-                    .components {
-                        padding: 20px 0;
-
-                        @media(max-width: 991px) {
-                            padding: 10px;
-                        }
-
-                        &__item {
-                            .flip-card {
-                                background-color: transparent;
-                                width: 300px;
-                                height: 300px;
-                                perspective: 1000px;
-                                cursor: pointer;
-
-                                &-inner {
-                                    position: relative;
-                                    width: 100%;
-                                    height: 100%;
-                                    text-align: center;
-                                    transition: transform 0.6s;
-                                    transform-style: preserve-3d;
-                                    background: #ffffff;
-                                    box-shadow: 0 4px 8px 0 rgba(85, 84, 84, 0.2);
-                                    border-radius: 10px;
-
-                                    &:hover {
-                                        transform: rotateY(180deg);
-                                    }
-                                }    
-
-                                .flip-card{
-                                    &-front, &-back {
-                                        position: absolute;
-                                        width: 100%;
-                                        height: 100%;
-                                        backface-visibility: hidden;
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: center;
-                                        justify-content: center;
-                                        border-radius: 10px;
-
-                                    }
-
-                                    &-front {
-                                        img{
-                                            width: 100px;
-                                            height: 100px;
-                                            margin-bottom: 25px;
-                                        }
-                                     
-                                        h5 {
-                                            font-weight: 600;
-                                            color: #333;
-                                            font-size: 1.4rem;
-                                            font-family: 'Sen';
-                                        }
-
-                                    }
-                                    
-                                    &-back {
-                                        color: #333;
-                                        transform: rotateY(180deg);
-                                        font-size: 1.1rem;
-                                        position: relative;
-
-                                        &::before{
-                                            content: '';
-                                            position: absolute;
-                                            width: 100%;
-                                            height: 100%;
-                                            background-size: cover;
-                                            z-index: 0;
-                                            opacity: 0.1;
-                                        }
-
-                                        p{
-                                            font-family: 'Sen';
-                                            padding: 0 10px;
-                                            z-index: 1;
-                                        }
-                                    }
-                                }
-                            }
-
-                            &1{
-                                .flip-card {
-                                    &-back{
-                                        &::before{
-                                            background: url("../img/offer/weight-loss.png");
-                                        }
-                                    }
-                                }
-                            }
-
-                            &2{
-                                .flip-card {
-                                    &-back{
-                                        &::before{
-                                            background: url("../img/offer/healthy-living.png");
-                                        }
-                                    }
-                                }
-                            }
-                            &3{
-                                .flip-card {
-                                    &-back{
-                                        &::before{
-                                            background: url("../img/offer/diet.png");
-                                        }
-                                    }
-                                }
-                            }
-                            &4{
-                                .flip-card {
-                                    &-back{
-                                        &::before{
-                                            background: url("../img/offer/gluten-free.png");
-                                        }
-                                    }
-                                }
-                            }
-                            &5{
-                                .flip-card {
-                                    &-back{
-                                        &::before{
-                                            background: url("../img/offer/salad.png");
-                                        }
-                                    }
-                                }
-                            }
-                            &6{
-                                .flip-card {
-                                    &-back{
-                                        &::before{
-                                            background: url("../img/offer/healthcare.png");
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        &__row-1{
-            background: #f1f7ff;
-            z-index: -2;
-
-            .row-wrapper{
-                padding: 50px;
-
-                ul{
-                    padding-left: 0;
-                    li{
-                        list-style-type: none;
-                        position: relative;
-                        margin-bottom: 20px;
-                        padding-left: 40px;
-                        display: flex;
-                        align-items: center;
-    
-                        &:before {
-                            content: '';
-                            display: inline-block;
-                            position: absolute;
-                            left: 0;
-                            width: 25px;
-                            height: 1px;
-                            background-color: #6a9cdf;
-                            opacity: 0.5;
-                        }
-                    }
-                }
-            }
-        
-        }
-        &__row-2{
-            img{
-                width: 75%;
-                height: 100%;
-                display: flex;
-                margin: 0 auto;
-            }
-        }
+      p {
+        font-family: "Quicksand";
+        line-height: 1.7;
+      }
     }
+    &__row-0 {
+      .content-wrapper {
+        max-width: 100%;
+        margin-top: 2em;
+
+        &-components {
+          justify-content: space-between;
+          flex-wrap: wrap;
+          max-width: 1000px;
+          margin: 0 auto;
+
+          @media (max-width: 991px) {
+            flex-wrap: wrap;
+            padding: 0 50px;
+          }
+
+          .components {
+            padding: 20px 0;
+
+            @media (max-width: 991px) {
+              padding: 10px;
+            }
+
+            &__item {
+              .flip-card {
+                background-color: transparent;
+                width: 300px;
+                height: 300px;
+                perspective: 1000px;
+                cursor: pointer;
+
+                &-inner {
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  text-align: center;
+                  transition: transform 0.6s;
+                  transform-style: preserve-3d;
+                  background: #ffffff;
+                  box-shadow: 0 4px 8px 0 rgba(85, 84, 84, 0.2);
+                  border-radius: 10px;
+
+                  &:hover {
+                    transform: rotateY(180deg);
+                  }
+                }
+
+                .flip-card {
+                  &-front,
+                  &-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                  }
+
+                  &-front {
+                    img {
+                      width: 100px;
+                      height: 100px;
+                      margin-bottom: 25px;
+                    }
+
+                    h5 {
+                      font-weight: 600;
+                      color: #333;
+                      font-size: 1.4rem;
+                      font-family: "Sen";
+                    }
+                  }
+
+                  &-back {
+                    color: #333;
+                    transform: rotateY(180deg);
+                    font-size: 1.1rem;
+                    position: relative;
+
+                    &::before {
+                      content: "";
+                      position: absolute;
+                      width: 100%;
+                      height: 100%;
+                      background-size: cover;
+                      z-index: 0;
+                      opacity: 0.1;
+                    }
+
+                    p {
+                      font-family: "Sen";
+                      padding: 0 10px;
+                      z-index: 1;
+                    }
+                  }
+                }
+              }
+
+              &1 {
+                .flip-card {
+                  &-back {
+                    &::before {
+                      background: url("../img/offer/weight-loss.png");
+                    }
+                  }
+                }
+              }
+
+              &2 {
+                .flip-card {
+                  &-back {
+                    &::before {
+                      background: url("../img/offer/healthy-living.png");
+                    }
+                  }
+                }
+              }
+              &3 {
+                .flip-card {
+                  &-back {
+                    &::before {
+                      background: url("../img/offer/diet.png");
+                    }
+                  }
+                }
+              }
+              &4 {
+                .flip-card {
+                  &-back {
+                    &::before {
+                      background: url("../img/offer/gluten-free.png");
+                    }
+                  }
+                }
+              }
+              &5 {
+                .flip-card {
+                  &-back {
+                    &::before {
+                      background: url("../img/offer/salad.png");
+                    }
+                  }
+                }
+              }
+              &6 {
+                .flip-card {
+                  &-back {
+                    &::before {
+                      background: url("../img/offer/healthcare.png");
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__row-1 {
+      background: #f1f7ff;
+      z-index: -2;
+
+      .row-wrapper {
+        padding: 50px;
+      }
+    }
+    &__row-2 {
+      img {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+  }
 }
