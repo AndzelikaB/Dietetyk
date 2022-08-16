@@ -162,7 +162,6 @@ body.main-page .site-container .site-content__row-2 .about-me-textBlock {
   box-shadow: 0 0 2px 1px #c1c1c1;
   padding: 20px 90px 20px 20px;
   height: 100%;
-  z-index: 1;
   background: #fff;
   margin-top: 60px;
 }
@@ -218,7 +217,7 @@ body.main-page .site-container .site-content__row-2 .about-me-imageBlock .blok::
   background: url("../img/dots.jpg");
   width: 462px;
   height: 100px;
-  z-index: 0;
+  z-index: -1;
   position: absolute;
   opacity: 0.5;
   background-size: cover;

@@ -1,6 +1,6 @@
 @import "variables.scss";
 
-.site-content-wrapper{
+.site-content-wrapper {
   display: flex;
   flex-direction: row;
   width: 1200px;
@@ -9,31 +9,33 @@
   box-shadow: -1px 0px 10px 3px rgba(138, 136, 136, 0.5);
   margin: 10vw auto;
 
-  >.row{
+  > .row {
     padding: 30px;
 
-    .wrapper{
-      header{
+    .wrapper {
+      header {
         font-size: 2.2rem;
         font-weight: 500;
         padding: 20px 30px;
         color: #494bf5;
         font-family: "Sen";
       }
-      form{
+
+      form {
         padding: 0px 30px;
 
-        &.disabled{
+        &.disabled {
           pointer-events: none;
           opacity: 0.7;
         }
-         .dbl-field{
+
+        .dbl-field {
           display: flex;
           margin-bottom: 25px;
           flex-wrap: wrap;
         }
 
-        i{
+        i {
           position: absolute;
           top: 50%;
           left: 18px;
@@ -43,30 +45,30 @@
           transform: translateY(-50%);
         }
 
-        .field{
+        .field {
           position: relative;
           height: 50px;
           width: 100%;
         }
 
         .field input::placeholder,
-        .message textarea::placeholder{
+        .message textarea::placeholder {
           color: #ccc;
         }
 
         .field input:focus,
-        .message textarea:focus{
+        .message textarea:focus {
           padding-left: 47px;
           border: 2px solid $contact-form-details;
         }
 
         .field input:focus ~ i,
-        .message textarea:focus ~ i{
+        .message textarea:focus ~ i {
           color: $contact-form-details;
         }
 
         .field input,
-        .message textarea{
+        .message textarea {
           width: 100%;
           height: 100%;
           outline: none;
@@ -76,37 +78,37 @@
           border: 1px solid #ccc;
         }
 
-        .message{
+        .message {
           position: relative;
 
-          i{
+          i {
             top: 30px;
             font-size: 20px;
           }
 
-          textarea{
+          textarea {
             min-height: 130px;
             max-height: 230px;
             max-width: 100%;
             min-width: 100%;
             padding: 15px 20px 0 48px;
 
-            &:focus{
+            &:focus {
               padding-top: 14px;
             }
 
-            &::-webkit-scrollbar{
+            &::-webkit-scrollbar {
               width: 0px;
             }
           }
         }
 
-        .button-area{
+        .button-area {
           margin: 25px 0;
           display: flex;
           align-items: center;
 
-          button{
+          button {
             color: #fff;
             border: none;
             outline: none;
@@ -117,55 +119,22 @@
             background: $contact-form-details;
             transition: background 0.3s ease;
 
-            &:hover{
+            &:hover {
               background: $contact-form-details;
             }
           }
-        
-          span{
+
+          span {
             font-size: 17px;
             margin-left: 30px;
             display: none;
           }
         }
       }
-    //   @media (max-width: 600px){
-    //     .wrapper header{
-    //       text-align: center;
-    //     }
-    //     .wrapper form{
-    //       margin: 35px 20px;
-    //     }
-    //     form .dbl-field{
-    //       flex-direction: column;
-    //       margin-bottom: 0px;
-    //     }
-    //     form .dbl-field .field{
-    //       width: 100%;
-    //       height: 45px;
-    //       margin-bottom: 20px;
-    //     }
-    //     form .message textarea{
-    //       resize: none;
-    //     }
-    //     form .button-area{
-    //       margin-top: 20px;
-    //       flex-direction: column;
-    //     }
-    //     .button-area button{
-    //       width: 100%;
-    //       padding: 11px 0;
-    //       font-size: 16px;
-    //     }
-    //     .button-area span{
-    //       margin: 20px 0 0;
-    //       text-align: center;
-    //     }
-    //  }
     }
 
-    .image{
-      img{
+    .image {
+      img {
         width: 100%;
         height: 100%;
       }

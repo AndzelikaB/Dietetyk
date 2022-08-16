@@ -2,7 +2,6 @@
 .site-content-wrapper{
 
     .inner-content{
-
         &__row-0,
         &__row-1,
         &__row-2{
@@ -255,6 +254,7 @@
                 width: 75%;
                 height: 100%;
                 display: flex;
+                margin: 0 auto;
             }
         }
     }
