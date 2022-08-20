@@ -1,4 +1,4 @@
-//Tabs
+//Tabs element
 let tabs = document.querySelectorAll('.tabs__toggle')
 let contents = document.querySelectorAll('.tabs__content')
 
@@ -17,7 +17,7 @@ tabs.forEach((tab, index) => {
     });
 })
 
-//Accordion
+//Accordion element
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
 accordionItemHeaders.forEach(accordionItemHeader => {
