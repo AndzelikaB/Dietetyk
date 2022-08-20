@@ -1,16 +1,15 @@
-
 //Tabs
-let tabs = document.querySelectorAll('.tabs__toggle'),
-    contents = document.querySelectorAll('.tabs__content');
+let tabs = document.querySelectorAll('.tabs__toggle')
+let contents = document.querySelectorAll('.tabs__content')
 
 tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => {
-        contents.forEach((content) => {
-            content.classList.remove('is-active');
-        });
 
         tabs.forEach((tab) => {
             tab.classList.remove('is-active');
+        });
+        contents.forEach((content) => {
+            content.classList.remove('is-active');
         });
 
         contents[index].classList.add('is-active');
