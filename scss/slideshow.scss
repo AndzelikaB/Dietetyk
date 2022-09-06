@@ -1,122 +1,142 @@
 @import "variables.scss";
 
 .slideshow {
-    .slider {
-        margin-bottom: 0px !important;
+  .slider {
+    margin-bottom: 0px !important;
 
-        &-item {
-            &-image {
-                width: 100%;
-                object-fit: cover;
-                height: 100vh;
+    &-item {
+      &-image {
+        width: 100%;
+        object-fit: cover;
+        height: 100vh;
 
-                @media(max-width: 991px){
-                    height: 300px;
-                }
+        @media (max-width: 991px) {
+          height: 300px;
+        }
+      }
+
+      &-details {
+        position: absolute;
+        top: 0;
+        max-width: 1000px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        top: 170px;
+        right: 40px;
+        padding: 20px;
+
+        @media (max-width: 991px) {
+          max-width: 100%;
+          bottom: 0;
+          background: #ffffff94;
+        }
+
+        span {
+          position: relative;
+          z-index: 1;
+          font-weight: 700;
+
+          &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            background-color: #6a9cdf;
+            opacity: 0.5;
+            height: 30%;
+            z-index: -1;
+            width: 100%;
+            bottom: 0;
+          }
+        }
+
+        .slider-item {
+          &--text {
+            color: $text-color-dark;
+            margin-bottom: 0px;
+            line-height: 1.2;
+            text-align: right;
+            font: 400 3.6rem Sen, sans-serif;
+
+            @media (max-width: 991px) {
+              font-size: 2rem;
             }
+          }
 
-            &-details {
+          &--button {
+            border: none;
+            background: #fff;
+            margin-top: 40px;
+            transition: all ease-in-out 0.5s;
+
+            a {
+              color: $text-color-dark;
+              text-decoration: none;
+              border-radius: 3px;
+              font-size: 1.7rem;
+              text-align: center;
+              text-transform: uppercase;
+              display: inline-block;
+              padding: 10px 20px;
+              transition: all ease-in-out 0.5s;
+              position: relative;
+              z-index: 0;
+
+              &:before {
+                content: "";
+                display: inline-block;
                 position: absolute;
-                top: 0;
-                max-width: 1000px;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                top: 170px;
-                right: 40px;
-                padding: 20px;
+                right: 0;
+                background-color: #6a9cdf;
+                opacity: 0.5;
+                height: 100%;
+                z-index: 0;
+                width: 30%;
+                bottom: -1;
+              }
 
-                @media(max-width: 991px){
-                    max-width: 100%;
-                    bottom: 0;
-                    background: #ffffff94;
-                }
-
-                span {
-                    position: relative;
-                    z-index: 1;
-                    font-weight: 700;
-
-                    &:before {
-                        content: "";
-                        display: inline-block;
-                        position: absolute;
-                        right: 0;
-                        background-color: #6a9cdf;
-                        opacity: 0.5;
-                        height: 30%;
-                        z-index: -1;
-                        width: 100%;
-                        bottom: 0;
-                    }
-                }
-
-                .slider-item {
-                    &--text {
-                        color: $text-color-dark;
-                        margin-bottom: 0px;
-                        line-height: 1.2;
-                        text-align: right;
-                        font: 400 3.6rem Sen, sans-serif;
-
-                        @media(max-width: 991px){
-                            font-size: 2rem;
-                        }
-                    }
-
-                    &--button {
-                        border: 1px solid $text-color-dark;
-                        background: transparent;
-                        margin-top: 30px;
-                        transition: all ease-in-out 0.5s;
-
-                        a {
-                            color: $text-color-dark;
-                            text-decoration: none;
-                            border-radius: 3px;
-                            font-size: 1.4rem;
-                            text-align: center;
-                            text-transform: uppercase;
-                            display: inline-block;
-                            padding: 10px 20px;
-                            transition: all ease-in-out 0.5s;
-                        }
-
-                        &:hover {
-                            background: #fff;
-
-                            a {
-                                color: $details-color;
-                            }
-                        }
-                    }
-                }
+              //   &:after {
+              //     content: "";
+              //     font: 700 1.2rem "Font Awesome 5 Brands";
+              //   }
             }
+
+            &:hover {
+              background: #fff;
+
+              a {
+                color: $details-color;
+              }
+            }
+          }
         }
-
-        .slick-dots {
-            bottom: 25px;
-            display: flex;
-            align-items: flex-start;
-            padding: 0 20px;
-
-            & li button:before {
-                color: transparent;
-                font-size: 1rem;
-                border: 3px solid $primary-color;
-                border-radius: 50%;
-            }
-            @media(max-width: 991px){
-                display: none;
-            }
-        }
+      }
     }
+
+    .slick-dots {
+      bottom: 25px;
+      display: flex;
+      align-items: flex-start;
+      padding: 0 20px;
+
+      & li button:before {
+        color: transparent;
+        font-size: 1rem;
+        border: 3px solid $primary-color;
+        border-radius: 50%;
+      }
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+  }
 }
 
-body{
-    &.inner-page{
-        .slideshow{
-            display: none;
-        }
+body {
+  &.inner-page {
+    .slideshow {
+      display: none;
     }
+  }
 }

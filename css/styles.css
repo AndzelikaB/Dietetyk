@@ -113,10 +113,10 @@ body.main-page .site-container .site-content__row-0 .content-wrapper-components 
   background: #3b5577;
 }
 body.main-page .site-container .site-content__row-0 .content-wrapper-components .components__item2 {
-  background: #5C7390;
+  background: #5c7390;
 }
 body.main-page .site-container .site-content__row-0 .content-wrapper-components .components__item3 {
-  background: #8899AF;
+  background: #8899af;
 }
 body.main-page .site-container .site-content__row-0 .content-wrapper-components .components__item4 {
   background: #9ca5af;
@@ -717,7 +717,7 @@ body.inner-page .site-top .site-header {
   top: 0;
   max-width: 1000px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
   top: 170px;
   right: 40px;
@@ -760,21 +760,35 @@ body.inner-page .site-top .site-header {
   }
 }
 .slideshow .slider-item-details .slider-item--button {
-  border: 1px solid #333;
-  background: transparent;
-  margin-top: 30px;
+  border: none;
+  background: #fff;
+  margin-top: 40px;
   transition: all ease-in-out 0.5s;
 }
 .slideshow .slider-item-details .slider-item--button a {
   color: #333;
   text-decoration: none;
   border-radius: 3px;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
   padding: 10px 20px;
   transition: all ease-in-out 0.5s;
+  position: relative;
+  z-index: 0;
+}
+.slideshow .slider-item-details .slider-item--button a:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  background-color: #6a9cdf;
+  opacity: 0.5;
+  height: 100%;
+  z-index: 0;
+  width: 30%;
+  bottom: -1;
 }
 .slideshow .slider-item-details .slider-item--button:hover {
   background: #fff;
@@ -816,6 +830,13 @@ body.inner-page .slideshow {
 .site-footer-details {
   padding: 4em;
   flex-wrap: wrap;
+}
+.site-footer-details a {
+  color: unset;
+  text-decoration: none;
+}
+.site-footer-details a:hover {
+  color: #6a9cdf;
 }
 .site-footer-details .col-12 {
   margin-bottom: 30px;
@@ -877,16 +898,18 @@ body.inner-page .slideshow {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.4s;
 }
 .site-footer-details--icons .icons-element a i::before {
   font: 700 1.2rem "Font Awesome 5 Brands";
   color: #fff;
-  transition: transform 300ms ease-in;
-  transform: rotate(360deg);
-  transition: 0.3s;
+}
+.site-footer-details--icons .icons-element a i:hover {
+  background: #fff;
+  border: 1px solid #6a9cdf;
 }
 .site-footer-details--icons .icons-element a i:hover::before {
-  color: #3b5577;
+  color: #6a9cdf;
 }
 .site-footer::before {
   content: "";
@@ -911,12 +934,14 @@ body.inner-page .slideshow {
   padding: 15px;
   margin-bottom: 0px;
   color: rgb(146, 158, 173);
+  z-index: 2;
 }
 .site-footer--copyrights p a {
   text-decoration: none;
   color: rgb(146, 158, 173);
   cursor: pointer;
+  transition: 5ms;
 }
 .site-footer--copyrights p a:hover {
-  color: #4179fd;
+  color: #6a9cdf;
 }

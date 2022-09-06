@@ -14,6 +14,13 @@
   padding: 4em;
   flex-wrap: wrap;
 }
+.site-footer-details a {
+  color: unset;
+  text-decoration: none;
+}
+.site-footer-details a:hover {
+  color: #6a9cdf;
+}
 .site-footer-details .col-12 {
   margin-bottom: 30px;
 }
@@ -74,16 +81,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.4s;
 }
 .site-footer-details--icons .icons-element a i::before {
   font: 700 1.2rem "Font Awesome 5 Brands";
   color: #fff;
-  transition: transform 300ms ease-in;
-  transform: rotate(360deg);
-  transition: 0.3s;
+}
+.site-footer-details--icons .icons-element a i:hover {
+  background: #fff;
+  border: 1px solid #6a9cdf;
 }
 .site-footer-details--icons .icons-element a i:hover::before {
-  color: #3b5577;
+  color: #6a9cdf;
 }
 .site-footer::before {
   content: "";
@@ -108,12 +117,14 @@
   padding: 15px;
   margin-bottom: 0px;
   color: rgb(146, 158, 173);
+  z-index: 2;
 }
 .site-footer--copyrights p a {
   text-decoration: none;
   color: rgb(146, 158, 173);
   cursor: pointer;
+  transition: 5ms;
 }
 .site-footer--copyrights p a:hover {
-  color: #4179fd;
+  color: #6a9cdf;
 }

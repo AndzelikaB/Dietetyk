@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 $theme-background: #d6dde5;
 
@@ -26,9 +26,9 @@ $sticky-menu-bg: #f1f7ff;
 
 $slideshow-text: #6a9cdf;
 
-$qlink1: #3b5577;;
-$qlink2: #5C7390;
-$qlink3: #8899AF;
+$qlink1: #3b5577;
+$qlink2: #5c7390;
+$qlink3: #8899af;
 $qlink4: #9ca5af;
 
 $row1-bg: $light-primary-color;
@@ -42,6 +42,7 @@ $ig-bg-hover: #d0def1;
 $footer-bg: #f1f7ff;
 $footer-icon: #fff;
 $footer-icon-bg: rgb(146 158 173);
+$footer-icon-hover: #6a9cdf;
 $copyright: rgb(146 158 173);
 
 $text-color-dark: #333;
@@ -51,5 +52,5 @@ $text-menu-color: $primary-color;
 $details-color: #6a9cdf;
 
 :root {
-    --site-header-height: 105px;
+  --site-header-height: 105px;
 }
