@@ -1,8 +1,4 @@
 <?php
-
-ini_set("SMTP","ssl://smtp.gmail.com");
-ini_set("smtp_port","465");
-
   $name = htmlspecialchars($_POST['name']);
   $email = htmlspecialchars($_POST['email']);
   $phone = htmlspecialchars($_POST['phone']);
