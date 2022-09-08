@@ -17,7 +17,6 @@
 
       &-details {
         position: absolute;
-        top: 0;
         max-width: 1000px;
         display: flex;
         align-items: flex-end;
@@ -30,6 +29,8 @@
           max-width: 100%;
           bottom: 0;
           background: #ffffff94;
+          top: unset;
+          right: unset;
         }
 
         span {
@@ -63,20 +64,27 @@
             @media (max-width: 991px) {
               font-size: 2rem;
             }
+            @media (max-width: 600px) {
+              font-size: 1.5rem;
+            }
           }
 
           &--button {
             border: none;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.6);
             margin-top: 25px;
+            padding: 0;
+
+            @media (max-width: 991px) {
+              margin-top: 5px;
+            }
 
             a {
-              color: $text-color-dark;
+              color: rgb(63, 63, 63);
               text-decoration: none;
               border-radius: 3px;
               font-size: 1.7rem;
               text-align: center;
-              // text-transform: uppercase;
               padding: 10px 20px;
               position: relative;
               z-index: 0;
@@ -84,6 +92,13 @@
               padding-right: 30px;
               display: flex;
               align-items: center;
+
+              @media (max-width: 991px) {
+                font-size: 1.5rem;
+              }
+              @media (max-width: 600px) {
+                font-size: 1.2rem;
+              }
 
               &:before {
                 content: "";
@@ -108,10 +123,9 @@
             }
 
             &:hover {
-              background: #fff;
               a {
                 &::before {
-                  width: 100%;
+                  width: 110%;
                 }
                 i {
                   right: -8px;
@@ -136,7 +150,7 @@
         border-radius: 50%;
       }
       @media (max-width: 991px) {
-        display: none;
+        display: none !important;
       }
     }
   }

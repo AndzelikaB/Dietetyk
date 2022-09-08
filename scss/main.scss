@@ -190,6 +190,7 @@ body.main-page {
 
             @media (max-width: 991px) {
               order: 1;
+              padding: 15px;
             }
 
             h2,
@@ -237,6 +238,16 @@ body.main-page {
             margin-left: -45px;
             position: relative;
 
+            @media (max-width: 991px) {
+              justify-content: center;
+              margin: 0;
+              height: 350px;
+            }
+
+            @media (max-width: 600px) {
+              height: 290px;
+            }
+
             img {
               height: 100%;
               box-shadow: 44px -44px #a1b3b5;
@@ -250,7 +261,6 @@ body.main-page {
                 width: 462px;
                 height: 100px;
                 z-index: -1;
-                position: absolute;
                 opacity: 0.5;
                 background-size: cover;
                 border: 0;
@@ -258,6 +268,10 @@ body.main-page {
                 position: absolute;
                 bottom: -100px;
                 left: -140px;
+
+                @media (max-width: 991px) {
+                  display: none;
+                }
               }
             }
           }
