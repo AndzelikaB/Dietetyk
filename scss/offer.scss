@@ -9,9 +9,11 @@
       .row-wrapper {
         margin: 50px 100px;
 
+        @media (max-width: 991px) {
+          margin: 0px 30px;
+        }
+
         span {
-          // font-weight: 600;
-          // color: #6a9cdf;
           position: relative;
           z-index: 1;
 
@@ -218,6 +220,9 @@
 
       .row-wrapper {
         padding: 50px;
+        @media (max-width: 991px) {
+          padding: 10px;
+        }
       }
     }
     &__row-2 {

@@ -25,6 +25,11 @@
   display: flex;
   align-items: center;
 }
+@media (max-width: 991px) {
+  .site-top .site-header-wrapper {
+    justify-content: space-between;
+  }
+}
 .site-top .site-header-wrapper__details-logo img {
   max-width: 200px;
 }

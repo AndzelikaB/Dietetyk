@@ -1,127 +1,135 @@
 @import "variables.scss";
 
 .site-top {
-    height: 100vh;
+  height: 100vh;
 
-    @media(max-width: 991px) {
-        height: unset;
-    }
+  @media (max-width: 991px) {
+    height: unset;
+  }
 
-    .site-header {
-        position: absolute;
-        width: 100%;
-        background-color: transparent;
-        padding: 5px 25px 0px;
-        min-height: var(--site-header-height);
-        z-index: 1;
+  .site-header {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    padding: 5px 25px 0px;
+    min-height: var(--site-header-height);
+    z-index: 1;
 
-        &-wrapper {
-            display: flex;
-            align-items: center;
+    &-wrapper {
+      display: flex;
+      align-items: center;
 
-            &__details {
-                &-logo {
-                    img {
-                        max-width: 200px;
-                    }
-                }
-            }
+      @media (max-width: 991px) {
+        justify-content: space-between;
+      }
 
-            &__right {
-                .row {
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0px;
-                }
-
-
-                &-social-icons {
-                    justify-content: flex-end;
-                    column-gap: 10px;
-
-                    a {
-                        text-decoration: none;
-                        transition: 1s;
-
-                        i {
-                            font-style: normal;
-                            z-index: 3;
-
-                            &::before {
-                                font: 700 1.6rem 'Font Awesome 5 Brands';
-                                color: $header-icon;
-                            }
-                        }
-
-                        &:hover {
-                            transform: rotateY(360deg);
-
-                            i {
-                                &::before {
-                                    color: $header-icon-hover;
-                                }
-
-                            }
-                        }
-                    }
-                }
-            }
+      &__details {
+        &-logo {
+          img {
+            max-width: 200px;
+          }
         }
-    }
+      }
 
-    .sticky {
-        position: fixed !important;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: $sticky-menu-bg;
-        z-index: 3;
-        padding: 0;
-        transition: .5s;
-        min-height: 65px !important;
-        transition: 500ms ease-in-out;
-
-        .site-header-wrapper {
-            z-index: 1;
-            padding: 0 35px;
-
-            &__details {
-                img {
-                    max-width: 130px;
-                }
-            }
-
-            .site-menu {
-                &-item {
-                    &--link {
-                        color: $sticky-menu;
-
-                        &:hover {
-                            color: $sticky-menu;
-
-                            .line1,
-                            .line2,
-                            .line3,
-                            .line4 {
-                                background: $sticky-menu;
-                            }
-                        }
-                    }
-                }
-            }
+      &__right {
+        .row {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin: 0px;
         }
+
+        &-social-icons {
+          justify-content: flex-end;
+          column-gap: 10px;
+
+          a {
+            text-decoration: none;
+            transition: 1s;
+
+            i {
+              font-style: normal;
+              z-index: 3;
+
+              &::before {
+                font: 700 1.6rem "Font Awesome 5 Brands";
+                color: $header-icon;
+              }
+            }
+
+            &:hover {
+              transform: rotateY(360deg);
+
+              i {
+                &::before {
+                  color: $header-icon-hover;
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
+
+  .sticky {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $sticky-menu-bg;
+    z-index: 3;
+    padding: 0;
+    transition: 0.5s;
+    min-height: 65px !important;
+    transition: 500ms ease-in-out;
+
+    .site-header-wrapper {
+      z-index: 1;
+      padding: 0 35px;
+
+      &__details {
+        img {
+          max-width: 130px;
+        }
+      }
+
+      .site-menu {
+        &-item {
+          &--link {
+            color: $sticky-menu;
+
+            &:hover {
+              color: $sticky-menu;
+
+              .line1,
+              .line2,
+              .line3,
+              .line4 {
+                background: $sticky-menu;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 body {
-    &.inner-page {
-        .site-top {
-            height: 100%;
+  &.inner-page {
+    .site-top {
+      height: 100%;
 
-            .site-header {
-                position: relative;
-            }
-        }
+      .site-header {
+        position: relative;
+      }
     }
+  }
 }
+
+// @media (max-width: 991px) {
+//   .site-header-wrapper__right-menu {
+//     display: none;
+//   }
+// }

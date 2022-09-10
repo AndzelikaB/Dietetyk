@@ -535,7 +535,6 @@ body.main-page {
 }
 
 body:not(.site-menu-horizntal) .site-menu {
-  padding-left: 0;
   flex-direction: column;
   .site-menu-item {
     list-style-type: none;
