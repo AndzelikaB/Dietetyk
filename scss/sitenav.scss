@@ -64,49 +64,48 @@
       }
     }
   }
-}
-
-.site-menu-mobile {
-  background: $primary-color;
-  width: 100%;
-
-  .hamburger-menu {
-    background: none;
-    border: unset;
-    color: #fff;
-    font-size: 1.8rem;
-    padding: 8px 25px;
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-end;
+  &-mobile {
+    background: $primary-color;
     width: 100%;
 
-    &:hover {
-      color: #6a9cdf;
-    }
-  }
-
-  .site-menu {
-    background: #49607e;
-    padding: 10px 20px;
-    margin: 0;
-    .site-menu-item {
-      &--link {
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.1rem;
-        padding: 10px 15px;
-        letter-spacing: 1px;
-      }
+    .hamburger-menu {
+      background: none;
+      border: unset;
+      color: #fff;
+      font-size: 1.8rem;
+      padding: 8px 25px;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
 
       &:hover {
-        background: #536884;
+        color: #6a9cdf;
       }
     }
-  }
 
-  .active {
-    display: none;
+    .site-menu {
+      background: #49607e;
+      padding: 10px 20px;
+      margin: 0;
+      .site-menu-item {
+        &--link {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.1rem;
+          padding: 10px 15px;
+          letter-spacing: 1px;
+        }
+
+        &:hover {
+          background: #536884;
+        }
+      }
+    }
+
+    .active {
+      display: none;
+    }
   }
 }
 

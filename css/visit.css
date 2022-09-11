@@ -7,104 +7,78 @@
 
 .blocks {
   margin: 0px auto;
-  width: 1170px;
+  max-width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
   text-align: center;
   display: table;
 }
-.blocks .section-1 .left,
-.blocks .section-2 .left,
-.blocks .section-3 .left,
-.blocks .section-4 .left,
-.blocks .section-5 .left,
-.blocks .section-6 .left,
-.blocks .section-7 .left {
+@media (max-width: 991px) {
+  .blocks #sections {
+    flex-direction: column;
+    margin: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .blocks #sections {
+    margin: 20px;
+  }
+}
+.blocks #sections .left {
   align-items: center;
   justify-content: center;
   display: flex;
   padding: 7em 0;
 }
-.blocks .section-1 .left .title,
-.blocks .section-2 .left .title,
-.blocks .section-3 .left .title,
-.blocks .section-4 .left .title,
-.blocks .section-5 .left .title,
-.blocks .section-6 .left .title,
-.blocks .section-7 .left .title {
+@media (max-width: 991px) {
+  .blocks #sections .left {
+    padding: 1em 0;
+  }
+}
+.blocks #sections .left .title {
   color: #3b5577;
 }
-.blocks .section-1 .icon,
-.blocks .section-2 .icon,
-.blocks .section-3 .icon,
-.blocks .section-4 .icon,
-.blocks .section-5 .icon,
-.blocks .section-6 .icon,
-.blocks .section-7 .icon {
+@media (max-width: 991px) {
+  .blocks #sections .left .title {
+    font-size: 2rem;
+  }
+}
+.blocks #sections .icon {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.blocks .section-1 .icon-image,
-.blocks .section-2 .icon-image,
-.blocks .section-3 .icon-image,
-.blocks .section-4 .icon-image,
-.blocks .section-5 .icon-image,
-.blocks .section-6 .icon-image,
-.blocks .section-7 .icon-image {
+.blocks #sections .icon-image {
   border: 4px solid #3b5577;
   border-radius: 50%;
   padding: 15px;
   z-index: 1;
   background: #fff;
 }
-.blocks .section-1 .icon-image img,
-.blocks .section-2 .icon-image img,
-.blocks .section-3 .icon-image img,
-.blocks .section-4 .icon-image img,
-.blocks .section-5 .icon-image img,
-.blocks .section-6 .icon-image img,
-.blocks .section-7 .icon-image img {
+.blocks #sections .icon-image img {
   width: 55px;
   height: 55px;
 }
-.blocks .section-1 .icon::after,
-.blocks .section-2 .icon::after,
-.blocks .section-3 .icon::after,
-.blocks .section-4 .icon::after,
-.blocks .section-5 .icon::after,
-.blocks .section-6 .icon::after,
-.blocks .section-7 .icon::after {
+.blocks #sections .icon::after {
   content: "";
   height: 100%;
   position: absolute;
   border: 4px solid #3b5577;
   z-index: 0;
 }
-.blocks .section-1 .right,
-.blocks .section-2 .right,
-.blocks .section-3 .right,
-.blocks .section-4 .right,
-.blocks .section-5 .right,
-.blocks .section-6 .right,
-.blocks .section-7 .right {
+.blocks #sections .right {
   display: flex;
   align-items: center;
-}
-.blocks .section-1 .right .description,
-.blocks .section-2 .right .description,
-.blocks .section-3 .right .description,
-.blocks .section-4 .right .description,
-.blocks .section-5 .right .description,
-.blocks .section-6 .right .description,
-.blocks .section-7 .right .description {
+  justify-content: center;
   background: #6a9cdf;
+  border-radius: 20px;
+}
+.blocks #sections .right .description {
   padding: 20px;
   color: #fff;
   text-align: left;
   margin: 0px;
-  border-radius: 20px;
 }
 .blocks .section-2,
 .blocks .section-4,

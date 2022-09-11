@@ -28,10 +28,17 @@
 @media (max-width: 991px) {
   .site-top .site-header-wrapper {
     justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 0;
   }
 }
 .site-top .site-header-wrapper__details-logo img {
   max-width: 200px;
+}
+@media (max-width: 991px) {
+  .site-top .site-header-wrapper__right {
+    padding: 25px 25px 0;
+  }
 }
 .site-top .site-header-wrapper__right .row {
   display: flex;
@@ -76,6 +83,11 @@
 .site-top .sticky .site-header-wrapper {
   z-index: 1;
   padding: 0 35px;
+}
+@media (max-width: 991px) {
+  .site-top .sticky .site-header-wrapper {
+    flex-direction: row;
+  }
 }
 .site-top .sticky .site-header-wrapper__details img {
   max-width: 130px;

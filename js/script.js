@@ -6,6 +6,14 @@ async function addHeader() {
     headerWrapper = document.getElementById("header-wrapper");
 }
 
+async function addMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const response = await fetch("../html/sitenav.html");
+    const mobileHtml = await response.text();
+    mobileMenu.insertAdjacentHTML("beforeend", mobileHtml);
+    mobileWrapper = document.getElementById("mobile-wrapper");
+}
+
 async function addFooter() {
     const footer = document.getElementById('site-footer')
     const resp = await fetch("../html/footer.html");

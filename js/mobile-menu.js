@@ -1,8 +1,8 @@
-const menuButton = document.getElementById("menu-button")
-const menuList = document.getElementById('menu-list')
 
-menuButton.addEventListener('click', openMenu)
-
-function openMenu() {
-    menuList.classList.toggle("active");
+window.onload = function () {
+    const menuButton = document.getElementById("menu-button"), menuList = document.getElementById('menu-list')
+    menuButton.addEventListener('click', () => {
+        menuList.classList.toggle("active")
+        console.log("lollo")
+    })
 }
