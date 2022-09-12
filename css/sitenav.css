@@ -170,3 +170,12 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(106, 157, 223, 0.6);
 }
+
+@media (max-width: 991px) {
+  .stickyMenu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+  }
+}

@@ -10,9 +10,18 @@
     box-shadow: 0px 0px 10px rgba(43, 43, 43, 0.15);
     margin: 0 auto;
 
+    @media (max-width: 991px) {
+      max-width: 100%;
+      box-shadow: unset;
+    }
+
     &__head {
       display: flex;
       align-items: stretch;
+
+      @media (max-width: 991px) {
+        flex-direction: column;
+      }
     }
 
     .tabs__toggle {
@@ -25,6 +34,11 @@
       justify-content: center;
       background: #f1f7ff;
       cursor: pointer;
+
+      @media (max-width: 991px) {
+        width: 100%;
+        font-size: 1.1rem;
+      }
 
       &.is-active {
         background: #fff;
@@ -46,10 +60,18 @@
       font-size: 1.5rem;
       font-weight: 700;
       margin-bottom: 20px;
+
+      @media (max-width: 991px) {
+        font-size: 1.3rem;
+      }
     }
     &__text {
       color: #333;
       font-size: 1rem;
+
+      @media (max-width: 991px) {
+        font-size: 0.9rem;
+      }
     }
   }
 
@@ -72,8 +94,13 @@
         justify-content: space-between;
         align-items: center;
 
+        @media (max-width: 991px) {
+          font-size: 1rem;
+        }
+
         &-name {
           margin: 0;
+
           &::before {
             content: "\002B";
             font-size: 2rem;
@@ -93,6 +120,7 @@
         &-cost {
           color: #6a9cdf;
           font-weight: 500;
+          white-space: nowrap;
         }
 
         &:hover {
@@ -111,6 +139,19 @@
           padding: 0 1rem 1rem;
           line-height: 1.5rem;
           color: rgb(119, 119, 119);
+
+          .site-menu {
+            h5 {
+              @media (max-width: 991px) {
+                font-size: 1rem;
+              }
+            }
+            &-item {
+              @media (max-width: 991px) {
+                font-size: 0.9rem;
+              }
+            }
+          }
         }
       }
     }

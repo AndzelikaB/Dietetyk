@@ -117,9 +117,8 @@
     width: 147px;
     height: 158px;
     position: absolute;
-    z-index: 2;
     bottom: 0;
-    right: 0px;
+    right: 0;
     background-position: center;
     background-size: contain;
     opacity: 0.1;
@@ -135,7 +134,6 @@
       padding: 15px;
       margin-bottom: 0px;
       color: $copyright;
-      z-index: 2;
 
       a {
         text-decoration: none;

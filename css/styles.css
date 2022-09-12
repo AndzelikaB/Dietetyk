@@ -633,41 +633,47 @@ body:not(.site-menu-horizntal) .site-menu .site-menu-item:before {
 .site-top .site-header-wrapper__right-social-icons a:hover i::before {
   color: #3b5577;
 }
-.site-top .sticky {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #f1f7ff;
-  z-index: 3;
-  padding: 0;
-  transition: 0.5s;
-  min-height: 65px !important;
-  transition: 500ms ease-in-out;
+@media (min-width: 991px) {
+  .site-top .sticky {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f1f7ff;
+    z-index: 3;
+    padding: 0;
+    transition: 0.5s;
+    min-height: 65px !important;
+    transition: 500ms ease-in-out;
+  }
+  .site-top .sticky .site-header-wrapper {
+    z-index: 1;
+    padding: 0 35px;
+  }
 }
-.site-top .sticky .site-header-wrapper {
-  z-index: 1;
-  padding: 0 35px;
-}
-@media (max-width: 991px) {
+@media (min-width: 991px) and (max-width: 991px) {
   .site-top .sticky .site-header-wrapper {
     flex-direction: row;
   }
 }
-.site-top .sticky .site-header-wrapper__details img {
-  max-width: 130px;
+@media (min-width: 991px) {
+  .site-top .sticky .site-header-wrapper__details img {
+    max-width: 130px;
+  }
 }
-.site-top .sticky .site-header-wrapper .site-menu-item--link {
-  color: #333;
-}
-.site-top .sticky .site-header-wrapper .site-menu-item--link:hover {
-  color: #333;
-}
-.site-top .sticky .site-header-wrapper .site-menu-item--link:hover .line1,
+@media (min-width: 991px) {
+  .site-top .sticky .site-header-wrapper .site-menu-item--link {
+    color: #333;
+  }
+  .site-top .sticky .site-header-wrapper .site-menu-item--link:hover {
+    color: #333;
+  }
+  .site-top .sticky .site-header-wrapper .site-menu-item--link:hover .line1,
 .site-top .sticky .site-header-wrapper .site-menu-item--link:hover .line2,
 .site-top .sticky .site-header-wrapper .site-menu-item--link:hover .line3,
 .site-top .sticky .site-header-wrapper .site-menu-item--link:hover .line4 {
-  background: #333;
+    background: #333;
+  }
 }
 
 body.inner-page .site-top {
@@ -847,6 +853,14 @@ body.inner-page .site-top .site-header {
   background: rgba(106, 157, 223, 0.6);
 }
 
+@media (max-width: 991px) {
+  .stickyMenu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+  }
+}
 :root {
   --site-header-height: 105px;
 }
@@ -1087,9 +1101,8 @@ body.inner-page .slideshow {
   width: 147px;
   height: 158px;
   position: absolute;
-  z-index: 2;
   bottom: 0;
-  right: 0px;
+  right: 0;
   background-position: center;
   background-size: contain;
   opacity: 0.1;
@@ -1104,7 +1117,6 @@ body.inner-page .slideshow {
   padding: 15px;
   margin-bottom: 0px;
   color: rgb(146, 158, 173);
-  z-index: 2;
 }
 .site-footer--copyrights p a {
   text-decoration: none;
