@@ -17,7 +17,7 @@
   position: absolute;
   width: 100%;
   background-color: transparent;
-  padding: 5px 25px 0px;
+  padding: 5px 25px 0;
   min-height: var(--site-header-height);
   z-index: 1;
 }
@@ -44,7 +44,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 0px;
+  margin: 0;
 }
 .site-top .site-header-wrapper__right-social-icons {
   justify-content: flex-end;
@@ -66,7 +66,7 @@
   transform: rotateY(360deg);
 }
 .site-top .site-header-wrapper__right-social-icons a:hover i::before {
-  color: #3b5577;
+  color: #6a9cdf;
 }
 @media (min-width: 991px) {
   .site-top .sticky {

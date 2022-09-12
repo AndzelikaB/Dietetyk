@@ -13,7 +13,7 @@
 }
 @media (max-width: 991px) {
   .site-content-wrapper .inner-content__row-0 .row-wrapper, .site-content-wrapper .inner-content__row-1 .row-wrapper, .site-content-wrapper .inner-content__row-2 .row-wrapper {
-    margin: 0px 30px;
+    margin: 0 30px;
   }
 }
 .site-content-wrapper .inner-content__row-0 .row-wrapper span, .site-content-wrapper .inner-content__row-1 .row-wrapper span, .site-content-wrapper .inner-content__row-2 .row-wrapper span {
@@ -33,11 +33,9 @@
   bottom: 0;
 }
 .site-content-wrapper .inner-content__row-0 h2, .site-content-wrapper .inner-content__row-1 h2, .site-content-wrapper .inner-content__row-2 h2 {
-  font-family: "Sen", sans-serif;
-  color: #000;
+  font-size: 2.5rem;
   font-weight: 400;
   text-align: center;
-  font-size: 2.5rem;
   margin-bottom: 1em;
 }
 @media (max-width: 991px) {
@@ -51,7 +49,6 @@
   }
 }
 .site-content-wrapper .inner-content__row-0 h3, .site-content-wrapper .inner-content__row-1 h3, .site-content-wrapper .inner-content__row-2 h3 {
-  font-family: "Sen", sans-serif;
   font-size: 1.9rem;
   margin-bottom: 0.7em;
 }
@@ -145,9 +142,7 @@
 }
 .site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .flip-card .flip-card-front h5 {
   font-weight: 600;
-  color: #333;
   font-size: 1.4rem;
-  font-family: "Sen";
 }
 .site-content-wrapper .inner-content__row-0 .content-wrapper-components .components__item .flip-card .flip-card-back {
   color: #333;

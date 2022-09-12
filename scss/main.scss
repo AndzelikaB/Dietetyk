@@ -1,17 +1,26 @@
 @import "variables.scss";
 
+body .site-container {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-family: "Sen", sans-serif;
+    color: $text-color-dark;
+  }
+}
+
 body.main-page {
   .site-container {
-    font: 16px "Sen", sans-serif;
-    color: $text-color-dark;
-
     .site-content {
       margin-top: -180px;
 
       @media (max-width: 991px) {
         margin: 50px 0;
       }
-
       &__row-0,
       &__row-1,
       &__row-2 {
@@ -189,7 +198,7 @@ body.main-page {
           align-items: center;
           margin-bottom: 35px;
 
-          @media (max-width: 9910px) {
+          @media (max-width: 991px) {
             max-width: 90%;
           }
           @media (max-width: 450px) {
@@ -252,7 +261,7 @@ body.main-page {
               .fab {
                 border-radius: 50%;
                 background-color: #0e76a8;
-                font-size: 30px;
+                font-size: 1.9rem;
                 padding: 15px;
                 color: #fff;
               }
@@ -260,7 +269,7 @@ body.main-page {
           }
 
           &-imageBlock {
-            padding: 0px;
+            padding: 0;
             height: 360px;
             display: flex;
             justify-content: flex-start;
@@ -293,7 +302,7 @@ body.main-page {
                 opacity: 0.5;
                 background-size: cover;
                 border: 0;
-                margin-bottom: 0px;
+                margin-bottom: 0;
                 position: absolute;
                 bottom: -100px;
                 left: -140px;
@@ -374,6 +383,7 @@ body.main-page {
               h5 {
                 font-size: 3rem;
                 font-weight: 700;
+                color: inherit;
 
                 @media (max-width: 9910px) {
                   font-size: 2.5rem;
@@ -386,6 +396,8 @@ body.main-page {
               p {
                 text-align: center;
                 font-size: 1.5rem;
+                color: inherit;
+
                 @media (max-width: 9910px) {
                   font-size: 1.3rem;
                 }
@@ -495,13 +507,13 @@ body.main-page {
 
             p {
               transition: all 250ms ease-in-out;
-              font-size: 17px;
+              font-size: 1.06rem;
               margin: 0 10px;
             }
 
             i {
               margin-left: 10px;
-              color: #6a9cdf;
+              color: $secondary-color;
 
               &::before {
                 font: 700 1.2rem "Font Awesome 5 Brands";
@@ -556,11 +568,9 @@ body.main-page {
 
 // Inner pages
 .content-title {
-  font-size: 3.6rem;
   line-height: 1.2;
-  font-family: "Sen", sans-serif;
+  font: 400 3.6rem "Sen", sans-serif;
   color: #333;
-  font-weight: 400;
   padding: 0 35px 15px;
   margin-bottom: 0;
   margin-top: 30px;
@@ -597,7 +607,7 @@ body:not(.site-menu-horizntal) .site-menu {
       left: 0;
       width: 25px;
       height: 1px;
-      background-color: #6a9cdf;
+      background-color: $secondary-color;
       opacity: 0.5;
     }
   }

@@ -6,7 +6,7 @@
 }
 
 .slideshow .slider {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
 }
 .slideshow .slider-item-image {
   width: 100%;
@@ -45,7 +45,7 @@
 }
 .slideshow .slider-item-details .slider-item--text {
   color: rgb(69, 69, 69);
-  margin-bottom: 0px;
+  margin-bottom: 0;
   line-height: 1.2;
   text-align: right;
   font: 400 3.6rem Sen, sans-serif;

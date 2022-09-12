@@ -8,7 +8,7 @@
 .site-menu-horizontal {
   display: flex;
   justify-content: space-between;
-  margin: 0px;
+  margin: 0;
 }
 .site-menu-horizontal .site-menu-item {
   list-style: none;
@@ -20,9 +20,10 @@
   padding: 10px 20px;
   position: relative;
   font-size: 1.1rem;
+  transition: all ease-in-out 150ms;
 }
 .site-menu-horizontal .site-menu-item--link:hover {
-  color: #3b5577;
+  color: #6a9cdf;
 }
 .site-menu-horizontal .site-menu-item--link:hover::before {
   width: 100%;
@@ -32,7 +33,7 @@
 .site-menu-horizontal .site-menu-item--link:hover .line3,
 .site-menu-horizontal .site-menu-item--link:hover .line4 {
   position: absolute;
-  background: #3b5577;
+  background: #6a9cdf;
 }
 .site-menu-horizontal .site-menu-item--link:hover .line1 {
   animation: move1 1500ms infinite ease;

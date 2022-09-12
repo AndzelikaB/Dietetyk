@@ -2,7 +2,7 @@
 
 .slideshow {
   .slider {
-    margin-bottom: 0px !important;
+    margin-bottom: 0 !important;
 
     &-item {
       &-image {
@@ -37,26 +37,13 @@
           position: relative;
           z-index: 1;
           font-weight: 500;
-          color: #6a9cdf;
-
-          // &:before {
-          //   content: "";
-          //   display: inline-block;
-          //   position: absolute;
-          //   right: 0;
-          //   background-color: #6a9cdf;
-          //   opacity: 0.5;
-          //   height: 30%;
-          //   z-index: -1;
-          //   width: 100%;
-          //   bottom: 0;
-          // }
+          color: $secondary-color;
         }
 
         .slider-item {
           &--text {
             color: rgb(69, 69, 69);
-            margin-bottom: 0px;
+            margin-bottom: 0;
             line-height: 1.2;
             text-align: right;
             font: 400 3.6rem Sen, sans-serif;
@@ -88,7 +75,6 @@
               padding: 10px 20px;
               position: relative;
               z-index: 0;
-              // display: inline;
               padding-right: 30px;
               display: flex;
               align-items: center;
@@ -105,7 +91,7 @@
                 display: inline-block;
                 position: absolute;
                 right: 0;
-                background-color: #6a9cdf;
+                background-color: $secondary-color;
                 opacity: 0.7;
                 height: 100%;
                 width: 35%;

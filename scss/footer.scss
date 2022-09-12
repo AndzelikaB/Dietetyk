@@ -23,7 +23,7 @@
     }
 
     h4 {
-      font-size: 24px;
+      font-size: 1.5rem;
       margin-bottom: 3.5rem;
       text-transform: uppercase;
       position: relative;
@@ -85,7 +85,7 @@
             font-style: normal;
             background: $footer-icon-bg;
             border-radius: 5px;
-            margin: 0px;
+            margin: 0;
             height: 40px;
             width: 40px;
             display: flex;
@@ -100,7 +100,7 @@
 
             &:hover {
               background: #fff;
-              border: 1px solid #6a9cdf;
+              border: 1px solid $secondary-color;
               &::before {
                 color: $footer-icon-hover;
               }
@@ -132,7 +132,7 @@
     p {
       text-align: center;
       padding: 15px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       color: $copyright;
 
       a {
@@ -142,7 +142,7 @@
         transition: 5ms;
 
         &:hover {
-          color: #6a9cdf;
+          color: $secondary-color;
         }
       }
     }

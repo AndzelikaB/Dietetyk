@@ -11,7 +11,7 @@
     position: absolute;
     width: 100%;
     background-color: transparent;
-    padding: 5px 25px 0px;
+    padding: 5px 25px 0;
     min-height: var(--site-header-height);
     z-index: 1;
 
@@ -41,7 +41,7 @@
           display: flex;
           justify-content: flex-end;
           align-items: center;
-          margin: 0px;
+          margin: 0;
         }
 
         &-social-icons {

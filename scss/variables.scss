@@ -5,26 +5,17 @@
 $theme-background: #d6dde5;
 
 $primary-color: #3b5577;
+$secondary-color: #6a9cdf;
 $light-primary-color: #6d84a4;
-$secondary-color: #4d7246;
-$light-secondary-color: #94c06f;
-$tertiary-color: #1b1e27;
-$quaternary-color: #d4d4d4;
-$based-color: #fff;
-$contact-form-details: #6a9cdf;
-
-$header-size: 2rem;
-$motto-size: 1rem;
+$contact-form-details: $secondary-color;
 
 $header-icon: #333;
-$header-icon-hover: $primary-color;
+$header-icon-hover: $secondary-color;
 
 $menu-color: #333;
-$menu-color-hover: $primary-color;
+$menu-color-hover: $secondary-color;
 $sticky-menu: #333;
 $sticky-menu-bg: #f1f7ff;
-
-$slideshow-text: #6a9cdf;
 
 $qlink1: #3b5577;
 $qlink2: #5c7390;
@@ -42,14 +33,10 @@ $ig-bg-hover: #d0def1;
 $footer-bg: #f1f7ff;
 $footer-icon: #fff;
 $footer-icon-bg: rgb(146 158 173);
-$footer-icon-hover: #6a9cdf;
+$footer-icon-hover: $secondary-color;
 $copyright: rgb(146 158 173);
 
 $text-color-dark: #333;
-$text-color-light: #fff;
-$text-menu-color: $primary-color;
-
-$details-color: #6a9cdf;
 
 :root {
   --site-header-height: 105px;

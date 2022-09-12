@@ -24,11 +24,9 @@
 
     .wrapper {
       header {
-        font-size: 2.2rem;
-        font-weight: 500;
         padding: 20px 30px;
-        color: #6a9cdf;
-        font-family: "Sen";
+        color: $secondary-color;
+        font: 500 2.2rem "Sen", sans-serif;
 
         @media (max-width: 991px) {
           padding: 0 0 20px;
@@ -37,10 +35,10 @@
       }
 
       form {
-        padding: 0px 30px;
+        padding: 0 30px;
 
         @media (max-width: 445px) {
-          padding: 0px;
+          padding: 0;
         }
 
         &.disabled {
@@ -59,7 +57,7 @@
           top: 50%;
           left: 18px;
           color: #ccc;
-          font-size: 17px;
+          font-size: 1.06rem;
           pointer-events: none;
           transform: translateY(-50%);
         }
@@ -117,7 +115,7 @@
             }
 
             &::-webkit-scrollbar {
-              width: 0px;
+              width: 0;
             }
           }
         }
@@ -131,7 +129,7 @@
             color: #fff;
             border: none;
             outline: none;
-            font-size: 18px;
+            font-size: 1.12rem;
             cursor: pointer;
             border-radius: 5px;
             padding: 13px 25px;
@@ -144,7 +142,7 @@
           }
 
           span {
-            font-size: 17px;
+            font-size: 1.06rem;
             margin-left: 30px;
             display: none;
             color: #333 !important;

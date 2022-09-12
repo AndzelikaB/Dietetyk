@@ -4,7 +4,7 @@
   &-horizontal {
     display: flex;
     justify-content: space-between;
-    margin: 0px;
+    margin: 0;
     .site-menu {
       &-item {
         list-style: none;
@@ -16,7 +16,7 @@
           padding: 10px 20px;
           position: relative;
           font-size: 1.1rem;
-
+          transition: all ease-in-out 150ms;
           &:hover {
             color: $menu-color-hover;
 
@@ -80,7 +80,7 @@
       width: 100%;
 
       &:hover {
-        color: #6a9cdf;
+        color: $secondary-color;
       }
     }
 
@@ -191,7 +191,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6a9cdf;
+  background: $secondary-color;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(106, 157, 223, 0.6);
