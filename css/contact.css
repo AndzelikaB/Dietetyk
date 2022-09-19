@@ -146,6 +146,7 @@
   opacity: 0.8;
   width: 100%;
   height: 100%;
+  padding: 30px;
 }
 @media (max-width: 991px) {
   .site-content-wrapper > .row .image img {

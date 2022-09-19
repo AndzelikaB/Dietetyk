@@ -589,7 +589,7 @@ body:not(.site-menu-horizntal) .site-menu .site-menu-item:before {
   position: absolute;
   width: 100%;
   background-color: transparent;
-  padding: 5px 25px 0;
+  padding: 25px 25px 0;
   min-height: var(--site-header-height);
   z-index: 1;
 }
@@ -606,6 +606,9 @@ body:not(.site-menu-horizntal) .site-menu .site-menu-item:before {
 }
 .site-top .site-header-wrapper__details-logo img {
   max-width: 200px;
+}
+.site-top .site-header-wrapper__right {
+  height: 100%;
 }
 @media (max-width: 991px) {
   .site-top .site-header-wrapper__right {
@@ -652,6 +655,9 @@ body:not(.site-menu-horizntal) .site-menu .site-menu-item:before {
     transition: 0.5s;
     min-height: 65px !important;
     transition: 500ms ease-in-out;
+  }
+  .site-top .sticky .row {
+    height: 100%;
   }
   .site-top .sticky .site-header-wrapper {
     z-index: 1;

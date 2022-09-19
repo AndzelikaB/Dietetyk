@@ -56,6 +56,9 @@
   font-family: "Quicksand";
   line-height: 1.7;
 }
+.site-content-wrapper .inner-content__row-0 .subsection, .site-content-wrapper .inner-content__row-1 .subsection, .site-content-wrapper .inner-content__row-2 .subsection {
+  margin-top: 30px;
+}
 .site-content-wrapper .inner-content__row-0 .content-wrapper {
   max-width: 100%;
   margin-top: 2em;
