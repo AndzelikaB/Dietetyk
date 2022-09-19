@@ -3,13 +3,14 @@
 .site-content-wrapper {
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
+  margin: 5vw 7vw;
   border-radius: 5px;
   box-shadow: -1px 0px 10px 3px rgba(138, 136, 136, 0.5);
 
   @media (max-width: 991px) {
     box-shadow: unset;
     border-radius: unset;
+    margin: 0;
   }
 
   > .row {
@@ -159,7 +160,7 @@
 
         @media (max-width: 991px) {
           display: flex;
-          width: 60%;
+          width: 50%;
           margin: 0 auto;
         }
       }

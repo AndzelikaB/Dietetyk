@@ -34,7 +34,7 @@
     bottom: 0;
     background: rgba(255, 255, 255, 0.5803921569);
     top: unset;
-    right: unset;
+    right: 0;
   }
 }
 .slideshow .slider-item-details span {

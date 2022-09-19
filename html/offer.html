@@ -23,11 +23,16 @@
     />
     <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body id="body" class="inner-page">
     <script src="../js/recognized_pages.js"></script>
     <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <div class="site-container">
       <div class="site-top">
         <div id="site-header" class="row site-header mx-0">
@@ -50,7 +55,7 @@
               <h2>W czym mogę Ci <span> pomóc? </span></h2>
               <div class="content-wrapper">
                 <div class="content-wrapper-components d-flex">
-                  <div class="components col-6 col-lg-4">
+                  <div data-aos="zoom-in" class="components col-6 col-lg-4">
                     <div class="components__item components__item1">
                       <div class="flip-card">
                         <div class="flip-card-inner">
@@ -70,7 +75,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="components col-6 col-lg-4">
+                  <div data-aos="zoom-in" class="components col-6 col-lg-4">
                     <div class="components__item components__item2">
                       <div class="flip-card">
                         <div class="flip-card-inner">
@@ -89,7 +94,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="components col-6 col-lg-4">
+                  <div data-aos="zoom-in" class="components col-6 col-lg-4">
                     <div class="components__item components__item3">
                       <div class="flip-card">
                         <div class="flip-card-inner">
@@ -109,8 +114,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="components col-6 col-lg-4">
+                  <div data-aos="zoom-in" class="components col-6 col-lg-4">
                     <div class="components__item components__item4">
                       <div class="flip-card">
                         <div class="flip-card-inner">
@@ -130,8 +134,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="components col-6 col-lg-4">
+                  <div data-aos="zoom-in" class="components col-6 col-lg-4">
                     <div class="components__item components__item5">
                       <div class="flip-card">
                         <div class="flip-card-inner">
@@ -151,8 +154,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="components col-6 col-lg-4">
+                  <div data-aos="zoom-in" class="components col-6 col-lg-4">
                     <div class="components__item components__item6">
                       <div class="flip-card">
                         <div class="flip-card-inner">
@@ -177,7 +179,7 @@
             </div>
           </div>
 
-          <div class="col-12 inner-content__row-1">
+          <div data-aos="fade-up" class="col-12 inner-content__row-1">
             <div class="row-wrapper">
               <h2>Jak przygotować się do <span> pierwszej wizyty? </span></h2>
               <div>
@@ -212,7 +214,11 @@
             </div>
           </div>
 
-          <div id="online" class="col-12 inner-content__row-2">
+          <div
+            id="online"
+            data-aos="fade-up"
+            class="col-12 inner-content__row-2"
+          >
             <div class="row-wrapper">
               <h2>Opieka <span> online </span></h2>
               <div class="row align-items-center">
@@ -240,7 +246,11 @@
                 </div>
 
                 <div class="col-12 col-lg-6">
-                  <img src="../img/offer/social_distance.jpg" alt="" />
+                  <img
+                    data-aos="zoom-in"
+                    src="../img/offer/social_distance.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>

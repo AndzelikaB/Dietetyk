@@ -8,7 +8,7 @@
 .site-content-wrapper {
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
+  margin: 5vw 7vw;
   border-radius: 5px;
   box-shadow: -1px 0px 10px 3px rgba(138, 136, 136, 0.5);
 }
@@ -16,6 +16,7 @@
   .site-content-wrapper {
     box-shadow: unset;
     border-radius: unset;
+    margin: 0;
   }
 }
 .site-content-wrapper > .row {
@@ -149,7 +150,7 @@
 @media (max-width: 991px) {
   .site-content-wrapper > .row .image img {
     display: flex;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
   }
 }
