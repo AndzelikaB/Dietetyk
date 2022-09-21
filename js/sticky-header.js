@@ -1,4 +1,4 @@
-var headerWrapper;
+let headerWrapper;
 window.addEventListener('DOMContentLoaded', function () {
    header = document.getElementById('site-header');
 

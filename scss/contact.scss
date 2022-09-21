@@ -3,7 +3,8 @@
 .site-content-wrapper {
   display: flex;
   flex-direction: row;
-  margin: 5vw 7vw;
+  margin-right: 7vw;
+  margin-left: 7vw;
   border-radius: 5px;
   box-shadow: -1px 0px 10px 3px rgba(138, 136, 136, 0.5);
 
@@ -162,7 +163,8 @@
         @media (max-width: 991px) {
           display: flex;
           width: 50%;
-          margin: 0 auto;
+          margin: 20px auto 0;
+          padding: 0;
         }
       }
     }

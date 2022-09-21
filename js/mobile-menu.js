@@ -1,4 +1,4 @@
-var mobileWrapper;
+let mobileWrapper;
 window.onload = function () {
     const menuButton = document.getElementById("menu-button"), menuList = document.getElementById('menu-list')
     menuButton.addEventListener('click', () => {

@@ -1,8 +1,8 @@
 async function addHeader() {
     const header = document.getElementById('site-header')
-    const response = await fetch("../html/header.html")   // (poczekaj aż pobierze header.html) pobierz wszystko
-    const headerHtml = await response.text();           //zwraca odpowiedź w formacie text -> funkcja do przerobienia na text
-    header.insertAdjacentHTML("beforeend", headerHtml); // włóż w miejsce przed elementem header fragment pobrany headerhtml
+    const response = await fetch("../html/header.html")
+    const headerHtml = await response.text();
+    header.insertAdjacentHTML("beforeend", headerHtml);
     headerWrapper = document.getElementById("header-wrapper");
 }
 

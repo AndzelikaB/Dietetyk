@@ -1,5 +1,5 @@
 const form = document.querySelector("form")
-const statusTxt = form.querySelector(".button-area span");
+const statusTxt = document.querySelector(".button-area span");
 
 form.onsubmit = (e) => {
   e.preventDefault();

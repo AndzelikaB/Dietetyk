@@ -13,6 +13,7 @@ body .site-container {
   }
 }
 
+// Main page
 body.main-page {
   .site-container {
     .site-content {
@@ -69,7 +70,6 @@ body.main-page {
                 text-align: center;
                 align-items: center;
                 height: 250px;
-                cursor: pointer;
                 position: relative;
                 display: flex;
                 flex-direction: column;
@@ -295,7 +295,7 @@ body.main-page {
             .blok {
               &::before {
                 content: "";
-                background: url("../img/dots.jpg");
+                background: url("../img/main-page/dots.jpg");
                 width: 462px;
                 height: 100px;
                 z-index: -1;
@@ -332,7 +332,7 @@ body.main-page {
             width: 200px;
             height: 200px;
             position: absolute;
-            z-index: 2;
+            z-index: 1;
             top: -80px;
             margin: 0 auto;
             right: 0;
@@ -342,7 +342,7 @@ body.main-page {
             @media (max-width: 9910px) {
               width: 160px;
             }
-            @media (max-width: 450px) {
+            @media (max-width: 700px) {
               width: 120px;
             }
           }
@@ -567,27 +567,33 @@ body.main-page {
 }
 
 // Inner pages
-.content-title {
-  line-height: 1.2;
-  font: 400 3.6rem "Sen", sans-serif;
-  color: #333;
-  padding: 0 35px 15px;
-  margin-bottom: 0;
-  margin-top: 30px;
-  border-bottom: 2px solid #c4c4c4;
-
-  @media (max-width: 991px) {
-    font-size: 2.9rem;
-    padding: 0px 0px 10px;
-    text-align: center;
+body.inner-page {
+  .site-container {
+    overflow: hidden;
   }
-  @media (max-width: 450px) {
-    font-size: 2.2rem;
-  }
-}
+  .content-title {
+    line-height: 1.2;
+    font: 400 3.6rem "Sen", sans-serif;
+    color: #333;
+    padding: 0 35px 15px;
+    margin-bottom: 0;
+    margin-top: 30px;
+    border-bottom: 2px solid #c4c4c4;
 
-.site-content-wrapper {
-  margin: 5vw auto;
+    @media (max-width: 991px) {
+      font-size: 2.9rem;
+      padding: 0px 0px 10px;
+      text-align: center;
+    }
+    @media (max-width: 450px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  .site-content-wrapper {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
 }
 
 body:not(.site-menu-horizntal) .site-menu {

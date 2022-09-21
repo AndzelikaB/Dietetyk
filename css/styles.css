@@ -89,7 +89,6 @@ body.main-page .site-container .site-content__row-0 .content-wrapper-components 
   text-align: center;
   align-items: center;
   height: 250px;
-  cursor: pointer;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -294,7 +293,7 @@ body.main-page .site-container .site-content__row-2 .about-me-imageBlock img {
 }
 body.main-page .site-container .site-content__row-2 .about-me-imageBlock .blok::before {
   content: "";
-  background: url("../img/dots.jpg");
+  background: url("../img/main-page/dots.jpg");
   width: 462px;
   height: 100px;
   z-index: -1;
@@ -327,7 +326,7 @@ body.main-page .site-container .site-content__row-3 .elements::before {
   width: 200px;
   height: 200px;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: -80px;
   margin: 0 auto;
   right: 0;
@@ -340,7 +339,7 @@ body.main-page .site-container .site-content__row-3 .elements::before {
     width: 160px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 700px) {
   body.main-page .site-container .site-content__row-3 .elements::before {
     width: 120px;
   }
@@ -525,7 +524,10 @@ body.main-page .site-container .site-content__row-4 .ig-embeded_images #ig-embed
   position: relative;
 }
 
-.content-title {
+body.inner-page .site-container {
+  overflow: hidden;
+}
+body.inner-page .content-title {
   line-height: 1.2;
   font: 400 3.6rem "Sen", sans-serif;
   color: #333;
@@ -535,20 +537,20 @@ body.main-page .site-container .site-content__row-4 .ig-embeded_images #ig-embed
   border-bottom: 2px solid #c4c4c4;
 }
 @media (max-width: 991px) {
-  .content-title {
+  body.inner-page .content-title {
     font-size: 2.9rem;
     padding: 0px 0px 10px;
     text-align: center;
   }
 }
 @media (max-width: 450px) {
-  .content-title {
+  body.inner-page .content-title {
     font-size: 2.2rem;
   }
 }
-
-.site-content-wrapper {
-  margin: 5vw auto;
+body.inner-page .site-content-wrapper {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 body:not(.site-menu-horizntal) .site-menu {
@@ -859,6 +861,10 @@ body.inner-page .site-top .site-header {
   width: 13px;
 }
 
+::-webkit-scrollbar-track {
+  background: #f1f7ff;
+}
+
 ::-webkit-scrollbar-thumb {
   background: #6a9cdf;
 }
@@ -870,7 +876,7 @@ body.inner-page .site-top .site-header {
 @media (max-width: 991px) {
   .stickyMenu {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     width: 100%;
   }
